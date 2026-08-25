@@ -266,6 +266,17 @@ class RegenMedDatabase {
             FOREIGN KEY (user_id) REFERENCES users(id) ON DELETE CASCADE
         ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4");
 
+        $db->exec("CREATE TABLE IF NOT EXISTS magic_links (
+            id INT UNSIGNED AUTO_INCREMENT PRIMARY KEY,
+            user_id INT UNSIGNED NOT NULL,
+            token VARCHAR(64) UNIQUE NOT NULL,
+            email VARCHAR(255) NOT NULL,
+            expires_at DATETIME NOT NULL,
+            used TINYINT(1) DEFAULT 0,
+            created_at DATETIME DEFAULT CURRENT_TIMESTAMP,
+            FOREIGN KEY (user_id) REFERENCES users(id) ON DELETE CASCADE
+        ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4");
+
         $db->exec("CREATE INDEX IF NOT EXISTS idx_sessions_token ON sessions(session_token)");
         $db->exec("CREATE INDEX IF NOT EXISTS idx_sessions_user ON sessions(user_id)");
         $db->exec("CREATE INDEX IF NOT EXISTS idx_browsing_user ON browsing_history(user_id)");
@@ -276,6 +287,7 @@ class RegenMedDatabase {
         $db->exec("CREATE INDEX IF NOT EXISTS idx_scans_condition ON scans(condition_type)");
         $db->exec("CREATE INDEX IF NOT EXISTS idx_inferences_user ON inferences(user_id)");
         $db->exec("CREATE INDEX IF NOT EXISTS idx_inferences_created ON inferences(created_at)");
+        $db->exec("CREATE INDEX IF NOT EXISTS idx_magic_links_token ON magic_links(token)");
     }
 
     private static function initializeTablesSQLite(): void {
@@ -464,6 +476,17 @@ class RegenMedDatabase {
             FOREIGN KEY (user_id) REFERENCES users(id) ON DELETE CASCADE
         )");
 
+        $db->exec("CREATE TABLE IF NOT EXISTS magic_links (
+            id INTEGER PRIMARY KEY AUTOINCREMENT,
+            user_id INTEGER NOT NULL,
+            token TEXT UNIQUE NOT NULL,
+            email TEXT NOT NULL,
+            expires_at DATETIME NOT NULL,
+            used INTEGER DEFAULT 0,
+            created_at DATETIME DEFAULT CURRENT_TIMESTAMP,
+            FOREIGN KEY (user_id) REFERENCES users(id) ON DELETE CASCADE
+        )");
+
         $db->exec("CREATE INDEX IF NOT EXISTS idx_sessions_token ON sessions(session_token)");
         $db->exec("CREATE INDEX IF NOT EXISTS idx_sessions_user ON sessions(user_id)");
         $db->exec("CREATE INDEX IF NOT EXISTS idx_browsing_user ON browsing_history(user_id)");
@@ -474,6 +497,7 @@ class RegenMedDatabase {
         $db->exec("CREATE INDEX IF NOT EXISTS idx_scans_condition ON scans(condition_type)");
         $db->exec("CREATE INDEX IF NOT EXISTS idx_inferences_user ON inferences(user_id)");
         $db->exec("CREATE INDEX IF NOT EXISTS idx_inferences_created ON inferences(created_at)");
+        $db->exec("CREATE INDEX IF NOT EXISTS idx_magic_links_token ON magic_links(token)");
     }
 
     public static function logPageView(?int $userId, ?int $sessionId, string $page, ?string $queryString = null, ?string $referer = null, ?int $responseTime = null): void {
@@ -574,6 +598,43 @@ class RegenMedDatabase {
             $data['gpu_provider'] ?? null
         ]);
         return (int)$db->lastInsertId();
+    }
+
+    public static function createMagicLink(string $email): ?array {
+        $db = self::getInstance();
+        $stmt = $db->prepare("SELECT id, username, email, display_name FROM users WHERE email = ? AND is_active = 1");
+        $stmt->execute([$email]);
+        $user = $stmt->fetch();
+
+        if (!$user) {
+            $username = substr($email, 0, strpos($email, '@'));
+            $userId = self::createUser($username, $email, bin2hex(random_bytes(16)), $username);
+            $stmt = $db->prepare("SELECT id, username, email, display_name FROM users WHERE id = ?");
+            $stmt->execute([$userId]);
+            $user = $stmt->fetch();
+        }
+
+        $token = bin2hex(random_bytes(32));
+        $expires = date('Y-m-d H:i:s', strtotime('+15 minutes'));
+
+        $stmt = $db->prepare("INSERT INTO magic_links (user_id, token, email, expires_at) VALUES (?, ?, ?, ?)");
+        $stmt->execute([$user['id'], $token, $email, $expires]);
+
+        return ['token' => $token, 'user' => $user];
+    }
+
+    public static function verifyMagicLink(string $token): ?array {
+        $db = self::getInstance();
+        $stmt = $db->prepare("SELECT ml.*, u.username, u.email, u.display_name FROM magic_links ml JOIN users u ON ml.user_id = u.id WHERE ml.token = ? AND ml.used = 0 AND ml.expires_at > CURRENT_TIMESTAMP");
+        $stmt->execute([$token]);
+        $link = $stmt->fetch() ?: null;
+
+        if ($link) {
+            $stmt = $db->prepare("UPDATE magic_links SET used = 1 WHERE token = ?");
+            $stmt->execute([$token]);
+        }
+
+        return $link;
     }
 
     public static function getUserStats(int $userId): array {

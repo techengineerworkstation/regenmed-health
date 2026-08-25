@@ -20,7 +20,7 @@ $data = [
 $userId = SessionManager::getUserId();
 $page = InputValidator::deepSanitizeString($_GET['page'] ?? 'dashboard');
 
-$allowedPages = ['dashboard', 'conditions', 'imaging', 'protocols', 'supplements', 'pemf', 'stem-cells', 'vps-providers', 'data-manager', 'case-study', 'references', 'login', 'register', 'logout'];
+$allowedPages = ['dashboard', 'conditions', 'imaging', 'protocols', 'supplements', 'pemf', 'stem-cells', 'vps-providers', 'data-manager', 'case-study', 'references', 'login', 'magic-login', 'logout'];
 if (!in_array($page, $allowedPages, true)) {
     $page = 'dashboard';
 }
@@ -90,55 +90,33 @@ if ($page === 'login' && $_SERVER['REQUEST_METHOD'] === 'POST') {
     } elseif (!SecurityManager::checkHoneypot()) {
         $errors[] = 'Bot detected';
     } else {
-        $username = trim($_POST['username'] ?? '');
-        $password = $_POST['password'] ?? '';
-        
-        if (empty($username) || empty($password)) {
-            $errors[] = 'Username and password are required';
+        $email = trim($_POST['email'] ?? '');
+        if (empty($email) || !filter_var($email, FILTER_VALIDATE_EMAIL)) {
+            $errors[] = 'Please enter a valid email address';
         } else {
-            $user = RegenMedDatabase::authenticateUser($username, $password);
-            if ($user) {
-                SessionManager::setUserId((int)$user['id']);
-                SessionManager::regenerateSession();
-                header('Location: ?page=dashboard');
-                exit;
+            $result = RegenMedDatabase::createMagicLink($email);
+            if ($result) {
+                $magicToken = $result['token'];
+                $magicUrl = (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] !== 'off' ? 'https' : 'http')
+                    . '://' . $_SERVER['HTTP_HOST'] . '/?page=magic-login&token=' . $magicToken;
+                $magicLinkGenerated = $magicUrl;
             } else {
-                $errors[] = 'Invalid username or password';
+                $errors[] = 'Unable to generate sign-in link. Please try again.';
             }
         }
     }
 }
 
-if ($page === 'register' && $_SERVER['REQUEST_METHOD'] === 'POST') {
-    if (!SecurityManager::validateCSRF($_POST['csrf_token'] ?? '')) {
-        $errors[] = 'Invalid CSRF token';
-    } elseif (!SecurityManager::checkHoneypot()) {
-        $errors[] = 'Bot detected';
+if ($page === 'magic-login' && isset($_GET['token'])) {
+    $token = $_GET['token'];
+    $linkData = RegenMedDatabase::verifyMagicLink($token);
+    if ($linkData) {
+        SessionManager::setUserId((int)$linkData['user_id']);
+        header('Location: ?page=dashboard');
+        exit;
     } else {
-        $username = trim($_POST['username'] ?? '');
-        $password = $_POST['password'] ?? '';
-        $passwordConfirm = $_POST['password_confirm'] ?? '';
-        
-        if (empty($username) || empty($password)) {
-            $errors[] = 'All fields are required';
-        } elseif ($password !== $passwordConfirm) {
-            $errors[] = 'Passwords do not match';
-        } elseif (strlen($password) < 6) {
-            $errors[] = 'Password must be at least 6 characters';
-        } else {
-            try {
-                RegenMedDatabase::createUser($username, $username . '@regenmed.local', $password, $username);
-                $user = RegenMedDatabase::authenticateUser($username, $password);
-                if ($user) {
-                    SessionManager::setUserId((int)$user['id']);
-                    SessionManager::regenerateSession();
-                    header('Location: ?page=dashboard');
-                    exit;
-                }
-            } catch (Exception $e) {
-                $errors[] = 'Username already exists';
-            }
-        }
+        $errors[] = 'Invalid or expired sign-in link. Please request a new one.';
+        $page = 'login';
     }
 }
 ?>
@@ -299,11 +277,23 @@ if ($page === 'register' && $_SERVER['REQUEST_METHOD'] === 'POST') {
 </style>
 </head>
 <body class="font-sans antialiased bg-slate-50 text-slate-900 transition-colors duration-300"
-      x-data="{ sidebarOpen: false, darkMode: (localStorage.getItem('darkMode') === 'true') }"
-      x-init="$watch('darkMode', val => { localStorage.setItem('darkMode', val); if(val) document.documentElement.classList.add('dark'); else document.documentElement.classList.remove('dark'); }"
+      x-data="{ sidebarOpen: false, darkMode: (localStorage.getItem('darkMode') === 'true'), openThemeModal: false }"
+      x-init="$watch('darkMode', val => { localStorage.setItem('darkMode', val); if(val) document.documentElement.classList.add('dark'); else document.documentElement.classList.remove('dark'); })"
       x-bind:class="darkMode ? 'dark bg-slate-900 text-slate-100' : 'bg-slate-50 text-slate-900'"
       data-theme="<?= ThemeManager::getCurrentTheme() ?>"
       data-mode="light">
+    
+    <script nonce="<?= $nonce ?>">
+    function selectTheme(themeKey) {
+        document.documentElement.setAttribute('data-theme', themeKey);
+        localStorage.setItem('regenmed_theme', themeKey);
+        fetch('/includes/theme-switch.php', {
+            method: 'POST',
+            headers: {'Content-Type': 'application/x-www-form-urlencoded'},
+            body: 'theme=' + encodeURIComponent(themeKey) + '&csrf_token=' + encodeURIComponent(document.querySelector('meta[name="csrf-token"]')?.content || '')
+        });
+    }
+    </script>
     
     <?php require_once __DIR__ . '/includes/header.php'; ?>
     

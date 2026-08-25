@@ -1,54 +1,18 @@
 <header class="sticky top-0 z-50 glass-panel dark:bg-slate-900/80 dark:border-slate-700/50 shadow-sm" style="animation: fadeIn 0.5s ease-in-out;">
     <nav class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="flex items-center justify-between h-16">
-            <!-- Logo -->
             <div class="flex items-center space-x-3">
-                <div class="w-10 h-10 rounded-xl bg-gradient-to-br from-medical-teal to-medical-cyan flex items-center justify-center shadow-lg shadow-medical-teal/20">
-                    <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"/>
-                    </svg>
-                </div>
-                <div>
-                    <h1 class="text-lg font-bold gradient-text"><?= APP_NAME ?></h1>
-                    <p class="text-xs text-slate-500 dark:text-slate-400">v<?= APP_VERSION ?></p>
-                </div>
-
-            <!-- Theme Picker -->
-            <div class="hidden lg:flex items-center space-x-2">
-                <button @click="openThemeModal = true"
-                        class="p-2 rounded-xl text-slate-500 dark:text-slate-400 hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors duration-200"
-                        :title="select theme">
-                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2-2v6a2 2 0 002 2h2a2 2 0 002 2v-6a2 2 0 012-2zm0 0v-6a2 2 0 00-2-2H5a2 2 0 00-2-2v6a2 2 0 002 2h2a2 2 0 002 2vz6zm9-11a2 2 0 11-4 0 2 2 0 014 0zm2.875 5.875a2.125 2.125 0 11-3.389 1.827L18.5 16.188l-1.675 2.093a2.125 2.125 0 01-2.125 1.673H14l1.75 5.5a2.125 2.125 0 01-2.125 1.673H5.125a2.125 2.125 0 11-2.125-1.673L8.31 9.35a2.125 2.125 0 011.875-2.753h4.375a2.125 2.125 0 012.125 1.673l1.675 2.092L21.875 12z"/>
-                    </svg>
-                </button>
-            </div>
-
-            <!-- Theme Modal (mobile) -->
-            <div x-show="openThemeModal" x-cloak x-transition class="fixed inset-0 z-50 bg-black/60 backdrop-blur-sm items-center justify-center">
-                <div class="bg-white dark:bg-slate-800 rounded-lg p-6 w-80 max-w-full shadow-xl transform scale-95 opacity-0"
-                     @click.away="openThemeModal = false"
-                     @click.self.stop>
-                    <h3 class="text-xl font-bold text-slate-900 dark:text-slate-100 mb-4 text-center">Select Theme</h3>
-                    <div class="space-y-3 mb-6">
-                        <?php foreach (ThemeManager::getThemeNames() as $key => $theme): ?>
-                        <button @click="selectTheme('<?= $key ?>'); openThemeModal = false"
-                                class="w-full h-12 rounded-xl flex items-center justify-center border-2 <?= $key === ThemeManager::getCurrentTheme() ? 'border-medical-teal' : 'border-slate-300 dark:border-slate-600' ?> hover:border-medical-teal/30 transition-colors"
-                                style="background: var(--bg-primary); color: var(--text-primary);">
-                            <span class="text-sm font-medium"><?= $theme['name'] ?></span>
-                        </button>
-                        <?php endforeach; ?>
+                <a href="?page=dashboard" class="flex items-center space-x-3 group">
+                    <div class="w-10 h-10 rounded-xl flex items-center justify-center shadow-lg overflow-hidden" style="background: linear-gradient(135deg, #16a34a, #0d9488, #06b6d4, #7c3aed);">
+                        <img src="/assets/svg/logo.svg" alt="Regen Med Health" class="w-8 h-8">
                     </div>
-                    <button @click="openThemeModal = false"
-                            class="w-full py-2 rounded-lg bg-medical-teal text-white text-sm font-medium hover:bg-medical-teal/90 transition">
-                        Apply & Close
-                    </button>
-                </div>
+                    <div>
+                        <h1 class="text-lg font-bold gradient-text"><?= APP_NAME ?></h1>
+                        <p class="text-xs text-slate-500 dark:text-slate-400">v<?= APP_VERSION ?></p>
+                    </div>
+                </a>
             </div>
 
-
-
-            <!-- Desktop Navigation -->
             <div class="hidden lg:flex items-center space-x-1">
                 <?php
                 $navItems = [
@@ -90,8 +54,15 @@
                 <?php endforeach; ?>
             </div>
 
-            <!-- Dark Mode & Mobile Menu -->
             <div class="flex items-center space-x-2">
+                <button @click="openThemeModal = true"
+                        class="p-2 rounded-xl text-slate-500 dark:text-slate-400 hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors duration-200"
+                        title="Select theme">
+                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 21a4 4 0 01-4-4V5a2 2 0 012-2h4a2 2 0 012 2v12a4 4 0 01-4 4zm0 0h12a2 2 0 002-2v-4a2 2 0 00-2-2h-2.343M11 7.343l1.657-1.657a2 2 0 012.828 0l2.829 2.829a2 2 0 010 2.828l-8.486 8.485M7 17h.01"/>
+                    </svg>
+                </button>
+
                 <button @click="darkMode = !darkMode"
                         class="p-2 rounded-xl text-slate-500 dark:text-slate-400 hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors duration-200"
                         :title="darkMode ? 'Light mode' : 'Dark mode'">
@@ -102,6 +73,15 @@
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z"/>
                     </svg>
                 </button>
+
+                <?php if (SessionManager::isLoggedIn()): ?>
+                <a href="?page=logout" class="p-2 rounded-xl text-slate-500 dark:text-slate-400 hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors duration-200" title="Sign out">
+                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 16l4-4m0 0l-4-4m4 4H7m6 4v1a3 3 0 01-3 3H6a3 3 0 01-3-3V7a3 3 0 013-3h4a3 3 0 013 3v1"/>
+                    </svg>
+                </a>
+                <?php endif; ?>
+
                 <button @click="sidebarOpen = !sidebarOpen"
                         class="lg:hidden p-2 rounded-xl text-slate-500 dark:text-slate-400 hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors duration-200">
                     <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -112,12 +92,53 @@
         </div>
     </nav>
 
+    <!-- Theme Picker Modal -->
+    <div x-show="openThemeModal" x-cloak
+         x-transition:enter="transition ease-out duration-200"
+         x-transition:enter-start="opacity-0"
+         x-transition:enter-end="opacity-100"
+         x-transition:leave="transition ease-in duration-150"
+         x-transition:leave-start="opacity-100"
+         x-transition:leave-end="opacity-0"
+         class="fixed inset-0 z-50 flex items-center justify-center bg-black/60 backdrop-blur-sm"
+         @click.self="openThemeModal = false">
+        <div class="bg-white dark:bg-slate-800 rounded-2xl p-6 w-80 max-w-full shadow-2xl border border-slate-200 dark:border-slate-700"
+             x-transition:enter="transition ease-out duration-200"
+             x-transition:enter-start="opacity-0 scale-95"
+             x-transition:enter-end="opacity-100 scale-100">
+            <div class="flex items-center justify-between mb-4">
+                <h3 class="text-lg font-bold text-slate-900 dark:text-slate-100">Select Theme</h3>
+                <button @click="openThemeModal = false" class="text-slate-400 hover:text-slate-600 dark:hover:text-slate-300">
+                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/></svg>
+                </button>
+            </div>
+            <div class="space-y-3 mb-6">
+                <?php foreach (ThemeManager::getThemeNames() as $key => $theme): ?>
+                <?php $isCurrent = ($key === ThemeManager::getCurrentTheme()); ?>
+                <button @click="selectTheme('<?= $key ?>'); openThemeModal = false"
+                        class="w-full h-12 rounded-xl flex items-center gap-3 px-4 border-2 transition-all duration-200 hover:scale-[1.02] <?= $isCurrent ? 'border-medical-teal shadow-md shadow-medical-teal/20' : 'border-slate-200 dark:border-slate-600 hover:border-medical-teal/40' ?>"
+                        style="background: var(--bg-card);">
+                    <?= ThemeManager::themeColorSwatch($key) ?>
+                    <span class="text-sm font-medium" style="color: var(--text-primary);"><?= htmlspecialchars($theme['name']) ?></span>
+                    <?php if ($key === ThemeManager::getCurrentTheme()): ?>
+                    <svg class="w-4 h-4 ml-auto text-medical-teal" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+                    <?php endif; ?>
+                </button>
+                <?php endforeach; ?>
+            </div>
+            <button @click="openThemeModal = false"
+                    class="w-full py-2.5 rounded-lg bg-medical-teal text-white text-sm font-medium hover:bg-medical-teal/90 transition">
+                Done
+            </button>
+        </div>
+    </div>
+
     <!-- Mobile Sidebar -->
     <div x-show="sidebarOpen" x-cloak x-transition class="lg:hidden bg-white dark:bg-slate-800 border-t dark:border-slate-700 shadow-lg">
         <div class="px-4 pt-2 pb-4 space-y-1">
             <?php foreach ($navItems as $key => $item): ?>
             <a href="?page=<?= $key ?>" @click="sidebarOpen = false"
-               class="block sidebar-item <?= $page === $key ? 'bg-medical-teal/10 text-medical-teal' : 'text-slate-600 dark:text-slate-300 hover:bg-slate-50 dark:hover:bg-slate-700/50' ?>">
+               class="block p-2 rounded-lg sidebar-item <?= $page === $key ? 'bg-medical-teal/10 text-medical-teal' : 'text-slate-600 dark:text-slate-300 hover:bg-slate-50 dark:hover:bg-slate-700/50' ?>">
                 <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="<?= $item['icon'] ?>"/>
                 </svg>
