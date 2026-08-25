@@ -11,7 +11,7 @@ return [
         'charset'  => 'utf8mb4',
     ],
     'app' => [
-        'name'  => 'Regen Med Health',
+        'name'  => 'Coach & Heal — Regen Med Health',
         'url'   => 'http://localhost:8081',
         'debug' => false,
     ],

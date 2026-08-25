@@ -10,15 +10,25 @@
                     </div>
                     <span class="text-lg font-bold gradient-text"><?= APP_NAME ?></span>
                 </div>
-                <p class="text-sm text-slate-400 dark:text-slate-500 max-w-md mb-4"><?= APP_DESCRIPTION ?>. Integrating medical imaging, regenerative medicine, and AI-assisted diagnostics for evidence-based treatment planning.</p>
-                <div class="flex space-x-2">
+                <p class="text-sm text-slate-400 dark:text-slate-500 max-w-md mb-4">Empowering growth in life, health, career, and world business. Personalized coaching and medical diagnostics to help you achieve balance, confidence, and lasting success — available online worldwide and across Nigeria.</p>
+                <div class="flex space-x-2 mb-4">
                     <span class="px-3 py-1 bg-medical-teal/20 text-medical-teal text-xs rounded-full font-medium">HIPAA Aware</span>
-                    <span class="px-3 py-1 bg-medical-cyan/20 text-medical-cyan text-xs rounded-full font-medium">Research Use</span>
+                    <span class="px-3 py-1 bg-medical-cyan/20 text-medical-cyan text-xs rounded-full font-medium">100% Confidential</span>
                     <span class="px-3 py-1 bg-medical-indigo/20 text-medical-indigo text-xs rounded-full font-medium">AI-Powered</span>
+                </div>
+                <div class="flex items-center space-x-4 text-sm">
+                    <a href="tel:+2347010744142" class="flex items-center space-x-1 text-slate-400 hover:text-medical-teal transition">
+                        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/></svg>
+                        <span>+234 701 074 4142</span>
+                    </a>
+                    <a href="mailto:Ibe@coachandheal.store" class="flex items-center space-x-1 text-slate-400 hover:text-medical-teal transition">
+                        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>
+                        <span>Ibe@coachandheal.store</span>
+                    </a>
                 </div>
             </div>
             <div>
-                <h4 class="text-white font-semibold mb-4 text-sm uppercase tracking-wider">Conditions</h4>
+                <h4 class="text-white font-semibold mb-4 text-sm uppercase tracking-wider">Challenges</h4>
                 <ul class="space-y-2 text-sm">
                     <li><a href="?page=conditions&condition=knee_arthritis" class="hover:text-medical-teal transition">Knee Osteoarthritis</a></li>
                     <li><a href="?page=conditions&condition=retinal_degeneration" class="hover:text-medical-teal transition">Macular Degeneration</a></li>
@@ -39,7 +49,7 @@
             </div>
         </div>
         <div class="border-t border-slate-800 dark:border-slate-800/50 mt-8 pt-8 flex flex-col md:flex-row items-center justify-between">
-            <p class="text-xs text-slate-500 dark:text-slate-600">&copy; <?= date('Y') ?> <?= APP_NAME ?>. For research and educational purposes only. Not a substitute for professional medical advice.</p>
+            <p class="text-xs text-slate-500 dark:text-slate-600">&copy; <?= date('Y') ?> <?= APP_NAME ?> by Coach Ibe / Ibereal Enterprise. For research and educational purposes only. Not a substitute for professional medical advice.</p>
             <p class="text-xs text-slate-500 dark:text-slate-600 mt-2 md:mt-0">Version <?= APP_VERSION ?> | PHP <?= phpversion() ?></p>
         </div>
     </div>
