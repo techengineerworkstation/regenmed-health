@@ -3,7 +3,7 @@ declare(strict_types=1);
 
 define('APP_NAME', 'Regen Med Health');
 define('APP_VERSION', '2.0');
-define('APP_DESCRIPTION', 'Medical Imaging & Regenerative Medicine Diagnostic Platform - Regen Med Health');
+define('APP_DESCRIPTION', 'Medical Scans, Test, and Recommendations - Regen Med Health');
 
 require_once __DIR__ . '/includes/security.php';
 require_once __DIR__ . '/includes/database.php';

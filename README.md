@@ -1,6 +1,6 @@
-# Regen Med Health Diagnostic Platform
+# Regen Med Health
 
-## Medical Imaging ## Medical Imaging & Regenerative Medicine Diagnostic Presentation System Regenerative Medicine Diagnostic Presentation System - Regen Med Health
+## Medical Scans, Test, and Recommendations
 
 A comprehensive, secure PHP-based local web application for medical imaging diagnostics and regenerative medicine treatment planning.
 
@@ -18,7 +18,6 @@ A comprehensive, secure PHP-based local web application for medical imaging diag
 - **AI Recommendation Engine** - Generate personalized treatment recommendations
 - **User Authentication** - Secure login/registration with session management
 - **Full Database Storage** - SQLite backend for all sessions, browsing history, user data
-- **Security Hardened** - CSRF, XSS, SQL injection, rate limiting, file upload protection
 
 ### Conditions Covered
 
@@ -30,7 +29,6 @@ A comprehensive, secure PHP-based local web application for medical imaging diag
 
 ### Security Features
 
-- Content Security Policy (CSP) headers
 - CSRF token validation
 - SQL injection prevention (PDO prepared statements)
 - XSS prevention (output encoding)
@@ -39,9 +37,6 @@ A comprehensive, secure PHP-based local web application for medical imaging diag
 - Argon2id password hashing
 - File upload validation (MIME type, extension, content scan)
 - Honeypot anti-bot protection
-- HTTP security headers (HSTS, X-Frame-Options, etc.)
-- Directory access restrictions
-- Input sanitization (GET, POST, COOKIE)
 
 ### Requirements
 
