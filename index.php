@@ -9,9 +9,11 @@ require_once __DIR__ . '/includes/security.php';
 require_once __DIR__ . '/includes/database.php';
 require_once __DIR__ . '/includes/themes.php';
 require_once __DIR__ . '/includes/theme-manager.php';
+require_once __DIR__ . '/includes/rss-feeds.php';
 
 SessionManager::start();
 ThemeManager::init();
+RssFeedManager::init();
 
 $data = [
     'themes' => ThemeManager::getThemeNames(),
@@ -80,6 +82,13 @@ if ($page === 'logout') {
 
 $csrfToken = SessionManager::generateCSRFToken();
 $nonce = SecurityManager::getNonce();
+
+$tipsFeed = [];
+$newsFeed = [];
+if ($page === 'dashboard') {
+    $tipsFeed = RssFeedManager::getTips(6);
+    $newsFeed = RssFeedManager::getNews(6);
+}
 
 $errors = [];
 $lockoutRemaining = 0;

@@ -48,6 +48,36 @@
                 </ul>
             </div>
         </div>
+        <!-- News & Best Practices Feed -->
+        <?php if (!empty($newsFeed)): ?>
+        <div class="border-t border-slate-800 dark:border-slate-800/50 mt-8 pt-8 mb-8">
+            <div class="flex items-center gap-2 mb-6">
+                <div class="w-8 h-8 rounded-lg bg-gradient-to-br from-medical-indigo to-medical-violet flex items-center justify-center">
+                    <svg class="w-4 h-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 20H5a2 2 0 01-2-2V6a2 2 0 012-2h10a2 2 0 012 2v1m2 13a2 2 0 01-2-2V7m2 13a2 2 0 002-2V9a2 2 0 00-2-2h-2m-4-3H9M7 16h6M7 8h6v4H7V8z"/></svg>
+                </div>
+                <h4 class="text-white font-semibold text-sm uppercase tracking-wider">News & Best Practices</h4>
+                <span class="text-xs text-slate-500">· Latest developments in regenerative medicine</span>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+                <?php foreach (array_slice($newsFeed, 0, 6) as $news): ?>
+                <a href="<?= htmlspecialchars($news['link'] ?? '#') ?>" target="_blank" rel="noopener"
+                   class="block p-4 rounded-xl bg-slate-800/50 hover:bg-slate-800 border border-slate-700/50 transition group">
+                    <p class="text-sm font-medium text-white group-hover:text-medical-teal transition line-clamp-2 mb-2"><?= htmlspecialchars($news['title'] ?? '') ?></p>
+                    <?php if (!empty($news['description'])): ?>
+                    <p class="text-xs text-slate-400 line-clamp-2 mb-2"><?= htmlspecialchars(mb_substr($news['description'], 0, 120)) ?>…</p>
+                    <?php endif; ?>
+                    <div class="flex items-center gap-2">
+                        <span class="text-xs text-medical-teal font-medium"><?= htmlspecialchars($news['source'] ?? '') ?></span>
+                        <?php if (!empty($news['date'])): ?>
+                        <span class="text-xs text-slate-500">· <?= htmlspecialchars($news['date']) ?></span>
+                        <?php endif; ?>
+                    </div>
+                </a>
+                <?php endforeach; ?>
+            </div>
+        </div>
+        <?php endif; ?>
+
         <div class="border-t border-slate-800 dark:border-slate-800/50 mt-8 pt-8 flex flex-col md:flex-row items-center justify-between">
             <p class="text-xs text-slate-500 dark:text-slate-600">&copy; <?= date('Y') ?> <?= APP_NAME ?> by Coach Ibe / Ibereal Enterprise. For research and educational purposes only. Not a substitute for professional medical advice.</p>
             <p class="text-xs text-slate-500 dark:text-slate-600 mt-2 md:mt-0">Version <?= APP_VERSION ?> | PHP <?= phpversion() ?></p>

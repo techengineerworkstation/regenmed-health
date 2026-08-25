@@ -1,4 +1,36 @@
     <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+        <!-- Health & Wellness Tips Ticker -->
+        <?php if (!empty($tipsFeed)): ?>
+        <section class="mb-8" x-data="{ paused: false, offset: 0 }" x-init="setInterval(() => { if (!paused) offset = (offset + 1) % <?= count($tipsFeed) ?>; }, 5000)">
+            <div class="bg-white dark:bg-slate-800/50 dark:border-slate-700/50 rounded-2xl p-4 shadow-sm border border-slate-100 dark:border-slate-700">
+                <div class="flex items-center gap-3">
+                    <div class="flex-shrink-0 flex items-center gap-2">
+                        <div class="w-8 h-8 rounded-lg bg-gradient-to-br from-emerald-500 to-teal-600 flex items-center justify-center">
+                            <svg class="w-4 h-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"/></svg>
+                        </div>
+                        <span class="text-xs font-bold text-emerald-600 dark:text-emerald-400 uppercase tracking-wider whitespace-nowrap">Wellness Tips</span>
+                        <div class="w-px h-6 bg-slate-200 dark:bg-slate-600"></div>
+                    </div>
+                    <div class="overflow-hidden flex-1 relative" @mouseenter="paused = true" @mouseleave="paused = false">
+                        <div class="flex gap-6 transition-transform duration-500 ease-in-out" :style="'transform: translateX(-' + (offset * 100) / <?= count($tipsFeed) ?> '%)'">
+                            <?php foreach ($tipsFeed as $i => $tip): ?>
+                            <a href="<?= htmlspecialchars($tip['link'] ?? '#') ?>" target="_blank" rel="noopener" class="flex-shrink-0 min-w-0 group">
+                                <p class="text-sm text-slate-700 dark:text-slate-300 group-hover:text-medical-teal transition truncate">
+                                    <span class="font-semibold"><?= htmlspecialchars($tip['title'] ?? '') ?></span>
+                                    <?php if (!empty($tip['description'])): ?>
+                                    <span class="text-slate-400 dark:text-slate-500"> — <?= htmlspecialchars(mb_substr($tip['description'], 0, 80)) ?>…</span>
+                                    <?php endif; ?>
+                                </p>
+                                <p class="text-xs text-slate-400 dark:text-slate-500 mt-0.5"><?= htmlspecialchars($tip['source'] ?? '') ?> · <?= htmlspecialchars($tip['date'] ?? '') ?></p>
+                            </a>
+                            <?php endforeach; ?>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <?php endif; ?>
+
         <!-- Carousel Hero Section -->
         <section class="relative rounded-3xl overflow-hidden mb-12 animate-fade-in"
                  x-data="{
@@ -13,6 +45,7 @@
                              ctaLink: '#contact',
                              badge: 'Available Online Worldwide & In-Person Across Nigeria',
                              gradient: 'from-medical-teal via-medical-cyan to-medical-indigo',
+                             image: '/assets/images/life-coaching.jpg',
                          },
                          {
                              title: 'Health Coaching & Regenerative Medicine',
@@ -22,6 +55,7 @@
                              ctaLink: '?page=conditions',
                              badge: 'Health Coaching + Medical Diagnostics',
                              gradient: 'from-emerald-600 via-teal-500 to-cyan-500',
+                             image: '/assets/images/health-coaching.jpg',
                          },
                          {
                              title: 'Wellness Technology & Medical Imaging',
@@ -31,6 +65,7 @@
                              ctaLink: '?page=imaging',
                              badge: 'Wellness Tech + Diagnostic Imaging',
                              gradient: 'from-medical-violet via-medical-indigo to-medical-cyan',
+                             image: '/assets/images/mri-brain.jpg',
                          },
                          {
                              title: 'Life, Career & World Business Coaching',
@@ -40,6 +75,7 @@
                              ctaLink: '#services',
                              badge: '4 Coaching Programs',
                              gradient: 'from-medical-amber via-medical-rose to-medical-indigo',
+                             image: '/assets/images/business-coaching.jpg',
                          },
                      ],
                      nextSlide() {
@@ -58,8 +94,8 @@
             <template x-for="(slide, index) in slides" :key="index">
                 <div class="absolute inset-0 transition-all duration-1000 ease-in-out"
                      :class="currentSlide === index ? 'opacity-100' : 'opacity-0'">
-                    <div class="absolute inset-0 bg-gradient-to-br"
-                         :class="slide.gradient"></div>
+                    <img :src="slide.image" :alt="slide.title" class="absolute inset-0 w-full h-full object-cover" loading="lazy">
+                    <div class="absolute inset-0 bg-gradient-to-br" :class="slide.gradient" style="opacity: 0.85;"></div>
                     <div class="absolute inset-0 medical-grid opacity-20"></div>
                 </div>
             </template>
@@ -167,17 +203,19 @@
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
                 <?php
                 $coachingCards = [
-                    ['title' => 'Life Coaching', 'duration' => '8–12 weeks', 'gradient' => 'from-teal-500 to-emerald-600', 'desc' => 'Find clarity, overcome limiting beliefs, and build a life that feels meaningful — on your terms.', 'icon' => 'M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z'],
-                    ['title' => 'Career Coaching', 'duration' => '6–10 weeks', 'gradient' => 'from-cyan-500 to-blue-600', 'desc' => 'Eyeing a promotion, changing careers, or coming back after a break — find your footing and move forward.', 'icon' => 'M21 13.255A23.931 23.931 0 0112 15c-3.183 0-6.22-.62-9-1.745M16 6V4a2 2 0 00-2-2h-4a2 2 0 00-2 2v2m4 6h.01M5 20h14a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z'],
-                    ['title' => 'Health Coaching', 'duration' => '8–12 weeks', 'gradient' => 'from-indigo-500 to-violet-600', 'desc' => 'Build small, sustainable habits for more energy, better sleep, and a clearer mind — no extreme diets.', 'icon' => 'M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z'],
-                    ['title' => 'World Business Coaching', 'duration' => '12–16 weeks', 'gradient' => 'from-purple-500 to-fuchsia-600', 'desc' => 'Build strategy, systems, and leadership skills to grow sustainably — without losing yourself in the process.', 'icon' => 'M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064M21 12a9 9 0 11-18 0 9 9 0 0118 0z'],
-                    ['title' => 'Wellness Technology', 'duration' => 'Ongoing', 'gradient' => 'from-amber-500 to-rose-600', 'desc' => 'Gentle, non-invasive sensors give you a window into your body\'s natural rhythms for smarter daily choices.', 'icon' => 'M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z'],
-                    ['title' => 'Medical Diagnostics', 'duration' => 'Per Protocol', 'gradient' => 'from-blue-500 to-indigo-600', 'desc' => 'MRI, OCT, ultrasound, mpMRI — AI-assisted diagnostic imaging combined with regenerative medicine protocols.', 'icon' => 'M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 012-2H6a2 2 0 01-2 2v12a2 2 0 012 2z'],
+                    ['title' => 'Life Coaching', 'duration' => '8–12 weeks', 'gradient' => 'from-teal-500 to-emerald-600', 'desc' => 'Find clarity, overcome limiting beliefs, and build a life that feels meaningful — on your terms.', 'icon' => 'M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z', 'image' => '/assets/images/life-coaching.jpg'],
+                    ['title' => 'Career Coaching', 'duration' => '6–10 weeks', 'gradient' => 'from-cyan-500 to-blue-600', 'desc' => 'Eyeing a promotion, changing careers, or coming back after a break — find your footing and move forward.', 'icon' => 'M21 13.255A23.931 23.931 0 0112 15c-3.183 0-6.22-.62-9-1.745M16 6V4a2 2 0 00-2-2h-4a2 2 0 00-2 2v2m4 6h.01M5 20h14a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z', 'image' => '/assets/images/career-growth.jpg'],
+                    ['title' => 'Health Coaching', 'duration' => '8–12 weeks', 'gradient' => 'from-indigo-500 to-violet-600', 'desc' => 'Build small, sustainable habits for more energy, better sleep, and a clearer mind — no extreme diets.', 'icon' => 'M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z', 'image' => '/assets/images/health-coaching.jpg'],
+                    ['title' => 'World Business Coaching', 'duration' => '12–16 weeks', 'gradient' => 'from-purple-500 to-fuchsia-600', 'desc' => 'Build strategy, systems, and leadership skills to grow sustainably — without losing yourself in the process.', 'icon' => 'M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064M21 12a9 9 0 11-18 0 9 9 0 0118 0z', 'image' => '/assets/images/business-coaching.jpg'],
+                    ['title' => 'Wellness Technology', 'duration' => 'Ongoing', 'gradient' => 'from-amber-500 to-rose-600', 'desc' => 'Gentle, non-invasive sensors give you a window into your body\'s natural rhythms for smarter daily choices.', 'icon' => 'M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z', 'image' => '/assets/images/wellness-technology.jpg'],
+                    ['title' => 'Medical Diagnostics', 'duration' => 'Per Protocol', 'gradient' => 'from-blue-500 to-indigo-600', 'desc' => 'MRI, OCT, ultrasound, mpMRI — AI-assisted diagnostic imaging combined with regenerative medicine protocols.', 'icon' => 'M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 012-2H6a2 2 0 01-2 2v12a2 2 0 012 2z', 'image' => '/assets/images/doctor-mri.jpg'],
                 ];
                 foreach ($coachingCards as $card):
                 ?>
                 <a href="?page=conditions" class="group block bg-white dark:bg-slate-800/50 dark:border-slate-700/50 rounded-2xl overflow-hidden shadow-sm border border-slate-100 card-hover">
-                    <div class="h-32 bg-gradient-to-br <?= $card['gradient'] ?> relative overflow-hidden">
+                    <div class="h-32 relative overflow-hidden">
+                        <img src="<?= $card['image'] ?>" alt="<?= htmlspecialchars($card['title']) ?>" class="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy">
+                        <div class="absolute inset-0 bg-gradient-to-br <?= $card['gradient'] ?>" style="opacity: 0.7;"></div>
                         <div class="absolute inset-0 medical-grid opacity-20"></div>
                         <div class="absolute bottom-4 left-4">
                             <span class="px-2 py-1 bg-white/20 backdrop-blur-sm text-white text-xs font-medium rounded-full"><?= $card['duration'] ?></span>
@@ -231,16 +269,18 @@
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
                 <?php
                 $conditionCards = [
-                    ['key' => 'knee_arthritis', 'title' => 'Knee Osteoarthritis', 'icd' => 'M17', 'modality' => 'MRI', 'gradient' => 'from-teal-500 to-emerald-600', 'findings' => 'Cartilage loss, osteophytes, subchondral sclerosis'],
-                    ['key' => 'retinal_degeneration', 'title' => 'Macular Degeneration', 'icd' => 'H35.30', 'modality' => 'OCT', 'gradient' => 'from-cyan-500 to-blue-600', 'findings' => 'Drusen, GA, subretinal fluid, CNV'],
-                    ['key' => 'male_factor_enhancing_fertility', 'title' => 'Male Enhancing Fertility', 'icd' => 'N46', 'modality' => 'Scrotal US', 'gradient' => 'from-indigo-500 to-violet-600', 'findings' => 'Varicocele, semen analysis, testicular volume'],
-                    ['key' => 'female_factor_enhancing_fertility', 'title' => 'Female Enhancing Fertility', 'icd' => 'N97', 'modality' => 'TV US', 'gradient' => 'from-purple-500 to-fuchsia-600', 'findings' => 'Follicle count, endometrial thickness, uterine anomalies'],
-                    ['key' => 'prostate_disease', 'title' => 'Prostate Disease', 'icd' => 'N40/N41', 'modality' => 'mpMRI', 'gradient' => 'from-blue-500 to-indigo-600', 'findings' => 'Prostate volume, PI-RADS, transition zone'],
+                    ['key' => 'knee_arthritis', 'title' => 'Knee Osteoarthritis', 'icd' => 'M17', 'modality' => 'MRI', 'gradient' => 'from-teal-500 to-emerald-600', 'findings' => 'Cartilage loss, osteophytes, subchondral sclerosis', 'image' => '/assets/images/patient-scan.jpg'],
+                    ['key' => 'retinal_degeneration', 'title' => 'Macular Degeneration', 'icd' => 'H35.30', 'modality' => 'OCT', 'gradient' => 'from-cyan-500 to-blue-600', 'findings' => 'Drusen, GA, subretinal fluid, CNV', 'image' => '/assets/images/retina-scan.jpg'],
+                    ['key' => 'male_factor_enhancing_fertility', 'title' => 'Male Enhancing Fertility', 'icd' => 'N46', 'modality' => 'Scrotal US', 'gradient' => 'from-indigo-500 to-violet-600', 'findings' => 'Varicocele, semen analysis, testicular volume', 'image' => '/assets/images/ultrasound.jpg'],
+                    ['key' => 'female_factor_enhancing_fertility', 'title' => 'Female Enhancing Fertility', 'icd' => 'N97', 'modality' => 'TV US', 'gradient' => 'from-purple-500 to-fuchsia-600', 'findings' => 'Follicle count, endometrial thickness, uterine anomalies', 'image' => '/assets/images/lab-research.jpg'],
+                    ['key' => 'prostate_disease', 'title' => 'Prostate Disease', 'icd' => 'N40/N41', 'modality' => 'mpMRI', 'gradient' => 'from-blue-500 to-indigo-600', 'findings' => 'Prostate volume, PI-RADS, transition zone', 'image' => '/assets/images/mri-scan.jpg'],
                 ];
                 foreach ($conditionCards as $card):
                 ?>
                 <a href="?page=conditions&condition=<?= $card['key'] ?>" class="group block bg-white dark:bg-slate-800/50 dark:border-slate-700/50 rounded-2xl overflow-hidden shadow-sm border border-slate-100 card-hover">
-                    <div class="h-32 bg-gradient-to-br <?= $card['gradient'] ?> relative overflow-hidden">
+                    <div class="h-32 relative overflow-hidden">
+                        <img src="<?= $card['image'] ?>" alt="<?= htmlspecialchars($card['title']) ?>" class="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy">
+                        <div class="absolute inset-0 bg-gradient-to-br <?= $card['gradient'] ?>" style="opacity: 0.7;"></div>
                         <div class="absolute inset-0 medical-grid opacity-20"></div>
                         <div class="absolute bottom-4 left-4">
                             <span class="px-2 py-1 bg-white/20 backdrop-blur-sm text-white text-xs font-medium rounded-full"><?= $card['modality'] ?></span>
