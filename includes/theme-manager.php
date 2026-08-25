@@ -115,7 +115,7 @@ class ThemeManager
         return $css;
     }
 
-    public static function injectThemeScript(): string
+    public static function injectThemeScript(string $nonce = ''): string
     {
         $currentTheme = self::getCurrentTheme();
         $allThemes = array_keys(self::$themes);
@@ -130,8 +130,9 @@ class ThemeManager
             'current' => $currentTheme,
         ]), ENT_QUOTES, 'UTF-8');
 
+        $nonceAttr = $nonce ? ' nonce="' . htmlspecialchars($nonce, ENT_QUOTES, 'UTF-8') . '"' : '';
         return <<<HTML
-<script nonce="{{NONCE}}">
+<script{$nonceAttr}>
 (function() {
     var cfg = {$json};
     var saved = localStorage.getItem('regenmed_theme');
@@ -146,6 +147,11 @@ class ThemeManager
 })();
 </script>
 HTML;
+    }
+
+    public static function getTheme(string $themeKey): array
+    {
+        return self::$themes[$themeKey] ?? self::$themes[self::$defaultTheme] ?? [];
     }
 
     public static function themeColorSwatch(string $themeKey): string

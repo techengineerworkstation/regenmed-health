@@ -8,12 +8,13 @@ define('APP_DESCRIPTION', 'Medical Scans, Test, and Recommendations - Regen Med 
 require_once __DIR__ . '/includes/security.php';
 require_once __DIR__ . '/includes/database.php';
 require_once __DIR__ . '/includes/themes.php';
+require_once __DIR__ . '/includes/theme-manager.php';
 
 SessionManager::start();
 ThemeManager::init();
 
 $data = [
-    'themeManager' => $themeManager ?? null,
+    'themes' => ThemeManager::getThemeNames(),
 ];
 
 $userId = SessionManager::getUserId();
@@ -154,7 +155,7 @@ if ($page === 'register' && $_SERVER['REQUEST_METHOD'] === 'POST') {
     <title>Regen Med Health Diagnostic Platform</title>
     <meta name="description" content="Medical Imaging & Regenerative Medicine Diagnostic Presentation System">
     <script src="/assets/js/tailwind-browser.js"></script>
-    <?php echo ThemeManager::injectThemeScript(); ?>
+    <?php echo ThemeManager::injectThemeScript($nonce); ?>
     <script nonce="<?= $nonce ?>">
         tailwind.config = {
             darkMode: 'class',
@@ -279,7 +280,7 @@ if ($page === 'register' && $_SERVER['REQUEST_METHOD'] === 'POST') {
         body {
             <?php
             $themeKey = ThemeManager::getCurrentTheme();
-            $theme = $themeManager['themes'][$themeKey] ?? $themeManager['themes']['beige-cream'] ?? [];
+            $theme = ThemeManager::getTheme($themeKey);
             $light = $theme['light'] ?? [];
             echo 'background: var(--bg-primary, ' . ($light['--bg-primary'] ?? '#faf8f5') . ');
                       radial-gradient(circle at 10% 10%, color-mix(in srgb, ' . ($light['--accent-primary'] ?? '#0d9488') . ' 0.03%) 0%, transparent 20%),
