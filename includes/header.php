@@ -1,150 +1,258 @@
-<header class="sticky top-0 z-50 glass-panel dark:bg-slate-900/80 dark:border-slate-700/50 shadow-sm" style="animation: fadeIn 0.5s ease-in-out;">
-    <nav class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="flex items-center justify-between h-16">
-            <div class="flex items-center space-x-3">
-                <a href="?page=dashboard" class="flex items-center space-x-3 group">
-                    <div class="w-10 h-10 rounded-xl flex items-center justify-center shadow-lg overflow-hidden" style="background: linear-gradient(135deg, #16a34a, #0d9488, #06b6d4, #7c3aed);">
-                        <img src="/assets/svg/logo.svg" alt="Coach & Heal — Regen Med Health" class="w-8 h-8">
-                    </div>
-                    <div>
-                        <h1 class="text-lg font-bold gradient-text"><?= APP_NAME ?></h1>
-                        <p class="text-xs text-slate-500 dark:text-slate-400">Empowering Growth in Life, Health & World Business</p>
-                    </div>
-                </a>
-            </div>
+<?php
+if (session_status() === PHP_SESSION_NONE) { session_start(); }
+if (!isset($app_version)) $app_version = '3.0';
+if (!isset($theme_manager)) { include __DIR__ . '/theme-manager.php'; $theme_manager = ThemeManager::getInstance(); }
+$set = $theme_manager->getSettings();
+if (!isset($current_user)) $current_user = $_SESSION['user'] ?? null;
+?>
+<!DOCTYPE html>
+<html lang="en" data-theme="<?= $theme_manager->getThemeName() ?>" data-color-scheme="<?= $theme_manager->getColorScheme() ?>" data-density="<?= $theme_manager->getDensity() ?>">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Coach & Heal — Regen Med Health</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lucide-static@0.263.1/font/lucide.min.css">
+  <link rel="stylesheet" href="assets/css/animations.css">
+  <link rel="icon" type="image/svg+xml" href="assets/svg/logo.svg">
+  <style>
+    :root {
+      --accent-primary: <?= $set['accent_primary'] ?>;
+      --accent-secondary: <?= $set['accent_secondary'] ?>;
+      --accent-green: <?= $set['accent_green'] ?>;
+      --accent-violet: <?= $set['accent_violet'] ?>;
+      --text-primary: <?= $set['text_primary'] ?>;
+      --text-secondary: <?= $set['text_secondary'] ?>;
+      --bg-primary: <?= $set['bg_primary'] ?>;
+      --bg-secondary: <?= $set['bg_secondary'] ?>;
+      --bg-tertiary: <?= $set['bg_tertiary'] ?>;
+      --border-color: <?= $set['border_color'] ?>;
+      --shadow-sm: <?= $set['shadow_sm'] ?>;
+      --shadow-md: <?= $set['shadow_md'] ?>;
+      --shadow-lg: <?= $set['shadow_lg'] ?>;
+      --radius: <?= $set['radius'] ?>;
+      --font-heading: <?= $set['font_heading'] ?>;
+      --font-body: <?= $set['font_body'] ?>;
+      --wave-color-1: <?= $set['wave_color_1'] ?>;
+      --wave-color-2: <?= $set['wave_color_2'] ?>;
+      --wave-opacity: <?= $set['wave_opacity'] ?>;
+      --header-height: 64px;
+    }
+    [data-theme="greenspectrum"] { --wave-color-1: #22c55e; --wave-color-2: #16a34a; }
+    [data-theme="oceanbreeze"] { --wave-color-1: #06b6d4; --wave-color-2: #0891b2; }
+    [data-theme="violetwave"] { --wave-color-1: #8b5cf6; --wave-color-2: #7c3aed; }
+    [data-theme="aurora"] { --wave-color-1: #22c55e; --wave-color-2: #8b5cf6; }
 
-            <div class="hidden lg:flex items-center space-x-1">
-                <?php
-                $navItems = [
-                    'dashboard' => ['icon' => 'M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6', 'label' => 'Main Screen', 'group' => 'main'],
-                    'conditions' => ['icon' => 'M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z', 'label' => 'Challenges', 'group' => 'main'],
-                    'imaging' => ['icon' => 'M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 012-2V6a2 2 0 012-2H6a2 2 0 01-2 2v12a2 2 0 012 2z', 'label' => 'Imaging', 'group' => 'diagnostics'],
-                    'protocols' => ['icon' => 'M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 01-1.806.547M8 4h8l-1 1v5.172a2 2 0 01.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z', 'label' => 'Protocols', 'group' => 'diagnostics'],
-                    'supplements' => ['icon' => 'M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 01-1.806.547M8 4h8l-1 1v5.172a2 2 0 01.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z', 'label' => 'Supplements', 'group' => 'diagnostics'],
-                    'pemf' => ['icon' => 'M13 10V3L4 14h7v7l9-11h-7z', 'label' => 'PEMF Therapy', 'group' => 'diagnostics'],
-                    'stem-cells' => ['icon' => 'M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197M13 7a4 4 0 11-8 0 4 4 0 018 0z', 'label' => 'Stem Cells', 'group' => 'diagnostics'],
-                    'vps-providers' => ['icon' => 'M5 12h14M5 12a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v4a2 2 0 01-2 2M5 12a2 2 0 00-2 2v4a2 2 0 002 2h14a2 2 0 002-2v-4a2 2 0 00-2-2m-2-4h.01M17 16h.01', 'label' => 'GPU Providers', 'group' => 'tools'],
-                    'data-manager' => ['icon' => 'M9 19V10a3 3 0 00-3-3H2m0 0v9a2 2 0 002 2h6a2 2 0 002-2V5a2 2 0 00-2-2H9a2 2 0 00-2 2v9z M9 19h6m-3 0v-6h3l3-3', 'label' => 'Data Manager', 'group' => 'tools'],
-                    'case-study' => ['icon' => 'M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z', 'label' => 'Case Study', 'group' => 'resources'],
-                    'references' => ['icon' => 'M12 6.253v11.495m-9-5.747 9-9 9 9-9 9', 'label' => 'References', 'group' => 'resources'],
-                ];
-                $groups = [
-                    'main' => 'Application',
-                    'diagnostics' => 'Diagnostics & Therapy',
-                    'tools' => 'Tools',
-                    'resources' => 'References',
-                ];
-                $currentGroup = null;
-                foreach ($navItems as $key => $item):
-                    if ($item['group'] !== $currentGroup):
-                        $currentGroup = $item['group'];
-                        ?>
-                        <?php if ($currentGroup !== reset($navItems)['group']): ?>
-                            <div class="mx-1 h-4 w-px bg-slate-300 dark:bg-slate-600"></div>
-                        <?php endif; ?>
-                    <?php endif;
-                    $active = $page === $key ? 'active text-medical-teal' : 'text-slate-600 dark:text-slate-400 hover:text-medical-teal dark:hover:text-medical-cyan';
-                ?>
-                <a href="?page=<?= $key ?>" class="nav-link <?= $active ?> sidebar-item group">
-                    <svg class="w-4 h-4 transition-transform duration-200 group-hover:scale-110" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="<?= $item['icon'] ?>"/>
-                    </svg>
-                    <span><?= $item['label'] ?></span>
-                </a>
-                <?php endforeach; ?>
-            </div>
+    body { font-family: var(--font-body), sans-serif; color: var(--text-primary); background: var(--bg-primary); margin: 0; padding: 0; }
+    h1,h2,h3,h4,h5,h6 { font-family: var(--font-heading), sans-serif; margin: 0; }
 
-            <div class="flex items-center space-x-2">
-                <button @click="openThemeModal = true"
-                        class="p-2 rounded-xl text-slate-500 dark:text-slate-400 hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors duration-200"
-                        title="Select theme">
-                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 21a4 4 0 01-4-4V5a2 2 0 012-2h4a2 2 0 012 2v12a4 4 0 01-4 4zm0 0h12a2 2 0 002-2v-4a2 2 0 00-2-2h-2.343M11 7.343l1.657-1.657a2 2 0 012.828 0l2.829 2.829a2 2 0 010 2.828l-8.486 8.485M7 17h.01"/>
-                    </svg>
-                </button>
+    /* === HEADER === */
+    .header {
+      position: sticky; top: 0; z-index: 100;
+      height: var(--header-height);
+      display: flex; align-items: center; justify-content: space-between;
+      padding: 0 1.5rem;
+      background: var(--bg-secondary);
+      border-bottom: 1px solid var(--border-color);
+      box-shadow: var(--shadow-sm);
+      backdrop-filter: blur(12px);
+    }
+    .header-left { display: flex; align-items: center; gap: 1rem; }
+    .header-brand { display: flex; align-items: center; gap: 0.75rem; text-decoration: none; color: var(--text-primary); }
+    .header-brand img { height: 36px; width: auto; }
+    .header-brand-text { display: flex; flex-direction: column; line-height: 1.2; }
+    .header-brand-name { font-weight: 700; font-size: 1rem; background: linear-gradient(135deg, var(--accent-green), var(--accent-violet)); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; }
+    .header-brand-sub { font-size: 0.65rem; color: var(--text-secondary); letter-spacing: 0.05em; }
 
-                <button @click="darkMode = !darkMode"
-                        class="p-2 rounded-xl text-slate-500 dark:text-slate-400 hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors duration-200"
-                        :title="darkMode ? 'Light mode' : 'Dark mode'">
-                    <svg x-show="!darkMode" class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z"/>
-                    </svg>
-                    <svg x-show="darkMode" class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z"/>
-                    </svg>
-                </button>
+    .header-center { flex: 1; display: flex; justify-content: center; }
+    .nav-links { display: flex; gap: 0.25rem; list-style: none; margin: 0; padding: 0; flex-wrap: nowrap; overflow-x: auto; -webkit-overflow-scrolling: touch; }
+    .nav-links li a {
+      display: flex; align-items: center; gap: 0.35rem;
+      padding: 0.45rem 0.75rem; border-radius: 8px;
+      font-size: 0.78rem; font-weight: 500; white-space: nowrap;
+      color: var(--text-secondary); text-decoration: none;
+      transition: all 0.2s ease;
+    }
+    .nav-links li a:hover { background: var(--bg-tertiary); color: var(--text-primary); }
+    .nav-links li a.active { background: var(--accent-primary); color: #fff; }
+    .nav-links li a i { font-size: 1rem; }
 
-                <?php if (SessionManager::isLoggedIn()): ?>
-                <a href="?page=logout" class="p-2 rounded-xl text-slate-500 dark:text-slate-400 hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors duration-200" title="Sign out">
-                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 16l4-4m0 0l-4-4m4 4H7m6 4v1a3 3 0 01-3 3H6a3 3 0 01-3-3V7a3 3 0 013-3h4a3 3 0 013 3v1"/>
-                    </svg>
-                </a>
-                <?php endif; ?>
+    .header-right { display: flex; align-items: center; gap: 0.75rem; }
+    .header-btn {
+      display: flex; align-items: center; justify-content: center;
+      width: 36px; height: 36px; border-radius: 8px;
+      border: 1px solid var(--border-color); background: var(--bg-secondary);
+      color: var(--text-secondary); cursor: pointer; font-size: 1rem;
+      transition: all 0.2s ease;
+    }
+    .header-btn:hover { background: var(--bg-tertiary); color: var(--text-primary); }
+    .header-btn.active { background: var(--accent-primary); color: #fff; border-color: var(--accent-primary); }
+    .hamburger { display: none; }
 
-                <button @click="sidebarOpen = !sidebarOpen"
-                        class="lg:hidden p-2 rounded-xl text-slate-500 dark:text-slate-400 hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors duration-200">
-                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
-                    </svg>
-                </button>
-            </div>
+    /* === MOBILE === */
+    @media (max-width: 1024px) {
+      .nav-links { display: none; }
+      .hamburger { display: flex; }
+      .header-center { display: none; }
+    }
+
+    /* === THEME PICKER MODAL === */
+    .theme-modal {
+      position: fixed; inset: 0; z-index: 9999;
+      display: none; align-items: center; justify-content: center;
+      background: rgba(0,0,0,0.5); backdrop-filter: blur(4px);
+    }
+    .theme-modal.open { display: flex; }
+    .theme-modal-box {
+      background: var(--bg-secondary); border: 1px solid var(--border-color);
+      border-radius: 16px; padding: 2rem; width: 90%; max-width: 480px;
+      box-shadow: var(--shadow-lg);
+    }
+    .theme-modal-box h3 { margin-bottom: 1.25rem; font-size: 1.1rem; }
+    .theme-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 0.75rem; }
+    .theme-card {
+      padding: 1rem; border-radius: 12px; border: 2px solid var(--border-color);
+      cursor: pointer; transition: all 0.2s ease; background: var(--bg-tertiary);
+    }
+    .theme-card:hover { border-color: var(--accent-primary); }
+    .theme-card.selected { border-color: var(--accent-primary); background: color-mix(in srgb, var(--accent-primary) 10%, var(--bg-tertiary)); }
+    .theme-card-name { font-weight: 600; font-size: 0.9rem; margin-bottom: 0.35rem; }
+    .theme-card-desc { font-size: 0.75rem; color: var(--text-secondary); }
+    .theme-card-colors { display: flex; gap: 6px; margin-top: 0.5rem; }
+    .theme-card-swatch { width: 18px; height: 18px; border-radius: 50%; border: 1px solid rgba(0,0,0,0.1); }
+    .theme-modal-close {
+      margin-top: 1rem; width: 100%; padding: 0.6rem;
+      border: none; border-radius: 8px; background: var(--bg-tertiary);
+      color: var(--text-primary); cursor: pointer; font-weight: 500;
+    }
+  </style>
+</head>
+<body>
+  <!-- WAVE BACKGROUND -->
+  <div class="wave-bg-container animated">
+    <div class="wave-layer wave-layer-1">
+      <svg viewBox="0 0 1440 320" preserveAspectRatio="none">
+        <path fill="var(--wave-color-1)" fill-opacity="var(--wave-opacity)" d="M0,192L48,197.3C96,203,192,213,288,229.3C384,245,480,267,576,250.7C672,235,768,181,864,181.3C960,181,1056,235,1152,234.7C1248,235,1344,181,1392,154.7L1440,128L1440,320L0,320Z"></path>
+        <path fill="var(--wave-color-2)" fill-opacity="var(--wave-opacity)" d="M0,256L48,240C96,224,192,192,288,186.7C384,181,480,203,576,218.7C672,235,768,245,864,229.3C960,213,1056,171,1152,154.7C1248,139,1344,149,1392,154.7L1440,160L1440,320L0,320Z"></path>
+        <path fill="var(--wave-color-1)" fill-opacity="var(--wave-opacity)" d="M0,288L48,272C96,256,192,224,288,213.3C384,203,480,213,576,229.3C672,245,768,267,864,261.3C960,256,1056,224,1152,208C1248,192,1344,192,1392,192L1440,192L1440,320L0,320Z"></path>
+      </svg>
+    </div>
+    <div class="wave-spectrum-overlay"></div>
+  </div>
+
+  <!-- HEADER -->
+  <header class="header">
+    <div class="header-left">
+      <a href="index.php" class="header-brand">
+        <img src="assets/svg/logo.svg" alt="Coach & Heal Logo">
+        <div class="header-brand-text">
+          <span class="header-brand-name">Coach & Heal</span>
+          <span class="header-brand-sub">Regen Med Health</span>
         </div>
+      </a>
+    </div>
+
+    <nav class="header-center">
+      <ul class="nav-links">
+        <li><a href="index.php?page=dashboard" class="<?= ($_GET['page'] ?? 'dashboard') === 'dashboard' ? 'active' : '' ?>"><i class="lucide-home"></i> Main Screen</a></li>
+        <li><a href="index.php?page=conditions" class="<?= ($_GET['page'] ?? '') === 'conditions' ? 'active' : '' ?>"><i class="lucide-activity"></i> Challenges</a></li>
+        <li><a href="index.php?page=diagnostics" class="<?= ($_GET['page'] ?? '') === 'diagnostics' ? 'active' : '' ?>"><i class="lucide-scan"></i> Imaging</a></li>
+        <li><a href="index.php?page=protocols" class="<?= ($_GET['page'] ?? '') === 'protocols' ? 'active' : '' ?>"><i class="lucide-file-text"></i> Protocols</a></li>
+        <li><a href="index.php?page=supplements" class="<?= ($_GET['page'] ?? '') === 'supplements' ? 'active' : '' ?>"><i class="lucide-capsule"></i> Supplements</a></li>
+        <li><a href="index.php?page=pemf" class="<?= ($_GET['page'] ?? '') === 'pemf' ? 'active' : '' ?>"><i class="lucide-zap"></i> PEMF</a></li>
+        <li><a href="index.php?page=stemcells" class="<?= ($_GET['page'] ?? '') === 'stemcells' ? 'active' : '' ?>"><i class="lucide-dna"></i> Stem Cells</a></li>
+        <li><a href="index.php?page=vps" class="<?= ($_GET['page'] ?? '') === 'vps' ? 'active' : '' ?>"><i class="lucide-server"></i> VPS</a></li>
+        <li><a href="index.php?page=data" class="<?= ($_GET['page'] ?? '') === 'data' ? 'active' : '' ?>"><i class="lucide-database"></i> Data</a></li>
+        <li><a href="index.php?page=case-study" class="<?= ($_GET['page'] ?? '') === 'case-study' ? 'active' : '' ?>"><i class="lucide-file"></i> Case Study</a></li>
+        <li><a href="index.php?page=references" class="<?= ($_GET['page'] ?? '') === 'references' ? 'active' : '' ?>"><i class="lucide-book-open"></i> References</a></li>
+      </ul>
     </nav>
 
-    <!-- Theme Picker Modal -->
-    <div x-show="openThemeModal" x-cloak
-         x-transition:enter="transition ease-out duration-200"
-         x-transition:enter-start="opacity-0"
-         x-transition:enter-end="opacity-100"
-         x-transition:leave="transition ease-in duration-150"
-         x-transition:leave-start="opacity-100"
-         x-transition:leave-end="opacity-0"
-         class="fixed inset-0 z-50 flex items-center justify-center bg-black/60 backdrop-blur-sm"
-         @click.self="openThemeModal = false">
-        <div class="bg-white dark:bg-slate-800 rounded-2xl p-6 w-80 max-w-full shadow-2xl border border-slate-200 dark:border-slate-700"
-             x-transition:enter="transition ease-out duration-200"
-             x-transition:enter-start="opacity-0 scale-95"
-             x-transition:enter-end="opacity-100 scale-100">
-            <div class="flex items-center justify-between mb-4">
-                <h3 class="text-lg font-bold text-slate-900 dark:text-slate-100">Select Theme</h3>
-                <button @click="openThemeModal = false" class="text-slate-400 hover:text-slate-600 dark:hover:text-slate-300">
-                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/></svg>
-                </button>
-            </div>
-            <div class="space-y-3 mb-6">
-                <?php foreach (ThemeManager::getThemeNames() as $key => $theme): ?>
-                <?php $isCurrent = ($key === ThemeManager::getCurrentTheme()); ?>
-                <button @click="selectTheme('<?= $key ?>'); openThemeModal = false"
-                        class="w-full h-12 rounded-xl flex items-center gap-3 px-4 border-2 transition-all duration-200 hover:scale-[1.02] <?= $isCurrent ? 'border-medical-teal shadow-md shadow-medical-teal/20' : 'border-slate-200 dark:border-slate-600 hover:border-medical-teal/40' ?>"
-                        style="background: var(--bg-card);">
-                    <?= ThemeManager::themeColorSwatch($key) ?>
-                    <span class="text-sm font-medium" style="color: var(--text-primary);"><?= htmlspecialchars($theme['name']) ?></span>
-                    <?php if ($key === ThemeManager::getCurrentTheme()): ?>
-                    <svg class="w-4 h-4 ml-auto text-medical-teal" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
-                    <?php endif; ?>
-                </button>
-                <?php endforeach; ?>
-            </div>
-            <button @click="openThemeModal = false"
-                    class="w-full py-2.5 rounded-lg bg-medical-teal text-white text-sm font-medium hover:bg-medical-teal/90 transition">
-                Done
-            </button>
-        </div>
+    <div class="header-right">
+      <button class="header-btn" id="themeToggle" title="Choose Theme" onclick="document.getElementById('themeModal').classList.add('open')"><i class="lucide-palette"></i></button>
+      <button class="header-btn" id="darkModeToggle" title="Toggle Dark Mode"><i class="lucide-moon"></i></button>
+      <button class="header-btn hamburger" id="menuToggle" title="Menu"><i class="lucide-menu"></i></button>
+      <?php if ($current_user): ?>
+        <span style="font-size:0.8rem;color:var(--text-secondary)"><?= htmlspecialchars($current_user['name'] ?? $current_user['email']) ?></span>
+        <a href="index.php?action=logout" class="header-btn" title="Logout" style="text-decoration:none"><i class="lucide-log-out"></i></a>
+      <?php endif; ?>
     </div>
+  </header>
 
-    <!-- Mobile Sidebar -->
-    <div x-show="sidebarOpen" x-cloak x-transition class="lg:hidden bg-white dark:bg-slate-800 border-t dark:border-slate-700 shadow-lg">
-        <div class="px-4 pt-2 pb-4 space-y-1">
-            <?php foreach ($navItems as $key => $item): ?>
-            <a href="?page=<?= $key ?>" @click="sidebarOpen = false"
-               class="block p-2 rounded-lg sidebar-item <?= $page === $key ? 'bg-medical-teal/10 text-medical-teal' : 'text-slate-600 dark:text-slate-300 hover:bg-slate-50 dark:hover:bg-slate-700/50' ?>">
-                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="<?= $item['icon'] ?>"/>
-                </svg>
-                <span><?= $item['label'] ?></span>
-            </a>
-            <?php endforeach; ?>
-        </div>
+  <!-- THEME PICKER MODAL -->
+  <div class="theme-modal" id="themeModal">
+    <div class="theme-modal-box">
+      <h3>Choose Your Wave</h3>
+      <div class="theme-grid">
+        <?php
+        $themes = [
+          ['name' => 'Emerald Tide', 'key' => 'emerald', 'desc' => 'Classic green diagnostic waves', 'colors' => ['#16a34a','#0d9488','#7c3aed','#f97316']],
+          ['name' => 'Green Spectrum', 'key' => 'greenspectrum', 'desc' => 'Vibrant green energy spectrum', 'colors' => ['#22c55e','#16a34a','#7c3aed','#f59e0b']],
+          ['name' => 'Ocean Breeze', 'key' => 'oceanbreeze', 'desc' => 'Calming ocean-inspired tones', 'colors' => ['#06b6d4','#0891b2','#7c3aed','#f97316']],
+          ['name' => 'Violet Wave', 'key' => 'violetwave', 'desc' => 'Deep violet wellness waves', 'colors' => ['#8b5cf6','#7c3aed','#16a34a','#f97316']],
+        ];
+        $current = $theme_manager->getThemeName();
+        foreach ($themes as $t): ?>
+          <div class="theme-card <?= $t['key'] === $current ? 'selected' : '' ?>" onclick="selectTheme('<?= $t['key'] ?>')">
+            <div class="theme-card-name"><?= $t['name'] ?></div>
+            <div class="theme-card-desc"><?= $t['desc'] ?></div>
+            <div class="theme-card-colors">
+              <?php foreach ($t['colors'] as $c): ?>
+                <div class="theme-card-swatch" style="background:<?= $c ?>;border-color:<?= $c ?>"></div>
+              <?php endforeach; ?>
+            </div>
+          </div>
+        <?php endforeach; ?>
+      </div>
+      <button class="theme-modal-close" onclick="document.getElementById('themeModal').classList.remove('open')">Done</button>
     </div>
-</header>
+  </div>
+
+  <script>
+    function selectTheme(theme) {
+      fetch('includes/theme-switch.php', {
+        method: 'POST',
+        headers: {'Content-Type':'application/x-www-form-urlencoded'},
+        body: 'theme=' + theme
+      }).then(r => r.json()).then(d => {
+        if (d.status === 'ok') { document.documentElement.setAttribute('data-theme', theme); document.querySelectorAll('.theme-card').forEach(c => c.classList.remove('selected')); event.currentTarget.classList.add('selected'); }
+      });
+    }
+
+    document.getElementById('darkModeToggle')?.addEventListener('click', () => {
+      const html = document.documentElement;
+      const isDark = html.getAttribute('data-color-scheme') === 'dark';
+      html.setAttribute('data-color-scheme', isDark ? 'light' : 'dark');
+      fetch('includes/theme-switch.php', { method: 'POST', headers: {'Content-Type':'application/x-www-form-urlencoded'}, body: 'color_scheme=' + (isDark ? 'light' : 'dark') });
+    });
+
+    document.getElementById('menuToggle')?.addEventListener('click', () => {
+      let sidebar = document.getElementById('mobileSidebar');
+      if (!sidebar) {
+        sidebar = document.createElement('div');
+        sidebar.id = 'mobileSidebar';
+        sidebar.style.cssText = 'position:fixed;inset:0;z-index:9998;background:var(--bg-secondary);padding:2rem;overflow-y:auto;display:flex;flex-direction:column;gap:0.5rem;';
+        const links = <?= json_encode([
+          ['page'=>'dashboard','label'=>'Main Screen','icon'=>'lucide-home'],
+          ['page'=>'conditions','label'=>'Challenges','icon'=>'lucide-activity'],
+          ['page'=>'diagnostics','label'=>'Imaging','icon'=>'lucide-scan'],
+          ['page'=>'protocols','label'=>'Protocols','icon'=>'lucide-file-text'],
+          ['page'=>'supplements','label'=>'Supplements','icon'=>'lucide-capsule'],
+          ['page'=>'pemf','label'=>'PEMF','icon'=>'lucide-zap'],
+          ['page'=>'stemcells','label'=>'Stem Cells','icon'=>'lucide-dna'],
+          ['page'=>'vps','label'=>'VPS Providers','icon'=>'lucide-server'],
+          ['page'=>'data','label'=>'Data Manager','icon'=>'lucide-database'],
+          ['page'=>'case-study','label'=>'Case Study','icon'=>'lucide-file'],
+          ['page'=>'references','label'=>'References','icon'=>'lucide-book-open'],
+        ]) ?>;
+        let html = '<div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:1rem"><strong style="font-size:1rem;background:linear-gradient(135deg,var(--accent-green),var(--accent-violet));-webkit-background-clip:text;-webkit-text-fill-color:transparent">Coach & Heal</strong><button onclick="document.getElementById(\'mobileSidebar\').remove()" style="background:none;border:none;color:var(--text-primary);font-size:1.5rem;cursor:pointer">&times;</button></div>';
+        links.forEach(l => { html += '<a href="index.php?page=' + l.page + '" style="display:flex;align-items:center;gap:0.75rem;padding:0.85rem 1rem;border-radius:10px;color:var(--text-primary);text-decoration:none;font-size:0.9rem;background:var(--bg-tertiary)"><i class="lucide-' + l.icon + '"></i>' + l.label + '</a>'; });
+        html += '<div style="margin-top:1.5rem;padding-top:1rem;border-top:1px solid var(--border-color);font-size:0.7rem;color:var(--text-secondary);text-align:center">Powered by Ibereal Enterprise<br>Regenerative Health Intelligence Platform<br>© <?= date('Y') ?> Coach & Heal</div>';
+        sidebar.innerHTML = html;
+        document.body.appendChild(sidebar);
+      }
+    });
+
+    document.getElementById('themeModal')?.addEventListener('click', e => { if (e.target === e.currentTarget) e.currentTarget.classList.remove('open'); });
+  </script>
+</body>
+</html>
