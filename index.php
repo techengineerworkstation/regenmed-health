@@ -191,9 +191,6 @@ if ($page === 'register' && $_SERVER['REQUEST_METHOD'] === 'POST') {
             }
         }
         document.documentElement.setAttribute('data-theme', '<?= ThemeManager::getCurrentTheme() ?>');
-        document.documentElement.setAttribute('data-mode', '<?= (window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light") ?>');
-        if (window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches) document.documentElement.classList.add('dark');
-        else document.documentElement.classList.remove('dark');
     </script>
     <style>
         <?php echo ThemeManager::generateFullCSS(); ?>
@@ -306,7 +303,7 @@ if ($page === 'register' && $_SERVER['REQUEST_METHOD'] === 'POST') {
       x-init="$watch('darkMode', val => { localStorage.setItem('darkMode', val); if(val) document.documentElement.classList.add('dark'); else document.documentElement.classList.remove('dark'); }"
       x-bind:class="darkMode ? 'dark bg-slate-900 text-slate-100' : 'bg-slate-50 text-slate-900'"
       data-theme="<?= ThemeManager::getCurrentTheme() ?>"
-      data-mode="<?= (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') ?>">
+      data-mode="light">
     
     <?php require_once __DIR__ . '/includes/header.php'; ?>
     

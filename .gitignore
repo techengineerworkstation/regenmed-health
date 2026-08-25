@@ -1,2 +1,5 @@
 .server.pid
 storage/logs/
+data/
+uploads/
+*.sqlite
