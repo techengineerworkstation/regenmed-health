@@ -1,0 +1,449 @@
+[Wed Aug 12 09:52:16 2026] PHP 8.4.24 Development Server (http://127.0.0.1:8081) started
+[Wed Aug 12 09:52:18 2026] 127.0.0.1:40766 Accepted
+[Wed Aug 12 09:52:18 2026] PHP Warning:  Undefined variable $active in /home/hptechworkpc/Apps/RegenMed/includes/header.php on line 50
+[Wed Aug 12 09:52:18 2026] PHP Warning:  Undefined variable $active in /home/hptechworkpc/Apps/RegenMed/includes/header.php on line 50
+[Wed Aug 12 09:52:18 2026] PHP Warning:  Undefined variable $active in /home/hptechworkpc/Apps/RegenMed/includes/header.php on line 50
+[Wed Aug 12 09:52:18 2026] PHP Warning:  Undefined variable $active in /home/hptechworkpc/Apps/RegenMed/includes/header.php on line 50
+[Wed Aug 12 09:52:18 2026] PHP Warning:  Undefined variable $active in /home/hptechworkpc/Apps/RegenMed/includes/header.php on line 50
+[Wed Aug 12 09:52:18 2026] PHP Warning:  Undefined variable $active in /home/hptechworkpc/Apps/RegenMed/includes/header.php on line 50
+[Wed Aug 12 09:52:18 2026] PHP Warning:  Undefined variable $active in /home/hptechworkpc/Apps/RegenMed/includes/header.php on line 50
+[Wed Aug 12 09:52:18 2026] PHP Warning:  Undefined variable $active in /home/hptechworkpc/Apps/RegenMed/includes/header.php on line 50
+[Wed Aug 12 09:52:18 2026] PHP Warning:  Undefined variable $active in /home/hptechworkpc/Apps/RegenMed/includes/header.php on line 50
+[Wed Aug 12 09:52:18 2026] PHP Warning:  Undefined variable $active in /home/hptechworkpc/Apps/RegenMed/includes/header.php on line 50
+[Wed Aug 12 09:52:18 2026] PHP Warning:  Undefined variable $active in /home/hptechworkpc/Apps/RegenMed/includes/header.php on line 50
+[Wed Aug 12 09:52:18 2026] 127.0.0.1:40766 [200]: GET /index.php?page=dashboard
+[Wed Aug 12 09:52:18 2026] 127.0.0.1:40766 Closing
+[Wed Aug 12 09:52:18 2026] 127.0.0.1:40768 Accepted
+[Wed Aug 12 09:52:18 2026] PHP Warning:  Undefined variable $active in /home/hptechworkpc/Apps/RegenMed/includes/header.php on line 50
+[Wed Aug 12 09:52:18 2026] PHP Warning:  Undefined variable $active in /home/hptechworkpc/Apps/RegenMed/includes/header.php on line 50
+[Wed Aug 12 09:52:18 2026] PHP Warning:  Undefined variable $active in /home/hptechworkpc/Apps/RegenMed/includes/header.php on line 50
+[Wed Aug 12 09:52:18 2026] PHP Warning:  Undefined variable $active in /home/hptechworkpc/Apps/RegenMed/includes/header.php on line 50
+[Wed Aug 12 09:52:18 2026] PHP Warning:  Undefined variable $active in /home/hptechworkpc/Apps/RegenMed/includes/header.php on line 50
+[Wed Aug 12 09:52:18 2026] PHP Warning:  Undefined variable $active in /home/hptechworkpc/Apps/RegenMed/includes/header.php on line 50
+[Wed Aug 12 09:52:18 2026] PHP Warning:  Undefined variable $active in /home/hptechworkpc/Apps/RegenMed/includes/header.php on line 50
+[Wed Aug 12 09:52:18 2026] PHP Warning:  Undefined variable $active in /home/hptechworkpc/Apps/RegenMed/includes/header.php on line 50
+[Wed Aug 12 09:52:18 2026] PHP Warning:  Undefined variable $active in /home/hptechworkpc/Apps/RegenMed/includes/header.php on line 50
+[Wed Aug 12 09:52:18 2026] PHP Warning:  Undefined variable $active in /home/hptechworkpc/Apps/RegenMed/includes/header.php on line 50
+[Wed Aug 12 09:52:18 2026] PHP Warning:  Undefined variable $active in /home/hptechworkpc/Apps/RegenMed/includes/header.php on line 50
+[Wed Aug 12 09:52:18 2026] 127.0.0.1:40768 [200]: GET /?page=dashboard
+[Wed Aug 12 09:52:18 2026] 127.0.0.1:40768 Closing
+[Wed Aug 12 09:52:47 2026] 127.0.0.1:36220 Accepted
+[Wed Aug 12 09:52:48 2026] PHP Warning:  Undefined variable $active in /home/hptechworkpc/Apps/RegenMed/includes/header.php on line 50
+[Wed Aug 12 09:52:48 2026] PHP Warning:  Undefined variable $active in /home/hptechworkpc/Apps/RegenMed/includes/header.php on line 50
+[Wed Aug 12 09:52:48 2026] PHP Warning:  Undefined variable $active in /home/hptechworkpc/Apps/RegenMed/includes/header.php on line 50
+[Wed Aug 12 09:52:48 2026] PHP Warning:  Undefined variable $active in /home/hptechworkpc/Apps/RegenMed/includes/header.php on line 50
+[Wed Aug 12 09:52:48 2026] PHP Warning:  Undefined variable $active in /home/hptechworkpc/Apps/RegenMed/includes/header.php on line 50
+[Wed Aug 12 09:52:48 2026] PHP Warning:  Undefined variable $active in /home/hptechworkpc/Apps/RegenMed/includes/header.php on line 50
+[Wed Aug 12 09:52:48 2026] PHP Warning:  Undefined variable $active in /home/hptechworkpc/Apps/RegenMed/includes/header.php on line 50
+[Wed Aug 12 09:52:48 2026] PHP Warning:  Undefined variable $active in /home/hptechworkpc/Apps/RegenMed/includes/header.php on line 50
+[Wed Aug 12 09:52:48 2026] PHP Warning:  Undefined variable $active in /home/hptechworkpc/Apps/RegenMed/includes/header.php on line 50
+[Wed Aug 12 09:52:48 2026] PHP Warning:  Undefined variable $active in /home/hptechworkpc/Apps/RegenMed/includes/header.php on line 50
+[Wed Aug 12 09:52:48 2026] PHP Warning:  Undefined variable $active in /home/hptechworkpc/Apps/RegenMed/includes/header.php on line 50
+[Wed Aug 12 09:52:48 2026] 127.0.0.1:36220 [200]: GET /index.php
+[Wed Aug 12 09:52:48 2026] 127.0.0.1:36220 Closing
+[Wed Aug 12 09:53:08 2026] 127.0.0.1:47550 Accepted
+[Wed Aug 12 09:53:08 2026] PHP Warning:  Undefined variable $active in /home/hptechworkpc/Apps/RegenMed/includes/header.php on line 50
+[Wed Aug 12 09:53:08 2026] PHP Warning:  Undefined variable $active in /home/hptechworkpc/Apps/RegenMed/includes/header.php on line 50
+[Wed Aug 12 09:53:08 2026] PHP Warning:  Undefined variable $active in /home/hptechworkpc/Apps/RegenMed/includes/header.php on line 50
+[Wed Aug 12 09:53:08 2026] PHP Warning:  Undefined variable $active in /home/hptechworkpc/Apps/RegenMed/includes/header.php on line 50
+[Wed Aug 12 09:53:08 2026] PHP Warning:  Undefined variable $active in /home/hptechworkpc/Apps/RegenMed/includes/header.php on line 50
+[Wed Aug 12 09:53:08 2026] PHP Warning:  Undefined variable $active in /home/hptechworkpc/Apps/RegenMed/includes/header.php on line 50
+[Wed Aug 12 09:53:08 2026] PHP Warning:  Undefined variable $active in /home/hptechworkpc/Apps/RegenMed/includes/header.php on line 50
+[Wed Aug 12 09:53:08 2026] PHP Warning:  Undefined variable $active in /home/hptechworkpc/Apps/RegenMed/includes/header.php on line 50
+[Wed Aug 12 09:53:08 2026] PHP Warning:  Undefined variable $active in /home/hptechworkpc/Apps/RegenMed/includes/header.php on line 50
+[Wed Aug 12 09:53:08 2026] PHP Warning:  Undefined variable $active in /home/hptechworkpc/Apps/RegenMed/includes/header.php on line 50
+[Wed Aug 12 09:53:08 2026] PHP Warning:  Undefined variable $active in /home/hptechworkpc/Apps/RegenMed/includes/header.php on line 50
+[Wed Aug 12 09:53:08 2026] 127.0.0.1:47550 [200]: GET /index.php
+[Wed Aug 12 09:53:08 2026] 127.0.0.1:47550 Closing
+[Wed Aug 12 09:53:43 2026] 127.0.0.1:41518 Accepted
+[Wed Aug 12 09:53:43 2026] PHP Warning:  Undefined variable $active in /home/hptechworkpc/Apps/RegenMed/includes/header.php on line 50
+[Wed Aug 12 09:53:43 2026] PHP Warning:  Undefined variable $active in /home/hptechworkpc/Apps/RegenMed/includes/header.php on line 50
+[Wed Aug 12 09:53:43 2026] PHP Warning:  Undefined variable $active in /home/hptechworkpc/Apps/RegenMed/includes/header.php on line 50
+[Wed Aug 12 09:53:43 2026] PHP Warning:  Undefined variable $active in /home/hptechworkpc/Apps/RegenMed/includes/header.php on line 50
+[Wed Aug 12 09:53:43 2026] PHP Warning:  Undefined variable $active in /home/hptechworkpc/Apps/RegenMed/includes/header.php on line 50
+[Wed Aug 12 09:53:43 2026] PHP Warning:  Undefined variable $active in /home/hptechworkpc/Apps/RegenMed/includes/header.php on line 50
+[Wed Aug 12 09:53:43 2026] PHP Warning:  Undefined variable $active in /home/hptechworkpc/Apps/RegenMed/includes/header.php on line 50
+[Wed Aug 12 09:53:43 2026] PHP Warning:  Undefined variable $active in /home/hptechworkpc/Apps/RegenMed/includes/header.php on line 50
+[Wed Aug 12 09:53:43 2026] PHP Warning:  Undefined variable $active in /home/hptechworkpc/Apps/RegenMed/includes/header.php on line 50
+[Wed Aug 12 09:53:43 2026] PHP Warning:  Undefined variable $active in /home/hptechworkpc/Apps/RegenMed/includes/header.php on line 50
+[Wed Aug 12 09:53:43 2026] PHP Warning:  Undefined variable $active in /home/hptechworkpc/Apps/RegenMed/includes/header.php on line 50
+[Wed Aug 12 09:53:43 2026] 127.0.0.1:41518 [200]: GET /index.php
+[Wed Aug 12 09:53:43 2026] 127.0.0.1:41518 Closing
+[Wed Aug 12 09:53:43 2026] 127.0.0.1:41526 Accepted
+[Wed Aug 12 09:53:43 2026] PHP Warning:  Undefined variable $active in /home/hptechworkpc/Apps/RegenMed/includes/header.php on line 50
+[Wed Aug 12 09:53:43 2026] PHP Warning:  Undefined variable $active in /home/hptechworkpc/Apps/RegenMed/includes/header.php on line 50
+[Wed Aug 12 09:53:43 2026] PHP Warning:  Undefined variable $active in /home/hptechworkpc/Apps/RegenMed/includes/header.php on line 50
+[Wed Aug 12 09:53:43 2026] PHP Warning:  Undefined variable $active in /home/hptechworkpc/Apps/RegenMed/includes/header.php on line 50
+[Wed Aug 12 09:53:43 2026] PHP Warning:  Undefined variable $active in /home/hptechworkpc/Apps/RegenMed/includes/header.php on line 50
+[Wed Aug 12 09:53:43 2026] PHP Warning:  Undefined variable $active in /home/hptechworkpc/Apps/RegenMed/includes/header.php on line 50
+[Wed Aug 12 09:53:43 2026] PHP Warning:  Undefined variable $active in /home/hptechworkpc/Apps/RegenMed/includes/header.php on line 50
+[Wed Aug 12 09:53:43 2026] PHP Warning:  Undefined variable $active in /home/hptechworkpc/Apps/RegenMed/includes/header.php on line 50
+[Wed Aug 12 09:53:43 2026] PHP Warning:  Undefined variable $active in /home/hptechworkpc/Apps/RegenMed/includes/header.php on line 50
+[Wed Aug 12 09:53:43 2026] PHP Warning:  Undefined variable $active in /home/hptechworkpc/Apps/RegenMed/includes/header.php on line 50
+[Wed Aug 12 09:53:43 2026] PHP Warning:  Undefined variable $active in /home/hptechworkpc/Apps/RegenMed/includes/header.php on line 50
+[Wed Aug 12 09:53:43 2026] 127.0.0.1:41526 [200]: GET /index.php
+[Wed Aug 12 09:53:43 2026] 127.0.0.1:41526 Closing
+[Wed Aug 12 09:53:43 2026] 127.0.0.1:41540 Accepted
+[Wed Aug 12 09:53:43 2026] PHP Warning:  Undefined variable $active in /home/hptechworkpc/Apps/RegenMed/includes/header.php on line 50
+[Wed Aug 12 09:53:43 2026] PHP Warning:  Undefined variable $active in /home/hptechworkpc/Apps/RegenMed/includes/header.php on line 50
+[Wed Aug 12 09:53:43 2026] PHP Warning:  Undefined variable $active in /home/hptechworkpc/Apps/RegenMed/includes/header.php on line 50
+[Wed Aug 12 09:53:43 2026] PHP Warning:  Undefined variable $active in /home/hptechworkpc/Apps/RegenMed/includes/header.php on line 50
+[Wed Aug 12 09:53:43 2026] PHP Warning:  Undefined variable $active in /home/hptechworkpc/Apps/RegenMed/includes/header.php on line 50
+[Wed Aug 12 09:53:43 2026] PHP Warning:  Undefined variable $active in /home/hptechworkpc/Apps/RegenMed/includes/header.php on line 50
+[Wed Aug 12 09:53:43 2026] PHP Warning:  Undefined variable $active in /home/hptechworkpc/Apps/RegenMed/includes/header.php on line 50
+[Wed Aug 12 09:53:43 2026] PHP Warning:  Undefined variable $active in /home/hptechworkpc/Apps/RegenMed/includes/header.php on line 50
+[Wed Aug 12 09:53:43 2026] PHP Warning:  Undefined variable $active in /home/hptechworkpc/Apps/RegenMed/includes/header.php on line 50
+[Wed Aug 12 09:53:43 2026] PHP Warning:  Undefined variable $active in /home/hptechworkpc/Apps/RegenMed/includes/header.php on line 50
+[Wed Aug 12 09:53:43 2026] PHP Warning:  Undefined variable $active in /home/hptechworkpc/Apps/RegenMed/includes/header.php on line 50
+[Wed Aug 12 09:53:43 2026] 127.0.0.1:41540 [200]: GET /index.php
+[Wed Aug 12 09:53:44 2026] 127.0.0.1:41540 Closing
+[Wed Aug 12 09:53:44 2026] 127.0.0.1:41554 Accepted
+[Wed Aug 12 09:53:44 2026] PHP Warning:  Undefined variable $active in /home/hptechworkpc/Apps/RegenMed/includes/header.php on line 50
+[Wed Aug 12 09:53:44 2026] PHP Warning:  Undefined variable $active in /home/hptechworkpc/Apps/RegenMed/includes/header.php on line 50
+[Wed Aug 12 09:53:44 2026] PHP Warning:  Undefined variable $active in /home/hptechworkpc/Apps/RegenMed/includes/header.php on line 50
+[Wed Aug 12 09:53:44 2026] PHP Warning:  Undefined variable $active in /home/hptechworkpc/Apps/RegenMed/includes/header.php on line 50
+[Wed Aug 12 09:53:44 2026] PHP Warning:  Undefined variable $active in /home/hptechworkpc/Apps/RegenMed/includes/header.php on line 50
+[Wed Aug 12 09:53:44 2026] PHP Warning:  Undefined variable $active in /home/hptechworkpc/Apps/RegenMed/includes/header.php on line 50
+[Wed Aug 12 09:53:44 2026] PHP Warning:  Undefined variable $active in /home/hptechworkpc/Apps/RegenMed/includes/header.php on line 50
+[Wed Aug 12 09:53:44 2026] PHP Warning:  Undefined variable $active in /home/hptechworkpc/Apps/RegenMed/includes/header.php on line 50
+[Wed Aug 12 09:53:44 2026] PHP Warning:  Undefined variable $active in /home/hptechworkpc/Apps/RegenMed/includes/header.php on line 50
+[Wed Aug 12 09:53:44 2026] PHP Warning:  Undefined variable $active in /home/hptechworkpc/Apps/RegenMed/includes/header.php on line 50
+[Wed Aug 12 09:53:44 2026] PHP Warning:  Undefined variable $active in /home/hptechworkpc/Apps/RegenMed/includes/header.php on line 50
+[Wed Aug 12 09:53:44 2026] 127.0.0.1:41554 [200]: GET /index.php
+[Wed Aug 12 09:53:44 2026] 127.0.0.1:41554 Closing
+[Wed Aug 12 09:53:44 2026] 127.0.0.1:41558 Accepted
+[Wed Aug 12 09:53:44 2026] PHP Warning:  Undefined variable $active in /home/hptechworkpc/Apps/RegenMed/includes/header.php on line 50
+[Wed Aug 12 09:53:44 2026] PHP Warning:  Undefined variable $active in /home/hptechworkpc/Apps/RegenMed/includes/header.php on line 50
+[Wed Aug 12 09:53:44 2026] PHP Warning:  Undefined variable $active in /home/hptechworkpc/Apps/RegenMed/includes/header.php on line 50
+[Wed Aug 12 09:53:44 2026] PHP Warning:  Undefined variable $active in /home/hptechworkpc/Apps/RegenMed/includes/header.php on line 50
+[Wed Aug 12 09:53:44 2026] PHP Warning:  Undefined variable $active in /home/hptechworkpc/Apps/RegenMed/includes/header.php on line 50
+[Wed Aug 12 09:53:44 2026] PHP Warning:  Undefined variable $active in /home/hptechworkpc/Apps/RegenMed/includes/header.php on line 50
+[Wed Aug 12 09:53:44 2026] PHP Warning:  Undefined variable $active in /home/hptechworkpc/Apps/RegenMed/includes/header.php on line 50
+[Wed Aug 12 09:53:44 2026] PHP Warning:  Undefined variable $active in /home/hptechworkpc/Apps/RegenMed/includes/header.php on line 50
+[Wed Aug 12 09:53:44 2026] PHP Warning:  Undefined variable $active in /home/hptechworkpc/Apps/RegenMed/includes/header.php on line 50
+[Wed Aug 12 09:53:44 2026] PHP Warning:  Undefined variable $active in /home/hptechworkpc/Apps/RegenMed/includes/header.php on line 50
+[Wed Aug 12 09:53:44 2026] PHP Warning:  Undefined variable $active in /home/hptechworkpc/Apps/RegenMed/includes/header.php on line 50
+[Wed Aug 12 09:53:44 2026] 127.0.0.1:41558 [200]: GET /index.php
+[Wed Aug 12 09:53:44 2026] 127.0.0.1:41558 Closing
+[Wed Aug 12 09:53:44 2026] 127.0.0.1:41568 Accepted
+[Wed Aug 12 09:53:44 2026] PHP Warning:  Undefined variable $active in /home/hptechworkpc/Apps/RegenMed/includes/header.php on line 50
+[Wed Aug 12 09:53:44 2026] PHP Warning:  Undefined variable $active in /home/hptechworkpc/Apps/RegenMed/includes/header.php on line 50
+[Wed Aug 12 09:53:44 2026] PHP Warning:  Undefined variable $active in /home/hptechworkpc/Apps/RegenMed/includes/header.php on line 50
+[Wed Aug 12 09:53:44 2026] PHP Warning:  Undefined variable $active in /home/hptechworkpc/Apps/RegenMed/includes/header.php on line 50
+[Wed Aug 12 09:53:44 2026] PHP Warning:  Undefined variable $active in /home/hptechworkpc/Apps/RegenMed/includes/header.php on line 50
+[Wed Aug 12 09:53:44 2026] PHP Warning:  Undefined variable $active in /home/hptechworkpc/Apps/RegenMed/includes/header.php on line 50
+[Wed Aug 12 09:53:44 2026] PHP Warning:  Undefined variable $active in /home/hptechworkpc/Apps/RegenMed/includes/header.php on line 50
+[Wed Aug 12 09:53:44 2026] PHP Warning:  Undefined variable $active in /home/hptechworkpc/Apps/RegenMed/includes/header.php on line 50
+[Wed Aug 12 09:53:44 2026] PHP Warning:  Undefined variable $active in /home/hptechworkpc/Apps/RegenMed/includes/header.php on line 50
+[Wed Aug 12 09:53:44 2026] PHP Warning:  Undefined variable $active in /home/hptechworkpc/Apps/RegenMed/includes/header.php on line 50
+[Wed Aug 12 09:53:44 2026] PHP Warning:  Undefined variable $active in /home/hptechworkpc/Apps/RegenMed/includes/header.php on line 50
+[Wed Aug 12 09:53:44 2026] 127.0.0.1:41568 [200]: GET /index.php
+[Wed Aug 12 09:53:44 2026] 127.0.0.1:41568 Closing
+[Wed Aug 12 09:54:18 2026] 127.0.0.1:35436 Accepted
+[Wed Aug 12 09:54:18 2026] PHP Warning:  Undefined variable $active in /home/hptechworkpc/Apps/RegenMed/includes/header.php on line 50
+[Wed Aug 12 09:54:18 2026] PHP Warning:  Undefined variable $active in /home/hptechworkpc/Apps/RegenMed/includes/header.php on line 50
+[Wed Aug 12 09:54:18 2026] PHP Warning:  Undefined variable $active in /home/hptechworkpc/Apps/RegenMed/includes/header.php on line 50
+[Wed Aug 12 09:54:18 2026] PHP Warning:  Undefined variable $active in /home/hptechworkpc/Apps/RegenMed/includes/header.php on line 50
+[Wed Aug 12 09:54:18 2026] PHP Warning:  Undefined variable $active in /home/hptechworkpc/Apps/RegenMed/includes/header.php on line 50
+[Wed Aug 12 09:54:18 2026] PHP Warning:  Undefined variable $active in /home/hptechworkpc/Apps/RegenMed/includes/header.php on line 50
+[Wed Aug 12 09:54:18 2026] PHP Warning:  Undefined variable $active in /home/hptechworkpc/Apps/RegenMed/includes/header.php on line 50
+[Wed Aug 12 09:54:18 2026] PHP Warning:  Undefined variable $active in /home/hptechworkpc/Apps/RegenMed/includes/header.php on line 50
+[Wed Aug 12 09:54:18 2026] PHP Warning:  Undefined variable $active in /home/hptechworkpc/Apps/RegenMed/includes/header.php on line 50
+[Wed Aug 12 09:54:18 2026] PHP Warning:  Undefined variable $active in /home/hptechworkpc/Apps/RegenMed/includes/header.php on line 50
+[Wed Aug 12 09:54:18 2026] PHP Warning:  Undefined variable $active in /home/hptechworkpc/Apps/RegenMed/includes/header.php on line 50
+[Wed Aug 12 09:54:18 2026] 127.0.0.1:35436 [200]: GET /index.php
+[Wed Aug 12 09:54:18 2026] 127.0.0.1:35436 Closing
+[Wed Aug 12 09:54:24 2026] 127.0.0.1:35448 Accepted
+[Wed Aug 12 09:54:24 2026] PHP Warning:  Undefined variable $active in /home/hptechworkpc/Apps/RegenMed/includes/header.php on line 50
+[Wed Aug 12 09:54:24 2026] PHP Warning:  Undefined variable $active in /home/hptechworkpc/Apps/RegenMed/includes/header.php on line 50
+[Wed Aug 12 09:54:24 2026] PHP Warning:  Undefined variable $active in /home/hptechworkpc/Apps/RegenMed/includes/header.php on line 50
+[Wed Aug 12 09:54:24 2026] PHP Warning:  Undefined variable $active in /home/hptechworkpc/Apps/RegenMed/includes/header.php on line 50
+[Wed Aug 12 09:54:24 2026] PHP Warning:  Undefined variable $active in /home/hptechworkpc/Apps/RegenMed/includes/header.php on line 50
+[Wed Aug 12 09:54:24 2026] PHP Warning:  Undefined variable $active in /home/hptechworkpc/Apps/RegenMed/includes/header.php on line 50
+[Wed Aug 12 09:54:24 2026] PHP Warning:  Undefined variable $active in /home/hptechworkpc/Apps/RegenMed/includes/header.php on line 50
+[Wed Aug 12 09:54:24 2026] PHP Warning:  Undefined variable $active in /home/hptechworkpc/Apps/RegenMed/includes/header.php on line 50
+[Wed Aug 12 09:54:24 2026] PHP Warning:  Undefined variable $active in /home/hptechworkpc/Apps/RegenMed/includes/header.php on line 50
+[Wed Aug 12 09:54:24 2026] PHP Warning:  Undefined variable $active in /home/hptechworkpc/Apps/RegenMed/includes/header.php on line 50
+[Wed Aug 12 09:54:24 2026] PHP Warning:  Undefined variable $active in /home/hptechworkpc/Apps/RegenMed/includes/header.php on line 50
+[Wed Aug 12 09:54:24 2026] 127.0.0.1:35448 [200]: GET /index.php
+[Wed Aug 12 09:54:24 2026] 127.0.0.1:35448 Closing
+[Wed Aug 12 09:55:06 2026] 127.0.0.1:58456 Accepted
+[Wed Aug 12 09:55:06 2026] PHP Warning:  Undefined variable $active in /home/hptechworkpc/Apps/RegenMed/includes/header.php on line 50
+[Wed Aug 12 09:55:06 2026] PHP Warning:  Undefined variable $active in /home/hptechworkpc/Apps/RegenMed/includes/header.php on line 50
+[Wed Aug 12 09:55:06 2026] PHP Warning:  Undefined variable $active in /home/hptechworkpc/Apps/RegenMed/includes/header.php on line 50
+[Wed Aug 12 09:55:06 2026] PHP Warning:  Undefined variable $active in /home/hptechworkpc/Apps/RegenMed/includes/header.php on line 50
+[Wed Aug 12 09:55:06 2026] PHP Warning:  Undefined variable $active in /home/hptechworkpc/Apps/RegenMed/includes/header.php on line 50
+[Wed Aug 12 09:55:06 2026] PHP Warning:  Undefined variable $active in /home/hptechworkpc/Apps/RegenMed/includes/header.php on line 50
+[Wed Aug 12 09:55:06 2026] PHP Warning:  Undefined variable $active in /home/hptechworkpc/Apps/RegenMed/includes/header.php on line 50
+[Wed Aug 12 09:55:06 2026] PHP Warning:  Undefined variable $active in /home/hptechworkpc/Apps/RegenMed/includes/header.php on line 50
+[Wed Aug 12 09:55:06 2026] PHP Warning:  Undefined variable $active in /home/hptechworkpc/Apps/RegenMed/includes/header.php on line 50
+[Wed Aug 12 09:55:06 2026] PHP Warning:  Undefined variable $active in /home/hptechworkpc/Apps/RegenMed/includes/header.php on line 50
+[Wed Aug 12 09:55:06 2026] PHP Warning:  Undefined variable $active in /home/hptechworkpc/Apps/RegenMed/includes/header.php on line 50
+[Wed Aug 12 09:55:06 2026] 127.0.0.1:58456 [200]: HEAD /index.php
+[Wed Aug 12 09:55:06 2026] 127.0.0.1:58456 Closing
+[Wed Aug 12 09:55:06 2026] 127.0.0.1:58460 Accepted
+[Wed Aug 12 09:55:06 2026] PHP Warning:  Undefined variable $active in /home/hptechworkpc/Apps/RegenMed/includes/header.php on line 50
+[Wed Aug 12 09:55:06 2026] PHP Warning:  Undefined variable $active in /home/hptechworkpc/Apps/RegenMed/includes/header.php on line 50
+[Wed Aug 12 09:55:06 2026] PHP Warning:  Undefined variable $active in /home/hptechworkpc/Apps/RegenMed/includes/header.php on line 50
+[Wed Aug 12 09:55:06 2026] PHP Warning:  Undefined variable $active in /home/hptechworkpc/Apps/RegenMed/includes/header.php on line 50
+[Wed Aug 12 09:55:06 2026] PHP Warning:  Undefined variable $active in /home/hptechworkpc/Apps/RegenMed/includes/header.php on line 50
+[Wed Aug 12 09:55:06 2026] PHP Warning:  Undefined variable $active in /home/hptechworkpc/Apps/RegenMed/includes/header.php on line 50
+[Wed Aug 12 09:55:06 2026] PHP Warning:  Undefined variable $active in /home/hptechworkpc/Apps/RegenMed/includes/header.php on line 50
+[Wed Aug 12 09:55:06 2026] PHP Warning:  Undefined variable $active in /home/hptechworkpc/Apps/RegenMed/includes/header.php on line 50
+[Wed Aug 12 09:55:06 2026] PHP Warning:  Undefined variable $active in /home/hptechworkpc/Apps/RegenMed/includes/header.php on line 50
+[Wed Aug 12 09:55:06 2026] PHP Warning:  Undefined variable $active in /home/hptechworkpc/Apps/RegenMed/includes/header.php on line 50
+[Wed Aug 12 09:55:06 2026] PHP Warning:  Undefined variable $active in /home/hptechworkpc/Apps/RegenMed/includes/header.php on line 50
+[Wed Aug 12 09:55:06 2026] 127.0.0.1:58460 [200]: GET /index.php
+[Wed Aug 12 09:55:06 2026] 127.0.0.1:58460 Closing
+[Wed Aug 12 09:55:06 2026] 127.0.0.1:58472 Accepted
+[Wed Aug 12 09:55:06 2026] PHP Warning:  Undefined variable $active in /home/hptechworkpc/Apps/RegenMed/includes/header.php on line 50
+[Wed Aug 12 09:55:06 2026] PHP Warning:  Undefined variable $active in /home/hptechworkpc/Apps/RegenMed/includes/header.php on line 50
+[Wed Aug 12 09:55:06 2026] PHP Warning:  Undefined variable $active in /home/hptechworkpc/Apps/RegenMed/includes/header.php on line 50
+[Wed Aug 12 09:55:06 2026] PHP Warning:  Undefined variable $active in /home/hptechworkpc/Apps/RegenMed/includes/header.php on line 50
+[Wed Aug 12 09:55:06 2026] PHP Warning:  Undefined variable $active in /home/hptechworkpc/Apps/RegenMed/includes/header.php on line 50
+[Wed Aug 12 09:55:06 2026] PHP Warning:  Undefined variable $active in /home/hptechworkpc/Apps/RegenMed/includes/header.php on line 50
+[Wed Aug 12 09:55:06 2026] PHP Warning:  Undefined variable $active in /home/hptechworkpc/Apps/RegenMed/includes/header.php on line 50
+[Wed Aug 12 09:55:06 2026] PHP Warning:  Undefined variable $active in /home/hptechworkpc/Apps/RegenMed/includes/header.php on line 50
+[Wed Aug 12 09:55:06 2026] PHP Warning:  Undefined variable $active in /home/hptechworkpc/Apps/RegenMed/includes/header.php on line 50
+[Wed Aug 12 09:55:06 2026] PHP Warning:  Undefined variable $active in /home/hptechworkpc/Apps/RegenMed/includes/header.php on line 50
+[Wed Aug 12 09:55:06 2026] PHP Warning:  Undefined variable $active in /home/hptechworkpc/Apps/RegenMed/includes/header.php on line 50
+[Wed Aug 12 09:55:06 2026] 127.0.0.1:58472 [200]: GET /index.php
+[Wed Aug 12 09:55:06 2026] 127.0.0.1:58472 Closing
+[Wed Aug 12 09:55:07 2026] 127.0.0.1:58480 Accepted
+[Wed Aug 12 09:55:07 2026] PHP Warning:  Undefined variable $active in /home/hptechworkpc/Apps/RegenMed/includes/header.php on line 50
+[Wed Aug 12 09:55:07 2026] PHP Warning:  Undefined variable $active in /home/hptechworkpc/Apps/RegenMed/includes/header.php on line 50
+[Wed Aug 12 09:55:07 2026] PHP Warning:  Undefined variable $active in /home/hptechworkpc/Apps/RegenMed/includes/header.php on line 50
+[Wed Aug 12 09:55:07 2026] PHP Warning:  Undefined variable $active in /home/hptechworkpc/Apps/RegenMed/includes/header.php on line 50
+[Wed Aug 12 09:55:07 2026] PHP Warning:  Undefined variable $active in /home/hptechworkpc/Apps/RegenMed/includes/header.php on line 50
+[Wed Aug 12 09:55:07 2026] PHP Warning:  Undefined variable $active in /home/hptechworkpc/Apps/RegenMed/includes/header.php on line 50
+[Wed Aug 12 09:55:07 2026] PHP Warning:  Undefined variable $active in /home/hptechworkpc/Apps/RegenMed/includes/header.php on line 50
+[Wed Aug 12 09:55:07 2026] PHP Warning:  Undefined variable $active in /home/hptechworkpc/Apps/RegenMed/includes/header.php on line 50
+[Wed Aug 12 09:55:07 2026] PHP Warning:  Undefined variable $active in /home/hptechworkpc/Apps/RegenMed/includes/header.php on line 50
+[Wed Aug 12 09:55:07 2026] PHP Warning:  Undefined variable $active in /home/hptechworkpc/Apps/RegenMed/includes/header.php on line 50
+[Wed Aug 12 09:55:07 2026] PHP Warning:  Undefined variable $active in /home/hptechworkpc/Apps/RegenMed/includes/header.php on line 50
+[Wed Aug 12 09:55:07 2026] 127.0.0.1:58480 [200]: GET /index.php
+[Wed Aug 12 09:55:07 2026] 127.0.0.1:58480 Closing
+[Wed Aug 12 09:56:59 2026] 127.0.0.1:39740 Accepted
+[Wed Aug 12 09:56:59 2026] PHP Warning:  Undefined variable $active in /home/hptechworkpc/Apps/RegenMed/includes/header.php on line 50
+[Wed Aug 12 09:56:59 2026] PHP Warning:  Undefined variable $active in /home/hptechworkpc/Apps/RegenMed/includes/header.php on line 50
+[Wed Aug 12 09:56:59 2026] PHP Warning:  Undefined variable $active in /home/hptechworkpc/Apps/RegenMed/includes/header.php on line 50
+[Wed Aug 12 09:56:59 2026] PHP Warning:  Undefined variable $active in /home/hptechworkpc/Apps/RegenMed/includes/header.php on line 50
+[Wed Aug 12 09:56:59 2026] PHP Warning:  Undefined variable $active in /home/hptechworkpc/Apps/RegenMed/includes/header.php on line 50
+[Wed Aug 12 09:56:59 2026] PHP Warning:  Undefined variable $active in /home/hptechworkpc/Apps/RegenMed/includes/header.php on line 50
+[Wed Aug 12 09:56:59 2026] PHP Warning:  Undefined variable $active in /home/hptechworkpc/Apps/RegenMed/includes/header.php on line 50
+[Wed Aug 12 09:56:59 2026] PHP Warning:  Undefined variable $active in /home/hptechworkpc/Apps/RegenMed/includes/header.php on line 50
+[Wed Aug 12 09:56:59 2026] PHP Warning:  Undefined variable $active in /home/hptechworkpc/Apps/RegenMed/includes/header.php on line 50
+[Wed Aug 12 09:56:59 2026] PHP Warning:  Undefined variable $active in /home/hptechworkpc/Apps/RegenMed/includes/header.php on line 50
+[Wed Aug 12 09:56:59 2026] PHP Warning:  Undefined variable $active in /home/hptechworkpc/Apps/RegenMed/includes/header.php on line 50
+[Wed Aug 12 09:56:59 2026] 127.0.0.1:39740 [200]: GET /index.php?page=dashboard
+[Wed Aug 12 09:56:59 2026] 127.0.0.1:39740 Closing
+[Wed Aug 12 09:56:59 2026] 127.0.0.1:39746 Accepted
+[Wed Aug 12 09:56:59 2026] PHP Warning:  Undefined variable $active in /home/hptechworkpc/Apps/RegenMed/includes/header.php on line 50
+[Wed Aug 12 09:56:59 2026] PHP Warning:  Undefined variable $active in /home/hptechworkpc/Apps/RegenMed/includes/header.php on line 50
+[Wed Aug 12 09:56:59 2026] PHP Warning:  Undefined variable $active in /home/hptechworkpc/Apps/RegenMed/includes/header.php on line 50
+[Wed Aug 12 09:56:59 2026] PHP Warning:  Undefined variable $active in /home/hptechworkpc/Apps/RegenMed/includes/header.php on line 50
+[Wed Aug 12 09:56:59 2026] PHP Warning:  Undefined variable $active in /home/hptechworkpc/Apps/RegenMed/includes/header.php on line 50
+[Wed Aug 12 09:56:59 2026] PHP Warning:  Undefined variable $active in /home/hptechworkpc/Apps/RegenMed/includes/header.php on line 50
+[Wed Aug 12 09:56:59 2026] PHP Warning:  Undefined variable $active in /home/hptechworkpc/Apps/RegenMed/includes/header.php on line 50
+[Wed Aug 12 09:56:59 2026] PHP Warning:  Undefined variable $active in /home/hptechworkpc/Apps/RegenMed/includes/header.php on line 50
+[Wed Aug 12 09:56:59 2026] PHP Warning:  Undefined variable $active in /home/hptechworkpc/Apps/RegenMed/includes/header.php on line 50
+[Wed Aug 12 09:56:59 2026] PHP Warning:  Undefined variable $active in /home/hptechworkpc/Apps/RegenMed/includes/header.php on line 50
+[Wed Aug 12 09:56:59 2026] PHP Warning:  Undefined variable $active in /home/hptechworkpc/Apps/RegenMed/includes/header.php on line 50
+[Wed Aug 12 09:56:59 2026] 127.0.0.1:39746 [200]: GET /index.php
+[Wed Aug 12 09:56:59 2026] 127.0.0.1:39746 Closing
+[Wed Aug 12 09:56:59 2026] 127.0.0.1:39754 Accepted
+[Wed Aug 12 09:56:59 2026] PHP Warning:  Undefined variable $active in /home/hptechworkpc/Apps/RegenMed/includes/header.php on line 50
+[Wed Aug 12 09:56:59 2026] PHP Warning:  Undefined variable $active in /home/hptechworkpc/Apps/RegenMed/includes/header.php on line 50
+[Wed Aug 12 09:56:59 2026] PHP Warning:  Undefined variable $active in /home/hptechworkpc/Apps/RegenMed/includes/header.php on line 50
+[Wed Aug 12 09:56:59 2026] PHP Warning:  Undefined variable $active in /home/hptechworkpc/Apps/RegenMed/includes/header.php on line 50
+[Wed Aug 12 09:56:59 2026] PHP Warning:  Undefined variable $active in /home/hptechworkpc/Apps/RegenMed/includes/header.php on line 50
+[Wed Aug 12 09:56:59 2026] PHP Warning:  Undefined variable $active in /home/hptechworkpc/Apps/RegenMed/includes/header.php on line 50
+[Wed Aug 12 09:56:59 2026] PHP Warning:  Undefined variable $active in /home/hptechworkpc/Apps/RegenMed/includes/header.php on line 50
+[Wed Aug 12 09:56:59 2026] PHP Warning:  Undefined variable $active in /home/hptechworkpc/Apps/RegenMed/includes/header.php on line 50
+[Wed Aug 12 09:56:59 2026] PHP Warning:  Undefined variable $active in /home/hptechworkpc/Apps/RegenMed/includes/header.php on line 50
+[Wed Aug 12 09:56:59 2026] PHP Warning:  Undefined variable $active in /home/hptechworkpc/Apps/RegenMed/includes/header.php on line 50
+[Wed Aug 12 09:56:59 2026] PHP Warning:  Undefined variable $active in /home/hptechworkpc/Apps/RegenMed/includes/header.php on line 50
+[Wed Aug 12 09:56:59 2026] 127.0.0.1:39754 [200]: GET /index.php
+[Wed Aug 12 09:56:59 2026] 127.0.0.1:39754 Closing
+[Wed Aug 12 09:57:31 2026] 127.0.0.1:42644 Accepted
+[Wed Aug 12 09:57:31 2026] PHP Warning:  Undefined variable $active in /home/hptechworkpc/Apps/RegenMed/includes/header.php on line 50
+[Wed Aug 12 09:57:31 2026] PHP Warning:  Undefined variable $active in /home/hptechworkpc/Apps/RegenMed/includes/header.php on line 50
+[Wed Aug 12 09:57:31 2026] PHP Warning:  Undefined variable $active in /home/hptechworkpc/Apps/RegenMed/includes/header.php on line 50
+[Wed Aug 12 09:57:31 2026] PHP Warning:  Undefined variable $active in /home/hptechworkpc/Apps/RegenMed/includes/header.php on line 50
+[Wed Aug 12 09:57:31 2026] PHP Warning:  Undefined variable $active in /home/hptechworkpc/Apps/RegenMed/includes/header.php on line 50
+[Wed Aug 12 09:57:31 2026] PHP Warning:  Undefined variable $active in /home/hptechworkpc/Apps/RegenMed/includes/header.php on line 50
+[Wed Aug 12 09:57:31 2026] PHP Warning:  Undefined variable $active in /home/hptechworkpc/Apps/RegenMed/includes/header.php on line 50
+[Wed Aug 12 09:57:31 2026] PHP Warning:  Undefined variable $active in /home/hptechworkpc/Apps/RegenMed/includes/header.php on line 50
+[Wed Aug 12 09:57:31 2026] PHP Warning:  Undefined variable $active in /home/hptechworkpc/Apps/RegenMed/includes/header.php on line 50
+[Wed Aug 12 09:57:31 2026] PHP Warning:  Undefined variable $active in /home/hptechworkpc/Apps/RegenMed/includes/header.php on line 50
+[Wed Aug 12 09:57:31 2026] PHP Warning:  Undefined variable $active in /home/hptechworkpc/Apps/RegenMed/includes/header.php on line 50
+[Wed Aug 12 09:57:31 2026] 127.0.0.1:42644 [200]: HEAD /index.php
+[Wed Aug 12 09:57:31 2026] 127.0.0.1:42644 Closing
+[Wed Aug 12 10:00:12 2026] 127.0.0.1:49318 Accepted
+[Wed Aug 12 10:00:12 2026] PHP Warning:  Undefined variable $active in /home/hptechworkpc/Apps/RegenMed/includes/header.php on line 50
+[Wed Aug 12 10:00:12 2026] PHP Warning:  Undefined variable $active in /home/hptechworkpc/Apps/RegenMed/includes/header.php on line 50
+[Wed Aug 12 10:00:12 2026] PHP Warning:  Undefined variable $active in /home/hptechworkpc/Apps/RegenMed/includes/header.php on line 50
+[Wed Aug 12 10:00:12 2026] PHP Warning:  Undefined variable $active in /home/hptechworkpc/Apps/RegenMed/includes/header.php on line 50
+[Wed Aug 12 10:00:12 2026] PHP Warning:  Undefined variable $active in /home/hptechworkpc/Apps/RegenMed/includes/header.php on line 50
+[Wed Aug 12 10:00:12 2026] PHP Warning:  Undefined variable $active in /home/hptechworkpc/Apps/RegenMed/includes/header.php on line 50
+[Wed Aug 12 10:00:12 2026] PHP Warning:  Undefined variable $active in /home/hptechworkpc/Apps/RegenMed/includes/header.php on line 50
+[Wed Aug 12 10:00:12 2026] PHP Warning:  Undefined variable $active in /home/hptechworkpc/Apps/RegenMed/includes/header.php on line 50
+[Wed Aug 12 10:00:12 2026] PHP Warning:  Undefined variable $active in /home/hptechworkpc/Apps/RegenMed/includes/header.php on line 50
+[Wed Aug 12 10:00:12 2026] PHP Warning:  Undefined variable $active in /home/hptechworkpc/Apps/RegenMed/includes/header.php on line 50
+[Wed Aug 12 10:00:12 2026] PHP Warning:  Undefined variable $active in /home/hptechworkpc/Apps/RegenMed/includes/header.php on line 50
+[Wed Aug 12 10:00:12 2026] 127.0.0.1:49318 [200]: GET /index.php
+[Wed Aug 12 10:00:12 2026] 127.0.0.1:49318 Closing
+[Wed Aug 12 10:00:59 2026] 127.0.0.1:33708 Accepted
+[Wed Aug 12 10:00:59 2026] PHP Warning:  Undefined variable $active in /home/hptechworkpc/Apps/RegenMed/includes/header.php on line 50
+[Wed Aug 12 10:00:59 2026] PHP Warning:  Undefined variable $active in /home/hptechworkpc/Apps/RegenMed/includes/header.php on line 50
+[Wed Aug 12 10:00:59 2026] PHP Warning:  Undefined variable $active in /home/hptechworkpc/Apps/RegenMed/includes/header.php on line 50
+[Wed Aug 12 10:00:59 2026] PHP Warning:  Undefined variable $active in /home/hptechworkpc/Apps/RegenMed/includes/header.php on line 50
+[Wed Aug 12 10:00:59 2026] PHP Warning:  Undefined variable $active in /home/hptechworkpc/Apps/RegenMed/includes/header.php on line 50
+[Wed Aug 12 10:00:59 2026] PHP Warning:  Undefined variable $active in /home/hptechworkpc/Apps/RegenMed/includes/header.php on line 50
+[Wed Aug 12 10:00:59 2026] PHP Warning:  Undefined variable $active in /home/hptechworkpc/Apps/RegenMed/includes/header.php on line 50
+[Wed Aug 12 10:00:59 2026] PHP Warning:  Undefined variable $active in /home/hptechworkpc/Apps/RegenMed/includes/header.php on line 50
+[Wed Aug 12 10:00:59 2026] PHP Warning:  Undefined variable $active in /home/hptechworkpc/Apps/RegenMed/includes/header.php on line 50
+[Wed Aug 12 10:00:59 2026] PHP Warning:  Undefined variable $active in /home/hptechworkpc/Apps/RegenMed/includes/header.php on line 50
+[Wed Aug 12 10:00:59 2026] PHP Warning:  Undefined variable $active in /home/hptechworkpc/Apps/RegenMed/includes/header.php on line 50
+[Wed Aug 12 10:00:59 2026] 127.0.0.1:33708 [200]: GET /index.php
+[Wed Aug 12 10:00:59 2026] 127.0.0.1:33708 Closing
+[Wed Aug 12 10:00:59 2026] 127.0.0.1:33710 Accepted
+[Wed Aug 12 10:00:59 2026] PHP Warning:  Undefined variable $active in /home/hptechworkpc/Apps/RegenMed/includes/header.php on line 50
+[Wed Aug 12 10:00:59 2026] PHP Warning:  Undefined variable $active in /home/hptechworkpc/Apps/RegenMed/includes/header.php on line 50
+[Wed Aug 12 10:00:59 2026] PHP Warning:  Undefined variable $active in /home/hptechworkpc/Apps/RegenMed/includes/header.php on line 50
+[Wed Aug 12 10:00:59 2026] PHP Warning:  Undefined variable $active in /home/hptechworkpc/Apps/RegenMed/includes/header.php on line 50
+[Wed Aug 12 10:00:59 2026] PHP Warning:  Undefined variable $active in /home/hptechworkpc/Apps/RegenMed/includes/header.php on line 50
+[Wed Aug 12 10:00:59 2026] PHP Warning:  Undefined variable $active in /home/hptechworkpc/Apps/RegenMed/includes/header.php on line 50
+[Wed Aug 12 10:00:59 2026] PHP Warning:  Undefined variable $active in /home/hptechworkpc/Apps/RegenMed/includes/header.php on line 50
+[Wed Aug 12 10:00:59 2026] PHP Warning:  Undefined variable $active in /home/hptechworkpc/Apps/RegenMed/includes/header.php on line 50
+[Wed Aug 12 10:00:59 2026] PHP Warning:  Undefined variable $active in /home/hptechworkpc/Apps/RegenMed/includes/header.php on line 50
+[Wed Aug 12 10:00:59 2026] PHP Warning:  Undefined variable $active in /home/hptechworkpc/Apps/RegenMed/includes/header.php on line 50
+[Wed Aug 12 10:00:59 2026] PHP Warning:  Undefined variable $active in /home/hptechworkpc/Apps/RegenMed/includes/header.php on line 50
+[Wed Aug 12 10:00:59 2026] 127.0.0.1:33710 [200]: GET /index.php
+[Wed Aug 12 10:00:59 2026] 127.0.0.1:33710 Closing
+[Wed Aug 12 10:00:59 2026] 127.0.0.1:33726 Accepted
+[Wed Aug 12 10:00:59 2026] PHP Warning:  Undefined variable $active in /home/hptechworkpc/Apps/RegenMed/includes/header.php on line 50
+[Wed Aug 12 10:00:59 2026] PHP Warning:  Undefined variable $active in /home/hptechworkpc/Apps/RegenMed/includes/header.php on line 50
+[Wed Aug 12 10:00:59 2026] PHP Warning:  Undefined variable $active in /home/hptechworkpc/Apps/RegenMed/includes/header.php on line 50
+[Wed Aug 12 10:00:59 2026] PHP Warning:  Undefined variable $active in /home/hptechworkpc/Apps/RegenMed/includes/header.php on line 50
+[Wed Aug 12 10:00:59 2026] PHP Warning:  Undefined variable $active in /home/hptechworkpc/Apps/RegenMed/includes/header.php on line 50
+[Wed Aug 12 10:00:59 2026] PHP Warning:  Undefined variable $active in /home/hptechworkpc/Apps/RegenMed/includes/header.php on line 50
+[Wed Aug 12 10:00:59 2026] PHP Warning:  Undefined variable $active in /home/hptechworkpc/Apps/RegenMed/includes/header.php on line 50
+[Wed Aug 12 10:00:59 2026] PHP Warning:  Undefined variable $active in /home/hptechworkpc/Apps/RegenMed/includes/header.php on line 50
+[Wed Aug 12 10:00:59 2026] PHP Warning:  Undefined variable $active in /home/hptechworkpc/Apps/RegenMed/includes/header.php on line 50
+[Wed Aug 12 10:00:59 2026] PHP Warning:  Undefined variable $active in /home/hptechworkpc/Apps/RegenMed/includes/header.php on line 50
+[Wed Aug 12 10:00:59 2026] PHP Warning:  Undefined variable $active in /home/hptechworkpc/Apps/RegenMed/includes/header.php on line 50
+[Wed Aug 12 10:00:59 2026] 127.0.0.1:33726 [200]: GET /index.php
+[Wed Aug 12 10:00:59 2026] 127.0.0.1:33726 Closing
+[Wed Aug 12 10:01:00 2026] 127.0.0.1:33728 Accepted
+[Wed Aug 12 10:01:00 2026] PHP Warning:  Undefined variable $active in /home/hptechworkpc/Apps/RegenMed/includes/header.php on line 50
+[Wed Aug 12 10:01:00 2026] PHP Warning:  Undefined variable $active in /home/hptechworkpc/Apps/RegenMed/includes/header.php on line 50
+[Wed Aug 12 10:01:00 2026] PHP Warning:  Undefined variable $active in /home/hptechworkpc/Apps/RegenMed/includes/header.php on line 50
+[Wed Aug 12 10:01:00 2026] PHP Warning:  Undefined variable $active in /home/hptechworkpc/Apps/RegenMed/includes/header.php on line 50
+[Wed Aug 12 10:01:00 2026] PHP Warning:  Undefined variable $active in /home/hptechworkpc/Apps/RegenMed/includes/header.php on line 50
+[Wed Aug 12 10:01:00 2026] PHP Warning:  Undefined variable $active in /home/hptechworkpc/Apps/RegenMed/includes/header.php on line 50
+[Wed Aug 12 10:01:00 2026] PHP Warning:  Undefined variable $active in /home/hptechworkpc/Apps/RegenMed/includes/header.php on line 50
+[Wed Aug 12 10:01:00 2026] PHP Warning:  Undefined variable $active in /home/hptechworkpc/Apps/RegenMed/includes/header.php on line 50
+[Wed Aug 12 10:01:00 2026] PHP Warning:  Undefined variable $active in /home/hptechworkpc/Apps/RegenMed/includes/header.php on line 50
+[Wed Aug 12 10:01:00 2026] PHP Warning:  Undefined variable $active in /home/hptechworkpc/Apps/RegenMed/includes/header.php on line 50
+[Wed Aug 12 10:01:00 2026] PHP Warning:  Undefined variable $active in /home/hptechworkpc/Apps/RegenMed/includes/header.php on line 50
+[Wed Aug 12 10:01:00 2026] 127.0.0.1:33728 [200]: HEAD /index.php
+[Wed Aug 12 10:01:00 2026] 127.0.0.1:33728 Closing
+[Wed Aug 12 10:02:37 2026] 127.0.0.1:46590 Accepted
+[Wed Aug 12 10:02:37 2026] PHP Warning:  Undefined variable $active in /home/hptechworkpc/Apps/RegenMed/includes/header.php on line 50
+[Wed Aug 12 10:02:37 2026] PHP Warning:  Undefined variable $active in /home/hptechworkpc/Apps/RegenMed/includes/header.php on line 50
+[Wed Aug 12 10:02:37 2026] PHP Warning:  Undefined variable $active in /home/hptechworkpc/Apps/RegenMed/includes/header.php on line 50
+[Wed Aug 12 10:02:37 2026] PHP Warning:  Undefined variable $active in /home/hptechworkpc/Apps/RegenMed/includes/header.php on line 50
+[Wed Aug 12 10:02:37 2026] PHP Warning:  Undefined variable $active in /home/hptechworkpc/Apps/RegenMed/includes/header.php on line 50
+[Wed Aug 12 10:02:37 2026] PHP Warning:  Undefined variable $active in /home/hptechworkpc/Apps/RegenMed/includes/header.php on line 50
+[Wed Aug 12 10:02:37 2026] PHP Warning:  Undefined variable $active in /home/hptechworkpc/Apps/RegenMed/includes/header.php on line 50
+[Wed Aug 12 10:02:37 2026] PHP Warning:  Undefined variable $active in /home/hptechworkpc/Apps/RegenMed/includes/header.php on line 50
+[Wed Aug 12 10:02:37 2026] PHP Warning:  Undefined variable $active in /home/hptechworkpc/Apps/RegenMed/includes/header.php on line 50
+[Wed Aug 12 10:02:37 2026] PHP Warning:  Undefined variable $active in /home/hptechworkpc/Apps/RegenMed/includes/header.php on line 50
+[Wed Aug 12 10:02:37 2026] PHP Warning:  Undefined variable $active in /home/hptechworkpc/Apps/RegenMed/includes/header.php on line 50
+[Wed Aug 12 10:02:37 2026] 127.0.0.1:46590 [200]: GET /index.php?page=dashboard
+[Wed Aug 12 10:02:37 2026] 127.0.0.1:46590 Closing
+[Wed Aug 12 10:02:37 2026] 127.0.0.1:46606 Accepted
+[Wed Aug 12 10:02:37 2026] PHP Warning:  Undefined variable $active in /home/hptechworkpc/Apps/RegenMed/includes/header.php on line 50
+[Wed Aug 12 10:02:37 2026] PHP Warning:  Undefined variable $active in /home/hptechworkpc/Apps/RegenMed/includes/header.php on line 50
+[Wed Aug 12 10:02:37 2026] PHP Warning:  Undefined variable $active in /home/hptechworkpc/Apps/RegenMed/includes/header.php on line 50
+[Wed Aug 12 10:02:37 2026] PHP Warning:  Undefined variable $active in /home/hptechworkpc/Apps/RegenMed/includes/header.php on line 50
+[Wed Aug 12 10:02:37 2026] PHP Warning:  Undefined variable $active in /home/hptechworkpc/Apps/RegenMed/includes/header.php on line 50
+[Wed Aug 12 10:02:37 2026] PHP Warning:  Undefined variable $active in /home/hptechworkpc/Apps/RegenMed/includes/header.php on line 50
+[Wed Aug 12 10:02:37 2026] PHP Warning:  Undefined variable $active in /home/hptechworkpc/Apps/RegenMed/includes/header.php on line 50
+[Wed Aug 12 10:02:37 2026] PHP Warning:  Undefined variable $active in /home/hptechworkpc/Apps/RegenMed/includes/header.php on line 50
+[Wed Aug 12 10:02:37 2026] PHP Warning:  Undefined variable $active in /home/hptechworkpc/Apps/RegenMed/includes/header.php on line 50
+[Wed Aug 12 10:02:37 2026] PHP Warning:  Undefined variable $active in /home/hptechworkpc/Apps/RegenMed/includes/header.php on line 50
+[Wed Aug 12 10:02:37 2026] PHP Warning:  Undefined variable $active in /home/hptechworkpc/Apps/RegenMed/includes/header.php on line 50
+[Wed Aug 12 10:02:37 2026] 127.0.0.1:46606 [200]: GET /index.php
+[Wed Aug 12 10:02:38 2026] 127.0.0.1:46606 Closing
+[Wed Aug 12 10:02:38 2026] 127.0.0.1:46618 Accepted
+[Wed Aug 12 10:02:38 2026] PHP Warning:  Undefined variable $active in /home/hptechworkpc/Apps/RegenMed/includes/header.php on line 50
+[Wed Aug 12 10:02:38 2026] PHP Warning:  Undefined variable $active in /home/hptechworkpc/Apps/RegenMed/includes/header.php on line 50
+[Wed Aug 12 10:02:38 2026] PHP Warning:  Undefined variable $active in /home/hptechworkpc/Apps/RegenMed/includes/header.php on line 50
+[Wed Aug 12 10:02:38 2026] PHP Warning:  Undefined variable $active in /home/hptechworkpc/Apps/RegenMed/includes/header.php on line 50
+[Wed Aug 12 10:02:38 2026] PHP Warning:  Undefined variable $active in /home/hptechworkpc/Apps/RegenMed/includes/header.php on line 50
+[Wed Aug 12 10:02:38 2026] PHP Warning:  Undefined variable $active in /home/hptechworkpc/Apps/RegenMed/includes/header.php on line 50
+[Wed Aug 12 10:02:38 2026] PHP Warning:  Undefined variable $active in /home/hptechworkpc/Apps/RegenMed/includes/header.php on line 50
+[Wed Aug 12 10:02:38 2026] PHP Warning:  Undefined variable $active in /home/hptechworkpc/Apps/RegenMed/includes/header.php on line 50
+[Wed Aug 12 10:02:38 2026] PHP Warning:  Undefined variable $active in /home/hptechworkpc/Apps/RegenMed/includes/header.php on line 50
+[Wed Aug 12 10:02:38 2026] PHP Warning:  Undefined variable $active in /home/hptechworkpc/Apps/RegenMed/includes/header.php on line 50
+[Wed Aug 12 10:02:38 2026] PHP Warning:  Undefined variable $active in /home/hptechworkpc/Apps/RegenMed/includes/header.php on line 50
+[Wed Aug 12 10:02:38 2026] 127.0.0.1:46618 [200]: HEAD /index.php
+[Wed Aug 12 10:02:38 2026] 127.0.0.1:46618 Closing
+[Wed Aug 12 10:08:25 2026] 127.0.0.1:49928 Accepted
+[Wed Aug 12 10:08:25 2026] PHP Warning:  Undefined variable $active in /home/hptechworkpc/Apps/RegenMed/includes/header.php on line 50
+[Wed Aug 12 10:08:25 2026] PHP Warning:  Undefined variable $active in /home/hptechworkpc/Apps/RegenMed/includes/header.php on line 50
+[Wed Aug 12 10:08:25 2026] PHP Warning:  Undefined variable $active in /home/hptechworkpc/Apps/RegenMed/includes/header.php on line 50
+[Wed Aug 12 10:08:25 2026] PHP Warning:  Undefined variable $active in /home/hptechworkpc/Apps/RegenMed/includes/header.php on line 50
+[Wed Aug 12 10:08:25 2026] PHP Warning:  Undefined variable $active in /home/hptechworkpc/Apps/RegenMed/includes/header.php on line 50
+[Wed Aug 12 10:08:25 2026] PHP Warning:  Undefined variable $active in /home/hptechworkpc/Apps/RegenMed/includes/header.php on line 50
+[Wed Aug 12 10:08:25 2026] PHP Warning:  Undefined variable $active in /home/hptechworkpc/Apps/RegenMed/includes/header.php on line 50
+[Wed Aug 12 10:08:25 2026] PHP Warning:  Undefined variable $active in /home/hptechworkpc/Apps/RegenMed/includes/header.php on line 50
+[Wed Aug 12 10:08:25 2026] PHP Warning:  Undefined variable $active in /home/hptechworkpc/Apps/RegenMed/includes/header.php on line 50
+[Wed Aug 12 10:08:25 2026] PHP Warning:  Undefined variable $active in /home/hptechworkpc/Apps/RegenMed/includes/header.php on line 50
+[Wed Aug 12 10:08:25 2026] PHP Warning:  Undefined variable $active in /home/hptechworkpc/Apps/RegenMed/includes/header.php on line 50
+[Wed Aug 12 10:08:25 2026] 127.0.0.1:49928 [200]: GET /index.php?page=dashboard
+[Wed Aug 12 10:08:25 2026] 127.0.0.1:49928 Closing
+[Wed Aug 12 10:08:25 2026] 127.0.0.1:49930 Accepted
+[Wed Aug 12 10:08:25 2026] PHP Warning:  Undefined variable $active in /home/hptechworkpc/Apps/RegenMed/includes/header.php on line 50
+[Wed Aug 12 10:08:25 2026] PHP Warning:  Undefined variable $active in /home/hptechworkpc/Apps/RegenMed/includes/header.php on line 50
+[Wed Aug 12 10:08:25 2026] PHP Warning:  Undefined variable $active in /home/hptechworkpc/Apps/RegenMed/includes/header.php on line 50
+[Wed Aug 12 10:08:25 2026] PHP Warning:  Undefined variable $active in /home/hptechworkpc/Apps/RegenMed/includes/header.php on line 50
+[Wed Aug 12 10:08:25 2026] PHP Warning:  Undefined variable $active in /home/hptechworkpc/Apps/RegenMed/includes/header.php on line 50
+[Wed Aug 12 10:08:25 2026] PHP Warning:  Undefined variable $active in /home/hptechworkpc/Apps/RegenMed/includes/header.php on line 50
+[Wed Aug 12 10:08:25 2026] PHP Warning:  Undefined variable $active in /home/hptechworkpc/Apps/RegenMed/includes/header.php on line 50
+[Wed Aug 12 10:08:25 2026] PHP Warning:  Undefined variable $active in /home/hptechworkpc/Apps/RegenMed/includes/header.php on line 50
+[Wed Aug 12 10:08:25 2026] PHP Warning:  Undefined variable $active in /home/hptechworkpc/Apps/RegenMed/includes/header.php on line 50
+[Wed Aug 12 10:08:25 2026] PHP Warning:  Undefined variable $active in /home/hptechworkpc/Apps/RegenMed/includes/header.php on line 50
+[Wed Aug 12 10:08:25 2026] PHP Warning:  Undefined variable $active in /home/hptechworkpc/Apps/RegenMed/includes/header.php on line 50
+[Wed Aug 12 10:08:25 2026] 127.0.0.1:49930 [200]: GET /index.php
+[Wed Aug 12 10:08:25 2026] 127.0.0.1:49930 Closing
+[Wed Aug 12 10:08:25 2026] 127.0.0.1:49934 Accepted
+[Wed Aug 12 10:08:25 2026] PHP Warning:  Undefined variable $active in /home/hptechworkpc/Apps/RegenMed/includes/header.php on line 50
+[Wed Aug 12 10:08:25 2026] PHP Warning:  Undefined variable $active in /home/hptechworkpc/Apps/RegenMed/includes/header.php on line 50
+[Wed Aug 12 10:08:25 2026] PHP Warning:  Undefined variable $active in /home/hptechworkpc/Apps/RegenMed/includes/header.php on line 50
+[Wed Aug 12 10:08:25 2026] PHP Warning:  Undefined variable $active in /home/hptechworkpc/Apps/RegenMed/includes/header.php on line 50
+[Wed Aug 12 10:08:25 2026] PHP Warning:  Undefined variable $active in /home/hptechworkpc/Apps/RegenMed/includes/header.php on line 50
+[Wed Aug 12 10:08:25 2026] PHP Warning:  Undefined variable $active in /home/hptechworkpc/Apps/RegenMed/includes/header.php on line 50
+[Wed Aug 12 10:08:25 2026] PHP Warning:  Undefined variable $active in /home/hptechworkpc/Apps/RegenMed/includes/header.php on line 50
+[Wed Aug 12 10:08:25 2026] PHP Warning:  Undefined variable $active in /home/hptechworkpc/Apps/RegenMed/includes/header.php on line 50
+[Wed Aug 12 10:08:25 2026] PHP Warning:  Undefined variable $active in /home/hptechworkpc/Apps/RegenMed/includes/header.php on line 50
+[Wed Aug 12 10:08:25 2026] PHP Warning:  Undefined variable $active in /home/hptechworkpc/Apps/RegenMed/includes/header.php on line 50
+[Wed Aug 12 10:08:25 2026] PHP Warning:  Undefined variable $active in /home/hptechworkpc/Apps/RegenMed/includes/header.php on line 50
+[Wed Aug 12 10:08:25 2026] 127.0.0.1:49934 [200]: GET /index.php
+[Wed Aug 12 10:08:25 2026] 127.0.0.1:49934 Closing
+[Wed Aug 12 10:08:25 2026] 127.0.0.1:49948 Accepted
+[Wed Aug 12 10:08:25 2026] PHP Warning:  Undefined variable $active in /home/hptechworkpc/Apps/RegenMed/includes/header.php on line 50
+[Wed Aug 12 10:08:25 2026] PHP Warning:  Undefined variable $active in /home/hptechworkpc/Apps/RegenMed/includes/header.php on line 50
+[Wed Aug 12 10:08:25 2026] PHP Warning:  Undefined variable $active in /home/hptechworkpc/Apps/RegenMed/includes/header.php on line 50
+[Wed Aug 12 10:08:25 2026] PHP Warning:  Undefined variable $active in /home/hptechworkpc/Apps/RegenMed/includes/header.php on line 50
+[Wed Aug 12 10:08:25 2026] PHP Warning:  Undefined variable $active in /home/hptechworkpc/Apps/RegenMed/includes/header.php on line 50
+[Wed Aug 12 10:08:25 2026] PHP Warning:  Undefined variable $active in /home/hptechworkpc/Apps/RegenMed/includes/header.php on line 50
+[Wed Aug 12 10:08:25 2026] PHP Warning:  Undefined variable $active in /home/hptechworkpc/Apps/RegenMed/includes/header.php on line 50
+[Wed Aug 12 10:08:25 2026] PHP Warning:  Undefined variable $active in /home/hptechworkpc/Apps/RegenMed/includes/header.php on line 50
+[Wed Aug 12 10:08:25 2026] PHP Warning:  Undefined variable $active in /home/hptechworkpc/Apps/RegenMed/includes/header.php on line 50
+[Wed Aug 12 10:08:25 2026] PHP Warning:  Undefined variable $active in /home/hptechworkpc/Apps/RegenMed/includes/header.php on line 50
+[Wed Aug 12 10:08:25 2026] PHP Warning:  Undefined variable $active in /home/hptechworkpc/Apps/RegenMed/includes/header.php on line 50
+[Wed Aug 12 10:08:25 2026] 127.0.0.1:49948 [200]: HEAD /index.php
+[Wed Aug 12 10:08:25 2026] 127.0.0.1:49948 Closing

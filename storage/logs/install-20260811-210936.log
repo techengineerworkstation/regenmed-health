@@ -1,0 +1,247 @@
+[21:09:36] Log: /home/hptechworkpc/Apps/RegenMed/storage/logs/install-20260811-210936.log
+[21:09:36] [1mStep 1/6: Detecting operating system[0m
+[21:09:36]   [0;32m✓[0m OS: [1mUltramarine Linux 43 (Plasma Edition)[0m
+[21:09:36]   [0;32m✓[0m Package manager: dnf
+[21:09:36]   [0;32m✓[0m Using sudo
+[21:09:36] [1mStep 2/6: Installing PHP and all required extensions[0m
+[21:09:36]   [0;34mℹ[0m Updating package cache and installing packages...
+[21:09:59]   [0;34mℹ[0m Installing via dnf...
+Updating and loading repositories:
+Repositories loaded.
+Package "which-2.23-3.fc43.x86_64" is already installed.
+Package "curl-8.15.0-7.fc43.x86_64" is already installed.
+Package "wget2-wget-2.2.1-1.fc43.x86_64" is already installed.
+Package "git-2.55.0-1.fc43.x86_64" is already installed.
+Package "sqlite-3.50.2-2.fc43.x86_64" is already installed.
+Package "ImageMagick-1:7.1.1.47-3.fc43.x86_64" is already installed.
+
+Package                       Arch   Version                          Repository      Size
+Upgrading:
+ ImageMagick                  x86_64 1:7.1.2.27-1.fc43                updates     88.0 KiB
+   replacing ImageMagick      x86_64 1:7.1.1.47-3.fc43                fedora      88.2 KiB
+ ImageMagick-libs             x86_64 1:7.1.2.27-1.fc43                updates      8.9 MiB
+   replacing ImageMagick-libs x86_64 1:7.1.1.47-3.fc43                fedora       8.7 MiB
+ curl                         x86_64 8.15.0-8.fc43                    updates    461.4 KiB
+   replacing curl             x86_64 8.15.0-7.fc43                    updates    461.4 KiB
+ libcurl                      x86_64 8.15.0-8.fc43                    updates    907.1 KiB
+   replacing libcurl          x86_64 8.15.0-7.fc43                    updates    907.1 KiB
+ libssh                       x86_64 0.11.5-1.fc43                    updates    573.1 KiB
+   replacing libssh           x86_64 0.11.4-1.fc43                    updates    571.8 KiB
+ libssh-config                noarch 0.11.5-1.fc43                    updates    277.0   B
+   replacing libssh-config    noarch 0.11.4-1.fc43                    updates    277.0   B
+Installing:
+ inkscape                     x86_64 1.4.4-1.fc43                     updates    162.2 MiB
+ php                          x86_64 8.4.24-1.fc43                    updates      0.0   B
+ php-bcmath                   x86_64 8.4.24-1.fc43                    updates     94.5 KiB
+ php-cli                      x86_64 8.4.24-1.fc43                    updates     12.2 MiB
+ php-common                   x86_64 8.4.24-1.fc43                    updates      9.5 MiB
+ php-gd                       x86_64 8.4.24-1.fc43                    updates    133.7 KiB
+ php-intl                     x86_64 8.4.24-1.fc43                    updates    583.0 KiB
+ php-mbstring                 x86_64 8.4.24-1.fc43                    updates      1.2 MiB
+ php-pdo                      x86_64 8.4.24-1.fc43                    updates    237.9 KiB
+ php-pecl-zip                 x86_64 1.22.8-1.fc43                    updates    169.6 KiB
+ php-process                  x86_64 8.4.24-1.fc43                    updates    118.4 KiB
+ php-sodium                   x86_64 8.4.24-1.fc43                    updates    109.4 KiB
+ php-xml                      x86_64 8.4.24-1.fc43                    updates      2.3 MiB
+ sqlite-tools                 x86_64 3.50.2-2.fc43                    fedora       1.5 MiB
+Installing dependencies:
+ GraphicsMagick               x86_64 1.3.45-5.fc43                    fedora       5.1 MiB
+ GraphicsMagick-c++           x86_64 1.3.45-5.fc43                    fedora     506.5 KiB
+ flexiblas                    x86_64 3.5.0-1.fc43                     updates     38.0 KiB
+ flexiblas-netlib             x86_64 3.5.0-1.fc43                     updates     16.5 MiB
+ flexiblas-openblas-openmp    x86_64 3.5.0-1.fc43                     updates     39.2 KiB
+ gsl                          x86_64 2.8-2.fc43                       fedora       3.5 MiB
+ gtksourceview4               x86_64 4.8.4-10.fc43                    fedora       4.5 MiB
+ httpd-core                   x86_64 2.4.68-1.fc43                    updates      4.5 MiB
+ httpd-filesystem             noarch 2.4.68-1.fc43                    updates    464.0   B
+ httpd-tools                  x86_64 2.4.68-1.fc43                    updates    198.1 KiB
+ inkscape-libs                x86_64 1.4.4-1.fc43                     updates     25.4 MiB
+ lib2geom                     x86_64 1.4-5.fc43                       fedora       1.0 MiB
+ libcdr                       x86_64 0.1.8-4.fc43                     fedora     886.4 KiB
+ libquadmath                  x86_64 15.3.1-1.fc43                    updates    317.9 KiB
+ librevenge                   x86_64 0.0.5-12.fc43                    fedora     748.7 KiB
+ libultrahdr                  x86_64 1.4.0^20251202git8cbc983-1.fc43  updates    384.9 KiB
+ libvisio                     x86_64 0.1.11-1.fc43                    updates    692.6 KiB
+ libwpd                       x86_64 0.10.3-23.fc43                   fedora     686.0 KiB
+ libwpg                       x86_64 0.3.4-6.fc43                     fedora     169.3 KiB
+ openblas-openmp              x86_64 0.3.29-2.fc43                    fedora      43.7 MiB
+ potrace                      x86_64 1.16-15.fc43                     fedora     242.5 KiB
+ python3-appdirs              noarch 1.4.4-30.fc43                    fedora      68.5 KiB
+ python3-cssselect            noarch 1.3.0-5.fc43                     fedora     272.6 KiB
+ python3-inkex                noarch 1.4.0^20250307git89726a33-5.fc43 fedora       1.8 MiB
+ python3-numpy                x86_64 1:2.3.5-1.fc43                   updates     41.4 MiB
+ python3-numpy-f2py           x86_64 1:2.3.5-1.fc43                   updates      2.1 MiB
+ python3-pyserial             noarch 3.5-15.fc43                      fedora     873.7 KiB
+ python3-scour                noarch 0.38.2-16.fc43                   fedora     414.1 KiB
+ python3-tinycss2             noarch 1.5.1-1.fc43                     updates    270.4 KiB
+ python3-webencodings         noarch 0.5.1-32.fc43                    fedora      86.9 KiB
+ urw-base35-fonts-legacy      noarch 20200910-26.fc43                 fedora       4.3 MiB
+Installing weak dependencies:
+ flexiblas-openblas-serial    x86_64 3.5.0-1.fc43                     updates     39.2 KiB
+ httpd                        x86_64 2.4.68-1.fc43                    updates     56.6 KiB
+ mod_http2                    x86_64 2.0.39-1.fc43                    updates    431.5 KiB
+ mod_lua                      x86_64 2.4.68-1.fc43                    updates    133.6 KiB
+ php-fpm                      x86_64 8.4.24-1.fc43                    updates      6.2 MiB
+ php-opcache                  x86_64 8.4.24-1.fc43                    updates      1.2 MiB
+
+Transaction Summary:
+ Installing:        51 packages
+ Upgrading:          6 packages
+ Replacing:          6 packages
+
+Total size of inbound packages is 68 MiB. Need to download 68 MiB.
+After this operation, 359 MiB extra will be used (install 370 MiB, remove 11 MiB).
+[ 1/57] python3-appdirs-0:1.4.4-30.fc43 100% |  19.3 KiB/s |  23.9 KiB |  00m01s
+[ 2/57] php-0:8.4.24-1.fc43.x86_64      100% |   8.4 KiB/s |  12.0 KiB |  00m01s
+[ 3/57] php-sodium-0:8.4.24-1.fc43.x86_ 100% |  19.1 KiB/s |  41.1 KiB |  00m02s
+[ 4/57] php-process-0:8.4.24-1.fc43.x86 100% |  17.9 KiB/s |  45.4 KiB |  00m03s
+[ 5/57] php-pecl-zip-0:1.22.8-1.fc43.x8 100% |  24.8 KiB/s |  64.5 KiB |  00m03s
+[ 6/57] libultrahdr-0:1.4.0^20251202git 100% |  61.7 KiB/s | 163.3 KiB |  00m03s
+[ 7/57] php-pdo-0:8.4.24-1.fc43.x86_64  100% |  32.3 KiB/s |  93.6 KiB |  00m03s
+[ 8/57] GraphicsMagick-c++-0:1.3.45-5.f 100% |  44.8 KiB/s | 129.8 KiB |  00m03s
+[ 9/57] php-gd-0:8.4.24-1.fc43.x86_64   100% |  15.1 KiB/s |  51.7 KiB |  00m03s
+[10/57] php-bcmath-0:8.4.24-1.fc43.x86_ 100% |  13.5 KiB/s |  49.8 KiB |  00m04s
+[11/57] python3-inkex-0:1.4.0^20250307g 100% | 130.4 KiB/s | 514.3 KiB |  00m04s
+[12/57] python3-pyserial-0:3.5-15.fc43. 100% |  96.3 KiB/s | 230.8 KiB |  00m02s
+[13/57] sqlite-tools-0:3.50.2-2.fc43.x8 100% | 138.4 KiB/s | 761.0 KiB |  00m05s
+[14/57] php-intl-0:8.4.24-1.fc43.x86_64 100% |  31.8 KiB/s | 177.7 KiB |  00m06s
+[15/57] python3-cssselect-0:1.3.0-5.fc4 100% |  22.3 KiB/s |  60.6 KiB |  00m03s
+[16/57] php-mbstring-0:8.4.24-1.fc43.x8 100% |  94.4 KiB/s | 535.2 KiB |  00m06s
+[17/57] libwpg-0:0.3.4-6.fc43.x86_64    100% |  23.5 KiB/s |  73.6 KiB |  00m03s
+[18/57] php-xml-0:8.4.24-1.fc43.x86_64  100% | 118.6 KiB/s | 695.3 KiB |  00m06s
+[19/57] gtksourceview4-0:4.8.4-10.fc43. 100% | 181.2 KiB/s | 890.4 KiB |  00m05s
+[20/57] potrace-0:1.16-15.fc43.x86_64   100% |  34.7 KiB/s | 121.9 KiB |  00m04s
+[21/57] librevenge-0:0.0.5-12.fc43.x86_ 100% |  54.8 KiB/s | 239.3 KiB |  00m04s
+[22/57] python3-scour-0:0.38.2-16.fc43. 100% |  36.7 KiB/s | 130.6 KiB |  00m04s
+[23/57] flexiblas-openblas-openmp-0:3.5 100% |  20.0 KiB/s |  17.3 KiB |  00m01s
+[24/57] php-common-0:8.4.24-1.fc43.x86_ 100% | 109.1 KiB/s | 770.3 KiB |  00m07s
+[25/57] flexiblas-openblas-serial-0:3.5 100% |  47.4 KiB/s |  17.2 KiB |  00m00s
+[26/57] libcdr-0:0.1.8-4.fc43.x86_64    100% |  84.1 KiB/s | 461.1 KiB |  00m05s
+[27/57] python3-webencodings-0:0.5.1-32 100% |  16.0 KiB/s |  31.9 KiB |  00m02s
+[28/57] gsl-0:2.8-2.fc43.x86_64         100% | 156.1 KiB/s |   1.2 MiB |  00m08s
+[29/57] libwpd-0:0.10.3-23.fc43.x86_64  100% |  63.9 KiB/s | 244.0 KiB |  00m04s
+[30/57] flexiblas-0:3.5.0-1.fc43.x86_64 100% |  10.5 KiB/s |  23.1 KiB |  00m02s
+[31/57] httpd-filesystem-0:2.4.68-1.fc4 100% |  12.8 KiB/s |  10.7 KiB |  00m01s
+[32/57] python3-tinycss2-0:1.5.1-1.fc43 100% |  26.2 KiB/s |  76.5 KiB |  00m03s
+[33/57] httpd-0:2.4.68-1.fc43.x86_64    100% |  16.0 KiB/s |  45.5 KiB |  00m03s
+[34/57] lib2geom-0:1.4-5.fc43.x86_64    100% |  44.6 KiB/s | 417.4 KiB |  00m09s
+[35/57] curl-0:8.15.0-8.fc43.x86_64     100% |  62.9 KiB/s | 226.2 KiB |  00m04s
+[36/57] httpd-tools-0:2.4.68-1.fc43.x86 100% |  17.6 KiB/s |  78.6 KiB |  00m04s
+[37/57] python3-numpy-f2py-1:2.3.5-1.fc 100% |  77.6 KiB/s | 510.8 KiB |  00m07s
+[38/57] mod_http2-0:2.0.39-1.fc43.x86_6 100% |  39.6 KiB/s | 163.0 KiB |  00m04s
+[39/57] ImageMagick-1:7.1.2.27-1.fc43.x 100% |  18.7 KiB/s |  68.5 KiB |  00m04s
+[40/57] libvisio-0:0.1.11-1.fc43.x86_64 100% |  39.6 KiB/s | 269.9 KiB |  00m07s
+[41/57] libssh-config-0:0.11.5-1.fc43.n 100% |   5.6 KiB/s |   8.9 KiB |  00m02s
+[42/57] httpd-core-0:2.4.68-1.fc43.x86_ 100% | 224.3 KiB/s |   1.4 MiB |  00m06s
+[43/57] mod_lua-0:2.4.68-1.fc43.x86_64  100% |   7.5 KiB/s |  56.1 KiB |  00m07s
+[44/57] urw-base35-fonts-legacy-0:20200 100% | 250.8 KiB/s |   3.0 MiB |  00m12s
+[45/57] php-opcache-0:8.4.24-1.fc43.x86 100% |  24.7 KiB/s | 533.3 KiB |  00m22s
+[46/57] libquadmath-0:15.3.1-1.fc43.x86 100% |   9.2 KiB/s | 213.7 KiB |  00m23s
+[47/57] libssh-0:0.11.5-1.fc43.x86_64   100% |  12.5 KiB/s | 234.6 KiB |  00m19s
+[48/57] GraphicsMagick-0:1.3.45-5.fc43. 100% |  49.1 KiB/s |   1.7 MiB |  00m35s
+[49/57] php-cli-0:8.4.24-1.fc43.x86_64  100% |  39.4 KiB/s |   2.3 MiB |  01m01s
+[50/57] openblas-openmp-0:0.3.29-2.fc43 100% |  98.4 KiB/s |   5.4 MiB |  00m56s
+[51/57] libcurl-0:8.15.0-8.fc43.x86_64  100% |   7.7 KiB/s | 402.9 KiB |  00m52s
+[52/57] python3-numpy-1:2.3.5-1.fc43.x8 100% | 141.8 KiB/s |   8.2 MiB |  00m59s
+>>> Curl error (28): Timeout was reached for http://forksystems.mm.fcix.net/fedo
+[53/57] flexiblas-netlib-0:3.5.0-1.fc43 100% |  72.6 KiB/s |   4.5 MiB |  01m03s
+>>> Curl error (28): Timeout was reached for https://forksystems.mm.fcix.net/fed
+[54/57] php-fpm-0:8.4.24-1.fc43.x86_64  100% |  30.7 KiB/s |   2.0 MiB |  01m05s
+>>> Curl error (28): Timeout was reached for http://fedora.mirror.constant.com/f
+[55/57] ImageMagick-libs-1:7.1.2.27-1.f 100% |  41.2 KiB/s |   2.6 MiB |  01m05s
+[56/57] inkscape-0:1.4.4-1.fc43.x86_64  100% | 143.7 KiB/s |  18.3 MiB |  02m10s
+[57/57] inkscape-libs-0:1.4.4-1.fc43.x8 100% |  56.3 KiB/s |   7.5 MiB |  02m16s
+>>> Curl error (28): Timeout was reached for http://fedora.mirror.constant.com/f
+--------------------------------------------------------------------------------
+[57/57] Total                           100% | 499.9 KiB/s |  67.8 MiB |  02m19s
+Running transaction
+[ 1/65] Verify package files            100% |  28.0   B/s |  57.0   B |  00m02s
+[ 2/65] Prepare transaction             100% |  20.0   B/s |  63.0   B |  00m03s
+[ 3/65] Installing librevenge-0:0.0.5-1 100% |   3.8 MiB/s | 751.6 KiB |  00m00s
+>>> Running sysusers scriptlet: httpd-filesystem-0:2.4.68-1.fc43.noarch         
+>>> Finished sysusers scriptlet: httpd-filesystem-0:2.4.68-1.fc43.noarch        
+>>> Scriptlet output:                                                           
+>>> Creating group 'apache' with GID 48.                                        
+>>> Creating user 'apache' (Apache) with UID 48 and GID 48.                     
+>>>                                                                             
+[ 4/65] Installing httpd-filesystem-0:2 100% | 108.2 KiB/s |   2.2 KiB |  00m00s
+[ 5/65] Installing gsl-0:2.8-2.fc43.x86 100% |  29.8 MiB/s |   3.5 MiB |  00m00s
+[ 6/65] Installing lib2geom-0:1.4-5.fc4 100% |  26.3 MiB/s |   1.0 MiB |  00m00s
+[ 7/65] Installing libcdr-0:0.1.8-4.fc4 100% |  21.2 MiB/s | 888.0 KiB |  00m00s
+[ 8/65] Installing libwpd-0:0.10.3-23.f 100% |  19.2 MiB/s | 687.8 KiB |  00m00s
+[ 9/65] Installing libwpg-0:0.3.4-6.fc4 100% |   3.6 MiB/s | 171.0 KiB |  00m00s
+[10/65] Installing libvisio-0:0.1.11-1. 100% |  20.5 MiB/s | 694.2 KiB |  00m00s
+[11/65] Upgrading libssh-config-0:0.11. 100% |  99.6 KiB/s | 816.0   B |  00m00s
+[12/65] Upgrading libssh-0:0.11.5-1.fc4 100% |  11.7 MiB/s | 575.1 KiB |  00m00s
+[13/65] Upgrading libcurl-0:8.15.0-8.fc 100% |  18.9 MiB/s | 908.2 KiB |  00m00s
+[14/65] Installing php-common-0:8.4.24- 100% |  43.0 MiB/s |   9.6 MiB |  00m00s
+[15/65] Installing httpd-tools-0:2.4.68 100% |   2.6 MiB/s | 202.1 KiB |  00m00s
+[16/65] Installing httpd-core-0:2.4.68- 100% |   6.8 MiB/s |   4.6 MiB |  00m01s
+[17/65] Installing libquadmath-0:15.3.1 100% |  11.5 MiB/s | 319.2 KiB |  00m00s
+[18/65] Installing openblas-openmp-0:0. 100% |  28.1 MiB/s |  43.7 MiB |  00m02s
+[19/65] Installing flexiblas-netlib-0:3 100% |  34.5 MiB/s |  16.5 MiB |  00m00s
+[20/65] Installing flexiblas-0:3.5.0-1. 100% |   1.5 MiB/s |  39.2 KiB |  00m00s
+[21/65] Installing flexiblas-openblas-o 100% | 507.0 KiB/s |  40.1 KiB |  00m00s
+[22/65] Installing python3-numpy-1:2.3. 100% |  15.2 MiB/s |  41.7 MiB |  00m03s
+[23/65] Installing python3-numpy-f2py-1 100% |   6.1 MiB/s |   2.2 MiB |  00m00s
+[24/65] Installing python3-webencodings 100% |   1.7 MiB/s |  91.7 KiB |  00m00s
+[25/65] Installing python3-tinycss2-0:1 100% |   4.8 MiB/s | 277.9 KiB |  00m00s
+[26/65] Installing urw-base35-fonts-leg 100% |   6.2 MiB/s |   4.3 MiB |  00m01s
+[27/65] Installing GraphicsMagick-0:1.3 100% |   8.0 MiB/s |   5.1 MiB |  00m01s
+[28/65] Installing GraphicsMagick-c++-0 100% |  10.3 MiB/s | 507.3 KiB |  00m00s
+[29/65] Installing python3-scour-0:0.38 100% |   1.3 MiB/s | 419.4 KiB |  00m00s
+[30/65] Installing python3-pyserial-0:3 100% |   2.4 MiB/s | 895.4 KiB |  00m00s
+[31/65] Installing python3-cssselect-0: 100% |   2.8 MiB/s | 277.2 KiB |  00m00s
+[32/65] Installing python3-inkex-0:1.4. 100% |   6.7 MiB/s |   1.9 MiB |  00m00s
+[33/65] Installing potrace-0:1.16-15.fc 100% |   2.6 MiB/s | 245.5 KiB |  00m00s
+[34/65] Installing gtksourceview4-0:4.8 100% |   9.4 MiB/s |   4.5 MiB |  00m00s
+[35/65] Installing inkscape-libs-0:1.4. 100% |  39.2 MiB/s |  25.5 MiB |  00m01s
+[36/65] Installing libultrahdr-0:1.4.0^ 100% |  10.8 MiB/s | 386.4 KiB |  00m00s
+[37/65] Upgrading ImageMagick-libs-1:7. 100% |   7.5 MiB/s |   9.0 MiB |  00m01s
+[38/65] Installing python3-appdirs-0:1. 100% | 804.5 KiB/s |  70.8 KiB |  00m00s
+[39/65] Installing inkscape-0:1.4.4-1.f 100% |  25.3 MiB/s | 163.0 MiB |  00m06s
+[40/65] Upgrading ImageMagick-1:7.1.2.2 100% | 464.9 KiB/s |  93.0 KiB |  00m00s
+[41/65] Installing flexiblas-openblas-s 100% |   2.4 MiB/s |  40.1 KiB |  00m00s
+[42/65] Installing httpd-0:2.4.68-1.fc4 100% |  78.1 KiB/s |  60.3 KiB |  00m01s
+[43/65] Installing mod_http2-0:2.0.39-1 100% |   3.4 MiB/s | 433.8 KiB |  00m00s
+[44/65] Installing mod_lua-0:2.4.68-1.f 100% |   2.7 MiB/s | 134.3 KiB |  00m00s
+[45/65] Installing php-0:8.4.24-1.fc43. 100% |   5.3 KiB/s | 124.0   B |  00m00s
+[46/65] Installing php-cli-0:8.4.24-1.f 100% |  24.3 MiB/s |  12.2 MiB |  00m01s
+[47/65] Installing php-pdo-0:8.4.24-1.f 100% |   2.5 MiB/s | 239.9 KiB |  00m00s
+[48/65] Installing php-mbstring-0:8.4.2 100% |  16.4 MiB/s |   1.2 MiB |  00m00s
+[49/65] Installing php-sodium-0:8.4.24- 100% |   3.8 MiB/s | 110.2 KiB |  00m00s
+[50/65] Installing php-process-0:8.4.24 100% |   1.9 MiB/s | 121.5 KiB |  00m00s
+[51/65] Installing php-pecl-zip-0:1.22. 100% |   2.0 MiB/s | 174.1 KiB |  00m00s
+[52/65] Installing php-xml-0:8.4.24-1.f 100% |  29.0 MiB/s |   2.3 MiB |  00m00s
+[53/65] Installing php-intl-0:8.4.24-1. 100% |  20.4 MiB/s | 583.9 KiB |  00m00s
+[54/65] Installing php-gd-0:8.4.24-1.fc 100% |   9.4 MiB/s | 134.5 KiB |  00m00s
+[55/65] Installing php-bcmath-0:8.4.24- 100% |   5.8 MiB/s |  95.6 KiB |  00m00s
+[56/65] Installing php-fpm-0:8.4.24-1.f 100% |  19.8 MiB/s |   6.2 MiB |  00m00s
+[57/65] Installing php-opcache-0:8.4.24 100% |  30.0 MiB/s |   1.2 MiB |  00m00s
+[58/65] Upgrading curl-0:8.15.0-8.fc43. 100% |   4.1 MiB/s | 463.8 KiB |  00m00s
+[59/65] Installing sqlite-tools-0:3.50. 100% |  10.7 MiB/s |   1.5 MiB |  00m00s
+[60/65] Removing ImageMagick-1:7.1.1.47 100% | 294.0   B/s |  35.0   B |  00m00s
+[61/65] Removing curl-0:8.15.0-7.fc43.x 100% | 447.0   B/s |  17.0   B |  00m00s
+[62/65] Removing libcurl-0:8.15.0-7.fc4 100% | 225.0   B/s |   7.0   B |  00m00s
+[63/65] Removing libssh-0:0.11.4-1.fc43 100% | 400.0   B/s |  14.0   B |  00m00s
+[64/65] Removing libssh-config-0:0.11.4 100% | 130.0   B/s |   3.0   B |  00m00s
+[65/65] Removing ImageMagick-libs-1:7.1 100% |  29.0   B/s | 549.0   B |  00m19s
+Complete!
+[21:13:21]   [0;32m✓[0m PHP 8.4.24 installed
+[21:13:21] [1mStep 3/6: Verifying PHP extensions[0m
+[21:13:21]   [0;32m✓[0m pdo
+[21:13:22]   [0;32m✓[0m pdo_sqlite
+[21:13:22]   [0;32m✓[0m mbstring
+[21:13:23]   [0;32m✓[0m json
+[21:13:23]   [0;32m✓[0m fileinfo
+[21:13:24]   [0;32m✓[0m openssl
+[21:13:24]   [0;32m✓[0m session
+[21:13:25]   [0;32m✓[0m filter
+[21:13:25]   [0;32m✓[0m sodium
+[21:13:25]   [0;32m✓[0m All 9 extensions verified
+[21:13:25] [1mStep 4/6: Creating directories and setting permissions[0m
+[21:13:26]   [0;32m✓[0m Directory created: data/ (chmod 750)
+[21:13:26]   [0;32m✓[0m Directory created: storage/ (chmod 750)
+[21:13:27]   [0;32m✓[0m Directory created: logs/ (chmod 750)
+[21:13:27]   [0;32m✓[0m Directory created: uploads/ (chmod 750)
+[21:13:28]   [0;32m✓[0m Scripts made executable

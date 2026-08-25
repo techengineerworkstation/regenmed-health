@@ -1,0 +1,94 @@
+[Tue Aug 11 21:16:25 2026] PHP 8.4.24 Development Server (http://127.0.0.1:8081) started
+[Tue Aug 11 21:16:48 2026] 127.0.0.1:40674 Accepted
+[Tue Aug 11 21:16:48 2026] PHP Fatal error:  Cannot redeclare class InputValidator (previously declared in /home/hptechworkpc/Apps/RegenMed/includes/security.php:337) in /home/hptechworkpc/Apps/RegenMed/includes/security.php on line 428
+[Tue Aug 11 21:16:48 2026] 127.0.0.1:40674 [500]: GET / - Cannot redeclare class InputValidator (previously declared in /home/hptechworkpc/Apps/RegenMed/includes/security.php:337) in /home/hptechworkpc/Apps/RegenMed/includes/security.php on line 428
+[Tue Aug 11 21:16:48 2026] 127.0.0.1:40674 Closing
+[Tue Aug 11 21:16:48 2026] 127.0.0.1:40690 Accepted
+[Tue Aug 11 21:17:06 2026] 127.0.0.1:47306 Accepted
+[Tue Aug 11 21:17:06 2026] 127.0.0.1:47306 Invalid request (Unsupported SSL request)
+[Tue Aug 11 21:17:06 2026] 127.0.0.1:47306 Closing
+[Tue Aug 11 21:17:06 2026] 127.0.0.1:47316 Accepted
+[Tue Aug 11 21:17:06 2026] 127.0.0.1:47316 Invalid request (Unsupported SSL request)
+[Tue Aug 11 21:17:06 2026] 127.0.0.1:47316 Closing
+[Tue Aug 11 21:17:06 2026] 127.0.0.1:47332 Accepted
+[Tue Aug 11 21:17:06 2026] 127.0.0.1:47334 Accepted
+[Tue Aug 11 21:17:06 2026] 127.0.0.1:47332 Invalid request (Unsupported SSL request)
+[Tue Aug 11 21:17:06 2026] 127.0.0.1:47332 Closing
+[Tue Aug 11 21:17:06 2026] 127.0.0.1:47336 Accepted
+[Tue Aug 11 21:17:06 2026] 127.0.0.1:47334 Invalid request (Unsupported SSL request)
+[Tue Aug 11 21:17:06 2026] 127.0.0.1:47334 Closing
+[Tue Aug 11 21:17:06 2026] 127.0.0.1:47336 Invalid request (Unsupported SSL request)
+[Tue Aug 11 21:17:06 2026] 127.0.0.1:47336 Closing
+[Tue Aug 11 21:17:06 2026] 127.0.0.1:47342 Accepted
+[Tue Aug 11 21:17:06 2026] 127.0.0.1:47342 Invalid request (Unsupported SSL request)
+[Tue Aug 11 21:17:06 2026] 127.0.0.1:47342 Closing
+[Tue Aug 11 21:17:07 2026] 127.0.0.1:47354 Accepted
+[Tue Aug 11 21:17:07 2026] 127.0.0.1:47354 Invalid request (Unsupported SSL request)
+[Tue Aug 11 21:17:07 2026] 127.0.0.1:47354 Closing
+[Tue Aug 11 21:17:07 2026] 127.0.0.1:47366 Accepted
+[Tue Aug 11 21:17:07 2026] 127.0.0.1:47380 Accepted
+[Tue Aug 11 21:17:07 2026] 127.0.0.1:47366 Invalid request (Unsupported SSL request)
+[Tue Aug 11 21:17:07 2026] 127.0.0.1:47366 Closing
+[Tue Aug 11 21:17:07 2026] 127.0.0.1:47380 Invalid request (Unsupported SSL request)
+[Tue Aug 11 21:17:07 2026] 127.0.0.1:47380 Closing
+[Tue Aug 11 21:17:07 2026] 127.0.0.1:47390 Accepted
+[Tue Aug 11 21:17:07 2026] 127.0.0.1:47390 Invalid request (Unsupported SSL request)
+[Tue Aug 11 21:17:07 2026] 127.0.0.1:47390 Closing
+[Tue Aug 11 21:17:12 2026] 127.0.0.1:47394 Accepted
+[Tue Aug 11 21:17:12 2026] 127.0.0.1:47394 Invalid request (Unsupported SSL request)
+[Tue Aug 11 21:17:12 2026] 127.0.0.1:47394 Closing
+[Tue Aug 11 21:17:12 2026] 127.0.0.1:47402 Accepted
+[Tue Aug 11 21:17:12 2026] 127.0.0.1:47402 Invalid request (Unsupported SSL request)
+[Tue Aug 11 21:17:12 2026] 127.0.0.1:47402 Closing
+[Tue Aug 11 21:17:12 2026] 127.0.0.1:47406 Accepted
+[Tue Aug 11 21:17:12 2026] 127.0.0.1:47410 Accepted
+[Tue Aug 11 21:17:12 2026] 127.0.0.1:47406 Invalid request (Unsupported SSL request)
+[Tue Aug 11 21:17:12 2026] 127.0.0.1:47406 Closing
+[Tue Aug 11 21:17:12 2026] 127.0.0.1:47420 Accepted
+[Tue Aug 11 21:17:12 2026] 127.0.0.1:47410 Invalid request (Unsupported SSL request)
+[Tue Aug 11 21:17:12 2026] 127.0.0.1:47410 Closing
+[Tue Aug 11 21:17:12 2026] 127.0.0.1:47424 Accepted
+[Tue Aug 11 21:17:12 2026] 127.0.0.1:47420 Invalid request (Unsupported SSL request)
+[Tue Aug 11 21:17:12 2026] 127.0.0.1:47420 Closing
+[Tue Aug 11 21:17:12 2026] 127.0.0.1:47424 Invalid request (Unsupported SSL request)
+[Tue Aug 11 21:17:12 2026] 127.0.0.1:47424 Closing
+[Tue Aug 11 21:17:42 2026] 127.0.0.1:56914 Accepted
+[Tue Aug 11 21:17:42 2026] 127.0.0.1:56914 Invalid request (Unsupported SSL request)
+[Tue Aug 11 21:17:42 2026] 127.0.0.1:56914 Closing
+[Tue Aug 11 21:17:42 2026] 127.0.0.1:56918 Accepted
+[Tue Aug 11 21:17:42 2026] 127.0.0.1:56918 Invalid request (Unsupported SSL request)
+[Tue Aug 11 21:17:42 2026] 127.0.0.1:56918 Closing
+[Tue Aug 11 21:17:43 2026] 127.0.0.1:56926 Accepted
+[Tue Aug 11 21:17:43 2026] 127.0.0.1:56936 Accepted
+[Tue Aug 11 21:17:43 2026] 127.0.0.1:56926 Invalid request (Unsupported SSL request)
+[Tue Aug 11 21:17:43 2026] 127.0.0.1:56926 Closing
+[Tue Aug 11 21:17:43 2026] 127.0.0.1:56936 Invalid request (Unsupported SSL request)
+[Tue Aug 11 21:17:43 2026] 127.0.0.1:56936 Closing
+[Tue Aug 11 21:17:43 2026] 127.0.0.1:56940 Accepted
+[Tue Aug 11 21:17:43 2026] 127.0.0.1:56948 Accepted
+[Tue Aug 11 21:17:43 2026] 127.0.0.1:56940 Invalid request (Unsupported SSL request)
+[Tue Aug 11 21:17:43 2026] 127.0.0.1:56940 Closing
+[Tue Aug 11 21:17:43 2026] 127.0.0.1:56948 Invalid request (Unsupported SSL request)
+[Tue Aug 11 21:17:43 2026] 127.0.0.1:56948 Closing
+[Tue Aug 11 21:17:54 2026] 127.0.0.1:40690 Closed without sending a request; it was probably just an unused speculative preconnection
+[Tue Aug 11 21:17:54 2026] 127.0.0.1:40690 Closing
+[Tue Aug 11 21:18:43 2026] 127.0.0.1:57900 Accepted
+[Tue Aug 11 21:18:43 2026] 127.0.0.1:57900 Invalid request (Unsupported SSL request)
+[Tue Aug 11 21:18:43 2026] 127.0.0.1:57900 Closing
+[Tue Aug 11 21:18:43 2026] 127.0.0.1:57916 Accepted
+[Tue Aug 11 21:18:43 2026] 127.0.0.1:57916 Invalid request (Unsupported SSL request)
+[Tue Aug 11 21:18:43 2026] 127.0.0.1:57916 Closing
+[Tue Aug 11 21:18:43 2026] 127.0.0.1:57918 Accepted
+[Tue Aug 11 21:18:43 2026] 127.0.0.1:57932 Accepted
+[Tue Aug 11 21:18:43 2026] 127.0.0.1:57918 Invalid request (Unsupported SSL request)
+[Tue Aug 11 21:18:43 2026] 127.0.0.1:57918 Closing
+[Tue Aug 11 21:18:43 2026] 127.0.0.1:57932 Invalid request (Unsupported SSL request)
+[Tue Aug 11 21:18:43 2026] 127.0.0.1:57932 Closing
+[Tue Aug 11 21:18:43 2026] 127.0.0.1:57934 Accepted
+[Tue Aug 11 21:18:43 2026] 127.0.0.1:57940 Accepted
+[Tue Aug 11 21:18:43 2026] 127.0.0.1:57934 Invalid request (Unsupported SSL request)
+[Tue Aug 11 21:18:43 2026] 127.0.0.1:57934 Closing
+[Tue Aug 11 21:18:43 2026] 127.0.0.1:57940 Invalid request (Unsupported SSL request)
+[Tue Aug 11 21:18:43 2026] 127.0.0.1:57940 Closing
+[21:18:55] Stopping server...
+[21:18:55]   [0;32m✓[0m Server stopped.

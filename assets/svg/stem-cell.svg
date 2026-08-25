@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 160 160" fill="none">
+  <defs>
+    <radialGradient id="cellMembrane" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" style="stop-color:#0d9488;stop-opacity:0.2"/>
+      <stop offset="80%" style="stop-color:#06b6d4;stop-opacity:0.3"/>
+      <stop offset="100%" style="stop-color:#4f46e5;stop-opacity:0.6"/>
+    </radialGradient>
+    <radialGradient id="cellNucleus" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" style="stop-color:#4f46e5"/>
+      <stop offset="100%" style="stop-color:#7c3aed"/>
+    </radialGradient>
+    <filter id="cellGlow">
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+  <!-- Cell membrane -->
+  <circle cx="80" cy="80" r="55" fill="url(#cellMembrane)" stroke="#0d9488" stroke-width="2" filter="url(#cellGlow)">
+    <animate attributeName="r" values="53;57;53" dur="3s" repeatCount="indefinite"/>
+  </circle>
+  <!-- Organelles -->
+  <ellipse cx="60" cy="65" rx="10" ry="6" fill="#06b6d4" opacity="0.4" transform="rotate(-20 60 65)">
+    <animate attributeName="opacity" values="0.3;0.6;0.3" dur="2s" repeatCount="indefinite"/>
+  </ellipse>
+  <ellipse cx="95" cy="70" rx="8" ry="5" fill="#0d9488" opacity="0.4" transform="rotate(15 95 70)">
+    <animate attributeName="opacity" values="0.4;0.7;0.4" dur="2.5s" begin="0.5s" repeatCount="indefinite"/>
+  </ellipse>
+  <ellipse cx="70" cy="95" rx="12" ry="4" fill="#4f46e5" opacity="0.3" transform="rotate(30 70 95)">
+    <animate attributeName="opacity" values="0.2;0.5;0.2" dur="2s" begin="1s" repeatCount="indefinite"/>
+  </ellipse>
+  <!-- Nucleus -->
+  <circle cx="80" cy="80" r="20" fill="url(#cellNucleus)" opacity="0.8">
+    <animate attributeName="r" values="18;22;18" dur="4s" repeatCount="indefinite"/>
+  </circle>
+  <!-- Nucleolus -->
+  <circle cx="80" cy="80" r="8" fill="#1e1b4b" opacity="0.6"/>
+  <!-- Differentiation arrows -->
+  <path d="M80 20 L80 15 M80 145 L80 140 M20 80 L15 80 M145 80 L140 80" stroke="#0d9488" stroke-width="1.5" opacity="0.4"/>
+  <!-- Stem cell markers -->
+  <circle cx="50" cy="45" r="3" fill="#10b981"><animate attributeName="opacity" values="0.4;1;0.4" dur="1.5s" repeatCount="indefinite"/></circle>
+  <circle cx="110" cy="50" r="2.5" fill="#10b981"><animate attributeName="opacity" values="0.4;1;0.4" dur="1.5s" begin="0.3s" repeatCount="indefinite"/></circle>
+  <circle cx="105" cy="110" r="3" fill="#10b981"><animate attributeName="opacity" values="0.4;1;0.4" dur="1.5s" begin="0.6s" repeatCount="indefinite"/></circle>
+</svg>

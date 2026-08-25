@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 120" fill="none">
+  <defs>
+    <linearGradient id="waveGrad1" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#0d9488;stop-opacity:0.8"/>
+      <stop offset="100%" style="stop-color:#0d9488;stop-opacity:0.1"/>
+    </linearGradient>
+    <linearGradient id="waveGrad2" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#06b6d4;stop-opacity:0.8"/>
+      <stop offset="100%" style="stop-color:#06b6d4;stop-opacity:0.1"/>
+    </linearGradient>
+    <linearGradient id="waveGrad3" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#4f46e5;stop-opacity:0.8"/>
+      <stop offset="100%" style="stop-color:#4f46e5;stop-opacity:0.1"/>
+    </linearGradient>
+  </defs>
+  <!-- Wave 1 -->
+  <path d="M0 60 Q37 30 75 60 Q112 90 150 60 Q187 30 225 60 Q262 90 300 60" stroke="url(#waveGrad1)" stroke-width="2.5" fill="none">
+    <animate attributeName="d" values="M0 60 Q37 30 75 60 Q112 90 150 60 Q187 30 225 60 Q262 90 300 60;M0 60 Q37 90 75 60 Q112 30 150 60 Q187 90 225 60 Q262 30 300 60;M0 60 Q37 30 75 60 Q112 90 150 60 Q187 30 225 60 Q262 90 300 60" dur="3s" repeatCount="indefinite"/>
+  </path>
+  <!-- Wave 2 -->
+  <path d="M0 60 Q37 40 75 60 Q112 80 150 60 Q187 40 225 60 Q262 80 300 60" stroke="url(#waveGrad2)" stroke-width="2" fill="none" opacity="0.7">
+    <animate attributeName="d" values="M0 60 Q37 40 75 60 Q112 80 150 60 Q187 40 225 60 Q262 80 300 60;M0 60 Q37 80 75 60 Q112 40 150 60 Q187 80 225 60 Q262 40 300 60;M0 60 Q37 40 75 60 Q112 80 150 60 Q187 40 225 60 Q262 80 300 60" dur="2.5s" repeatCount="indefinite"/>
+  </path>
+  <!-- Wave 3 -->
+  <path d="M0 60 Q37 50 75 60 Q112 70 150 60 Q187 50 225 60 Q262 70 300 60" stroke="url(#waveGrad3)" stroke-width="1.5" fill="none" opacity="0.5">
+    <animate attributeName="d" values="M0 60 Q37 50 75 60 Q112 70 150 60 Q187 50 225 60 Q262 70 300 60;M0 60 Q37 70 75 60 Q112 50 150 60 Q187 70 225 60 Q262 50 300 60;M0 60 Q37 50 75 60 Q112 70 150 60 Q187 50 225 60 Q262 70 300 60" dur="2s" repeatCount="indefinite"/>
+  </path>
+  <!-- Center dot -->
+  <circle cx="150" cy="60" r="4" fill="#0d9488"><animate attributeName="r" values="3;5;3" dur="1.5s" repeatCount="indefinite"/><animate attributeName="opacity" values="0.6;1;0.6" dur="1.5s" repeatCount="indefinite"/></circle>
+  <!-- Labels -->
+  <text x="5" y="110" font-size="9" fill="#64748b" font-family="sans-serif">1-50 Hz</text>
+  <text x="220" y="110" font-size="9" fill="#0d9488" font-family="sans-serif">PEMF Field</text>
+</svg>

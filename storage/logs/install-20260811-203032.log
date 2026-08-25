@@ -1,0 +1,20 @@
+[20:30:32] Log: /home/hptechworkpc/Apps/RegenMed/storage/logs/install-20260811-203032.log
+[20:30:32] [1mStep 1/6: Detecting operating system[0m
+[20:30:32]   [0;32m✓[0m OS: [1mUltramarine Linux 43 (Plasma Edition)[0m
+[20:30:32]   [0;32m✓[0m Package manager: dnf
+[20:30:32]   [0;32m✓[0m Using sudo
+[20:30:32] [1mStep 2/6: Installing PHP and all required extensions[0m
+[20:30:32]   [0;34mℹ[0m Updating package cache and installing packages...
+[20:40:58]   [0;34mℹ[0m Installing via dnf...
+Updating and loading repositories:
+Repositories loaded.
+Failed to resolve the transaction:
+No match for argument: php-pdo-sqlite
+Package "which-2.23-3.fc43.x86_64" is already installed.
+Package "curl-8.15.0-7.fc43.x86_64" is already installed.
+Package "wget2-wget-2.2.1-1.fc43.x86_64" is already installed.
+Package "git-2.55.0-1.fc43.x86_64" is already installed.
+Package "sqlite-3.50.2-2.fc43.x86_64" is already installed.
+You can try to add to command line:
+  --skip-unavailable to skip unavailable packages
+[20:41:06]   [0;31m✗[0m PHP installation failed

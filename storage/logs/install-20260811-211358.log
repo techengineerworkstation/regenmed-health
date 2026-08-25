@@ -1,0 +1,69 @@
+[21:13:58] Log: /home/hptechworkpc/Apps/RegenMed/storage/logs/install-20260811-211358.log
+[21:13:58] [1mStep 1/6: Detecting operating system[0m
+[21:13:58]   [0;32m✓[0m OS: [1mUltramarine Linux 43 (Plasma Edition)[0m
+[21:13:58]   [0;32m✓[0m Package manager: dnf
+[21:13:58]   [0;32m✓[0m Running as root
+[21:13:58] [1mStep 2/6: Installing PHP and all required extensions[0m
+[21:13:58]   [0;34mℹ[0m Updating package cache and installing packages...
+[21:14:26]   [0;34mℹ[0m Installing via dnf...
+Updating and loading repositories:
+Repositories loaded.
+Package "php-8.4.24-1.fc43.x86_64" is already installed.
+Package "php-cli-8.4.24-1.fc43.x86_64" is already installed.
+Package "php-common-8.4.24-1.fc43.x86_64" is already installed.
+Package "php-pdo-8.4.24-1.fc43.x86_64" is already installed.
+Package "php-pdo-8.4.24-1.fc43.x86_64" is already installed.
+Package "php-mbstring-8.4.24-1.fc43.x86_64" is already installed.
+Package "php-common-8.4.24-1.fc43.x86_64" is already installed.
+Package "php-common-8.4.24-1.fc43.x86_64" is already installed.
+Package "php-common-8.4.24-1.fc43.x86_64" is already installed.
+Package "php-common-8.4.24-1.fc43.x86_64" is already installed.
+Package "php-common-8.4.24-1.fc43.x86_64" is already installed.
+Package "php-common-8.4.24-1.fc43.x86_64" is already installed.
+Package "php-sodium-8.4.24-1.fc43.x86_64" is already installed.
+Package "php-process-8.4.24-1.fc43.x86_64" is already installed.
+Package "php-process-8.4.24-1.fc43.x86_64" is already installed.
+Package "php-pecl-zip-1.22.8-1.fc43.x86_64" is already installed.
+Package "php-xml-8.4.24-1.fc43.x86_64" is already installed.
+Package "php-common-8.4.24-1.fc43.x86_64" is already installed.
+Package "php-intl-8.4.24-1.fc43.x86_64" is already installed.
+Package "php-gd-8.4.24-1.fc43.x86_64" is already installed.
+Package "php-bcmath-8.4.24-1.fc43.x86_64" is already installed.
+Package "php-common-8.4.24-1.fc43.x86_64" is already installed.
+Package "php-common-8.4.24-1.fc43.x86_64" is already installed.
+Package "which-2.23-3.fc43.x86_64" is already installed.
+Package "curl-8.15.0-8.fc43.x86_64" is already installed.
+Package "wget2-wget-2.2.1-1.fc43.x86_64" is already installed.
+Package "git-2.55.0-1.fc43.x86_64" is already installed.
+Package "sqlite-3.50.2-2.fc43.x86_64" is already installed.
+Package "sqlite-tools-3.50.2-2.fc43.x86_64" is already installed.
+Package "ImageMagick-1:7.1.2.27-1.fc43.x86_64" is already installed.
+Package "inkscape-1.4.4-1.fc43.x86_64" is already installed.
+
+Nothing to do.
+[21:14:34]   [0;32m✓[0m PHP 8.4.24 installed
+[21:14:34] [1mStep 3/6: Verifying PHP extensions[0m
+[21:14:34]   [0;32m✓[0m pdo
+[21:14:34]   [0;32m✓[0m pdo_sqlite
+[21:14:35]   [0;32m✓[0m mbstring
+[21:14:35]   [0;32m✓[0m json
+[21:14:35]   [0;32m✓[0m fileinfo
+[21:14:35]   [0;32m✓[0m openssl
+[21:14:36]   [0;32m✓[0m session
+[21:14:36]   [0;32m✓[0m filter
+[21:14:36]   [0;32m✓[0m sodium
+[21:14:36]   [0;32m✓[0m All 9 extensions verified
+[21:14:36] [1mStep 4/6: Creating directories and setting permissions[0m
+[21:14:36]   [0;32m✓[0m Directory created: data/ (chmod 750)
+[21:14:37]   [0;32m✓[0m Directory created: storage/ (chmod 750)
+[21:14:37]   [0;32m✓[0m Directory created: logs/ (chmod 750)
+[21:14:37]   [0;32m✓[0m Directory created: uploads/ (chmod 750)
+[21:14:37]   [0;32m✓[0m Scripts made executable
+[21:14:37] [1mStep 5/6: Initializing SQLite database[0m
+PHP Warning:  Undefined array key "REQUEST_METHOD" in /home/hptechworkpc/Apps/RegenMed/includes/security.php on line 42
+Method Not Allowed[21:14:37]   [0;32m✓[0m Database initialized successfully
+[21:14:37] [1mStep 6/6: Configuring system security[0m
+[21:14:42]   [0;32m✓[0m Firewall: port 8081 opened
+[21:14:42] [1mQuick Start:[0m
+[21:14:42] [1mDefault Login:[0m
+[21:14:42] Full log: /home/hptechworkpc/Apps/RegenMed/storage/logs/install-20260811-211358.log
