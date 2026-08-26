@@ -11,6 +11,8 @@ class RssFeedManager
         'https://www.healthline.com/health-news/feed',
         'https://www.medicalnewstoday.com/rss',
         'https://www.who.int/rss-feeds/news-english.xml',
+        'https://www.webmd.com/rss/rss.aspx?rss_source=RSS_PUBLIC',
+        'https://www.nhs.uk/Conditions/NHS-RssFeed.aspx',
     ];
 
     private static array $newsFeeds = [
@@ -18,6 +20,9 @@ class RssFeedManager
         'https://www.sciencedaily.com/rss/health_medicine.xml',
         'https://www.medicalnewstoday.com/rss',
         'https://www.fda.gov/about-fda/contact-fda/stay-informed/rss-feeds/press-releases/rss.xml',
+        'https://www.nih.gov/news-events/news-releases/feed',
+        'https://www.nature.com/nature.rss',
+        'https://www.thelancet.com/rssfeed/lancet_current.xml',
     ];
 
     public static function init(): void

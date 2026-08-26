@@ -46,6 +46,8 @@ if (!isset($app_version)) $app_version = '3.0';
           <li><a href="index.php?page=supplements" style="font-size:0.73rem;color:var(--text-secondary);text-decoration:none;">Supplement Database</a></li>
           <li><a href="index.php?page=vps" style="font-size:0.73rem;color:var(--text-secondary);text-decoration:none;">GPU Cloud Providers</a></li>
           <li><a href="index.php?page=references" style="font-size:0.73rem;color:var(--text-secondary);text-decoration:none;">Clinical References</a></li>
+          <li><a href="index.php?page=team" style="font-size:0.73rem;color:var(--text-secondary);text-decoration:none;">Team / About</a></li>
+          <li><a href="index.php?page=faq" style="font-size:0.73rem;color:var(--text-secondary);text-decoration:none;">FAQ</a></li>
         </ul>
       </div>
     </div>

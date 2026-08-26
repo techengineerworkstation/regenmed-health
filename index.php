@@ -22,7 +22,7 @@ $data = [
 $userId = SessionManager::getUserId();
 $page = InputValidator::deepSanitizeString($_GET['page'] ?? 'dashboard');
 
-$allowedPages = ['dashboard', 'conditions', 'imaging', 'protocols', 'supplements', 'pemf', 'stem-cells', 'vps-providers', 'data-manager', 'case-study', 'references', 'login', 'magic-login', 'logout'];
+$allowedPages = ['dashboard', 'conditions', 'imaging', 'protocols', 'supplements', 'pemf', 'stem-cells', 'vps-providers', 'data-manager', 'case-study', 'references', 'team', 'faq', 'login', 'magic-login', 'logout'];
 if (!in_array($page, $allowedPages, true)) {
     $page = 'dashboard';
 }
@@ -139,8 +139,15 @@ if ($page === 'magic-login' && isset($_GET['token'])) {
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Regen Med Health Diagnostic Platform</title>
-    <meta name="description" content="Medical Imaging & Regenerative Medicine Diagnostic Presentation System">
+    <title>Coach & Heal — Regen Med Health</title>
+    <meta name="description" content="Empowering Growth in Life, Health & World Business — Medical Scans, Tests, and Recommendations">
+    <meta name="theme-color" content="#0d9488">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <link rel="preload" href="assets/svg/logo.svg" as="image">
+    <link rel="preload" href="assets/css/animations.css" as="style">
+    <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"></noscript>
     <script src="/assets/js/tailwind-browser.js"></script>
     <?php echo ThemeManager::injectThemeScript($nonce); ?>
     <script nonce="<?= $nonce ?>">

@@ -164,6 +164,8 @@ if (!isset($current_user)) $current_user = $_SESSION['user'] ?? null;
         <li><a href="index.php?page=data" class="<?= ($_GET['page'] ?? '') === 'data' ? 'active' : '' ?>"><i class="lucide-database"></i> Data</a></li>
         <li><a href="index.php?page=case-study" class="<?= ($_GET['page'] ?? '') === 'case-study' ? 'active' : '' ?>"><i class="lucide-file"></i> Case Study</a></li>
         <li><a href="index.php?page=references" class="<?= ($_GET['page'] ?? '') === 'references' ? 'active' : '' ?>"><i class="lucide-book-open"></i> References</a></li>
+        <li><a href="index.php?page=team" class="<?= ($_GET['page'] ?? '') === 'team' ? 'active' : '' ?>"><i class="lucide-users"></i> Team</a></li>
+        <li><a href="index.php?page=faq" class="<?= ($_GET['page'] ?? '') === 'faq' ? 'active' : '' ?>"><i class="lucide-help-circle"></i> FAQ</a></li>
       </ul>
     </nav>
 
@@ -243,6 +245,8 @@ if (!isset($current_user)) $current_user = $_SESSION['user'] ?? null;
           ['page'=>'data','label'=>'Data Manager','icon'=>'lucide-database'],
           ['page'=>'case-study','label'=>'Case Study','icon'=>'lucide-file'],
           ['page'=>'references','label'=>'References','icon'=>'lucide-book-open'],
+          ['page'=>'team','label'=>'Team / About','icon'=>'lucide-users'],
+          ['page'=>'faq','label'=>'FAQ','icon'=>'lucide-help-circle'],
         ]) ?>;
         let html = '<div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:1rem"><strong style="font-size:1rem;background:linear-gradient(135deg,var(--accent-green),var(--accent-violet));-webkit-background-clip:text;-webkit-text-fill-color:transparent">Coach & Heal</strong><button onclick="document.getElementById(\'mobileSidebar\').remove()" style="background:none;border:none;color:var(--text-primary);font-size:1.5rem;cursor:pointer">&times;</button></div>';
         links.forEach(l => { html += '<a href="index.php?page=' + l.page + '" style="display:flex;align-items:center;gap:0.75rem;padding:0.85rem 1rem;border-radius:10px;color:var(--text-primary);text-decoration:none;font-size:0.9rem;background:var(--bg-tertiary)"><i class="lucide-' + l.icon + '"></i>' + l.label + '</a>'; });
