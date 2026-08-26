@@ -64,7 +64,7 @@
   <!-- Hero -->
   <div class="about-hero">
     <h1>About Coach & Heal</h1>
-    <p>We combine the science of regenerative medicine with the art of personal coaching to help you heal, grow, and thrive — physically, mentally, and emotionally.</p>
+    <p>We combine the science of regenerative medicine with the art of personal counselling to help you heal, grow, and thrive — physically, mentally, and emotionally.</p>
   </div>
 
   <!-- Coach Ibe Card -->
@@ -76,7 +76,7 @@
       <h2>Coach Ibe</h2>
       <div class="coach-title">Founder & Lead Wellness Coach — Ibereal Enterprise</div>
       <div class="coach-bio">
-        Coach Ibe is a certified wellness coach, regenerative health advocate, and founder of Coach & Heal — the wellness division of Ibereal Enterprise. With deep expertise in life coaching, health optimization, PEMF therapy, stem cell protocols, and medical diagnostics, Coach Ibe has helped over 500 people across Nigeria and worldwide transform their health, mindset, and quality of life.
+        Coach Ibe is a certified wellness coach, regenerative health advocate, and founder of Coach & Heal — the wellness division of Ibereal Enterprise. With deep expertise in life counselling, health optimization, PEMF therapy, stem cell protocols, and medical diagnostics, Coach Ibe has helped over 500 people across Nigeria and worldwide transform their health, mindset, and quality of life.
         <br><br>
         Coach Ibe's approach is rooted in the belief that true healing addresses the whole person — mind, body, and spirit. Whether you're recovering from injury, optimizing performance, or seeking direction in life, Coach Ibe provides personalized guidance backed by cutting-edge science and compassionate care.
       </div>
@@ -105,7 +105,7 @@
     <div class="mission-card">
       <div class="mission-card-icon" style="background:color-mix(in srgb, var(--accent-green) 12%, transparent);color:var(--accent-green)"><i class="lucide-heart-handshake"></i></div>
       <h3>Empower Growth</h3>
-      <p>We empower individuals to take control of their health and life journey through personalized coaching, education, and support.</p>
+      <p>We empower individuals to take control of their health and life journey through personalized counselling, education, and support.</p>
     </div>
     <div class="mission-card">
       <div class="mission-card-icon" style="background:color-mix(in srgb, var(--accent-violet) 12%, transparent);color:var(--accent-violet)"><i class="lucide-microscope"></i></div>
@@ -115,7 +115,7 @@
     <div class="mission-card">
       <div class="mission-card-icon" style="background:color-mix(in srgb, var(--accent-primary) 12%, transparent);color:var(--accent-primary)"><i class="lucide-globe"></i></div>
       <h3>Reach Everyone</h3>
-      <p>Making world-class health coaching and diagnostics accessible online worldwide and in-person across Nigeria.</p>
+      <p>Making world-class health counselling and diagnostics accessible online worldwide and in-person across Nigeria.</p>
     </div>
   </div>
 
@@ -126,7 +126,7 @@
   <div class="values-list">
     <div class="value-item">
       <div class="value-icon" style="background:color-mix(in srgb, var(--accent-green) 12%, transparent);color:var(--accent-green)"><i class="lucide-shield-check"></i></div>
-      <div><h4>Complete Confidentiality</h4><p>Your health data and coaching sessions are 100% private. We never sell, share, or store your information beyond what's needed for your care.</p></div>
+      <div><h4>Complete Confidentiality</h4><p>Your health data and counselling sessions are 100% private. We never sell, share, or store your information beyond what's needed for your care.</p></div>
     </div>
     <div class="value-item">
       <div class="value-icon" style="background:color-mix(in srgb, var(--accent-violet) 12%, transparent);color:var(--accent-violet)"><i class="lucide-brain"></i></div>
@@ -134,7 +134,7 @@
     </div>
     <div class="value-item">
       <div class="value-icon" style="background:color-mix(in srgb, var(--accent-primary) 12%, transparent);color:var(--accent-primary)"><i class="lucide-users"></i></div>
-      <div><h4>Personalized Care</h4><p>No cookie-cutter programs. Every coaching plan and diagnostic assessment is tailored to your unique body, goals, and life situation.</p></div>
+      <div><h4>Personalized Care</h4><p>No cookie-cutter programs. Every counselling plan and diagnostic assessment is tailored to your unique body, goals, and life situation.</p></div>
     </div>
     <div class="value-item">
       <div class="value-icon" style="background:color-mix(in srgb, #f59e0b 12%, transparent);color:#f59e0b"><i class="lucide-hand-heart"></i></div>
@@ -150,17 +150,17 @@
     <div class="timeline-item">
       <div class="timeline-year">2019</div>
       <div class="timeline-title">Ibereal Enterprise Founded</div>
-      <div class="timeline-desc">Coach Ibe establishes Ibereal Enterprise with a vision to bridge the gap between traditional wellness coaching and cutting-edge regenerative medicine in Nigeria.</div>
+      <div class="timeline-desc">Coach Ibe establishes Ibereal Enterprise with a vision to bridge the gap between traditional wellness counselling and cutting-edge regenerative medicine in Nigeria.</div>
     </div>
     <div class="timeline-item">
       <div class="timeline-year">2020</div>
-      <div class="timeline-title">Life & Health Coaching Launch</div>
-      <div class="timeline-desc">Formal coaching programs launch — helping individuals overcome limiting beliefs, optimize health, and build purposeful lives through structured sessions.</div>
+      <div class="timeline-title">Life & Health Counselling Launch</div>
+      <div class="timeline-desc">Formal counselling programs launch — helping individuals overcome limiting beliefs, optimize health, and build purposeful lives through structured sessions.</div>
     </div>
     <div class="timeline-item">
       <div class="timeline-year">2022</div>
       <div class="timeline-title">Regenerative Medicine Integration</div>
-      <div class="timeline-desc">PEMF therapy, stem cell protocols, and nutritional medicine are integrated into the coaching framework — creating a truly holistic health platform.</div>
+      <div class="timeline-desc">PEMF therapy, stem cell protocols, and nutritional medicine are integrated into the counselling framework — creating a truly holistic health platform.</div>
     </div>
     <div class="timeline-item">
       <div class="timeline-year">2024</div>
@@ -170,7 +170,7 @@
     <div class="timeline-item">
       <div class="timeline-year">2025</div>
       <div class="timeline-title">Coach & Heal Platform</div>
-      <div class="timeline-desc">Full platform launch: coaching programs, diagnostic tools, wellness resources, and regenerative health protocols — all in one place. 500+ people transformed.</div>
+      <div class="timeline-desc">Full platform launch: counselling programs, diagnostic tools, wellness resources, and regenerative health protocols — all in one place. 500+ people transformed.</div>
     </div>
   </div>
 
@@ -179,7 +179,7 @@
     <h2>Start Your Transformation Today</h2>
     <p>Book a free discovery session with Coach Ibe. No obligation, no pressure — just a genuine conversation about your goals.</p>
     <div class="cta-links">
-      <a href="https://wa.me/2347010744142?text=Hi%20Coach%20Ibe!%20I%27d%20like%20to%20learn%20more%20about%20your%20coaching." class="cta-link cta-whatsapp"><i class="lucide-message-circle"></i> WhatsApp</a>
+      <a href="https://wa.me/2347010744142?text=Hi%20Coach%20Ibe!%20I%27d%20like%20to%20learn%20more%20about%20your%20counselling." class="cta-link cta-whatsapp"><i class="lucide-message-circle"></i> WhatsApp</a>
       <a href="https://t.me/coachandheal" class="cta-link cta-telegram"><i class="lucide-send"></i> Telegram</a>
       <a href="mailto:Ibe@coachandheal.store" class="cta-link cta-email"><i class="lucide-mail"></i> Email</a>
     </div>

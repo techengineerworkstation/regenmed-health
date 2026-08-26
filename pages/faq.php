@@ -33,28 +33,28 @@
 <div class="faq-section">
   <div class="faq-hero">
     <h1>Frequently Asked Questions</h1>
-    <p>Everything you need to know about Coach & Heal, our coaching programs, regenerative therapies, and medical diagnostics.</p>
+    <p>Everything you need to know about Coach & Heal, our counselling programs, regenerative therapies, and medical diagnostics.</p>
   </div>
 
   <!-- COACHING -->
   <div class="faq-category">
-    <div class="faq-category-title"><i class="lucide-heart-handshake" style="color:var(--accent-green)"></i> Coaching Programs</div>
+    <div class="faq-category-title"><i class="lucide-heart-handshake" style="color:var(--accent-green)"></i> Counselling Programs</div>
 
     <div class="faq-item">
-      <button class="faq-question" onclick="this.parentElement.classList.toggle('open')">What is life coaching and how is it different from therapy?<i class="lucide-chevron-down"></i></button>
+      <button class="faq-question" onclick="this.parentElement.classList.toggle('open')">What is life counselling and how is it different from therapy?<i class="lucide-chevron-down"></i></button>
       <div class="faq-answer">
-        <p>Life coaching focuses on your future — helping you set goals, overcome obstacles, and create actionable plans for growth. Therapy typically addresses past trauma and mental health conditions. Coach Ibe's approach combines both: forward-looking coaching grounded in wellness science, helping you achieve clarity, confidence, and purpose.</p>
+        <p>Life counselling focuses on your future — helping you set goals, overcome obstacles, and create actionable plans for growth. Therapy typically addresses past trauma and mental health conditions. Coach Ibe's approach combines both: forward-looking counselling grounded in wellness science, helping you achieve clarity, confidence, and purpose.</p>
       </div>
     </div>
 
     <div class="faq-item">
-      <button class="faq-question" onclick="this.parentElement.classList.toggle('open')">How do coaching sessions work — online or in-person?<i class="lucide-chevron-down"></i></button>
+      <button class="faq-question" onclick="this.parentElement.classList.toggle('open')">How do counselling sessions work — online or in-person?<i class="lucide-chevron-down"></i></button>
       <div class="faq-answer">
         <p>We offer both formats:</p>
         <ul>
           <li><strong>Online sessions</strong> — via WhatsApp video call, Telegram, or Zoom. Available worldwide, any timezone.</li>
           <li><strong>In-person sessions</strong> — available across Nigeria (Lagos, Abuja, Port Harcourt, and other cities).</li>
-          <li><strong>Hybrid packages</strong> — combine online coaching with periodic in-person check-ins.</li>
+          <li><strong>Hybrid packages</strong> — combine online counselling with periodic in-person check-ins.</li>
         </ul>
       </div>
     </div>
@@ -66,7 +66,7 @@
         <ul>
           <li><strong>Discovery Session</strong> — free, 30 minutes, no obligation</li>
           <li><strong>Single Session</strong> — for specific questions or challenges</li>
-          <li><strong>4-Week Program</strong> — structured coaching with weekly sessions</li>
+          <li><strong>4-Week Program</strong> — structured counselling with weekly sessions</li>
           <li><strong>12-Week Transformation</strong> — deep, lasting change with progress tracking</li>
           <li><strong>Ongoing Support</strong> — monthly check-ins for continued growth</li>
         </ul>
@@ -145,7 +145,7 @@
           <li><strong>PEMF therapy</strong> — many feel improvement after 1-2 sessions; full benefits in 8-12 weeks</li>
           <li><strong>Stem cell therapy</strong> — initial improvement in 2-4 weeks; continued healing for 6-12 months</li>
           <li><strong>Nutritional optimization</strong> — energy and mood improvements within 1-2 weeks</li>
-          <li><strong>Coaching</strong> — mindset shifts often occur in the first session; behavioral change in 4-6 weeks</li>
+          <li><strong>Counselling</strong> — mindset shifts often occur in the first session; behavioral change in 4-6 weeks</li>
         </ul>
       </div>
     </div>
@@ -211,7 +211,7 @@
         <p>We believe in accessible healthcare. Our pricing:</p>
         <ul>
           <li><strong>Discovery Session</strong> — FREE (no obligation)</li>
-          <li><strong>Single Coaching Session</strong> — affordable per-session rate</li>
+          <li><strong>Single Counselling Session</strong> — affordable per-session rate</li>
           <li><strong>4-Week Program</strong> — discounted package rate</li>
           <li><strong>12-Week Transformation</strong> — best value, includes all support</li>
           <li><strong>Diagnostic Analysis</strong> — per-scan pricing, varies by complexity</li>
@@ -241,7 +241,7 @@
           <li><strong>Step 1:</strong> Send a message via WhatsApp (+234 701 074 4142), Telegram, or email (Ibe@coachandheal.store)</li>
           <li><strong>Step 2:</strong> Book your free discovery session</li>
           <li><strong>Step 3:</strong> Discuss your goals, challenges, and health history with Coach Ibe</li>
-          <li><strong>Step 4:</strong> Receive a personalized plan — coaching, diagnostics, or therapy</li>
+          <li><strong>Step 4:</strong> Receive a personalized plan — counselling, diagnostics, or therapy</li>
           <li><strong>Step 5:</strong> Begin your transformation journey</li>
         </ul>
       </div>

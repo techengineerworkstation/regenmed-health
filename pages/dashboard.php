@@ -16,10 +16,10 @@ if (empty($tipItems)) {
     'Regenerative medicine harnesses your body\'s own healing power',
     'PEMF therapy supports cellular repair and reduces inflammation',
     'Stem cell therapy is revolutionizing orthopedic recovery',
-    'Cognitive coaching improves focus, memory, and decision-making',
+    'Cognitive counselling improves focus, memory, and decision-making',
     'Nutritional optimization is the foundation of wellness',
     'Chronic stress accelerates aging — mindfulness reverses it',
-    'Growth mindset coaching increases resilience by 40%',
+    'Growth mindset counselling increases resilience by 40%',
     'Medical imaging detects issues before symptoms appear',
     'Sleep quality is the #1 predictor of recovery speed',
     'Holistic wellness combines mind, body, and spirit healing',
@@ -60,8 +60,8 @@ $tipJson = json_encode($duplicatedTips);
 .section-title i { color: var(--accent-green); font-size: 1.15rem; }
 
 /* === COACHING CARDS (4 cards, 2x2 grid) === */
-.coaching-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 1rem; margin-bottom: 2.5rem; }
-.coaching-card {
+.counselling-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 1rem; margin-bottom: 2.5rem; }
+.counselling-card {
   position: relative; overflow: hidden;
   padding: 1.5rem; border-radius: 14px;
   border: 1px solid var(--border-color);
@@ -69,17 +69,17 @@ $tipJson = json_encode($duplicatedTips);
   cursor: pointer;
   transition: all 0.25s cubic-bezier(0.4,0,0.2,1);
 }
-.coaching-card:hover { transform: translateY(-3px); box-shadow: var(--shadow-lg); border-color: var(--accent-primary); }
-.coaching-card-image { position: absolute; top: 0; right: 0; width: 100px; height: 100px; object-fit: cover; opacity: 0.15; border-radius: 0 14px 0 50px; pointer-events: none; }
-.coaching-card-icon { width: 44px; height: 44px; border-radius: 12px; display: flex; align-items: center; justify-content: center; font-size: 1.2rem; margin-bottom: 0.85rem; }
-.coaching-card-title { font-size: 1rem; font-weight: 700; margin-bottom: 0.35rem; color: var(--text-primary); }
-.coaching-card-desc { font-size: 0.78rem; color: var(--text-secondary); line-height: 1.5; margin-bottom: 0.75rem; }
-.coaching-card-tags { display: flex; flex-wrap: wrap; gap: 0.35rem; }
-.coaching-tag { padding: 0.2rem 0.55rem; border-radius: 6px; font-size: 0.65rem; font-weight: 600; background: var(--bg-tertiary); color: var(--text-secondary); }
-.coaching-tag.green { background: color-mix(in srgb, var(--accent-green) 12%, transparent); color: var(--accent-green); }
-.coaching-tag.violet { background: color-mix(in srgb, var(--accent-violet) 12%, transparent); color: var(--accent-violet); }
-.coaching-tag.teal { background: color-mix(in srgb, var(--accent-primary) 12%, transparent); color: var(--accent-primary); }
-.coaching-tag.amber { background: color-mix(in srgb, #f59e0b 12%, transparent); color: #f59e0b; }
+.counselling-card:hover { transform: translateY(-3px); box-shadow: var(--shadow-lg); border-color: var(--accent-primary); }
+.counselling-card-image { position: absolute; top: 0; right: 0; width: 100px; height: 100px; object-fit: cover; opacity: 0.15; border-radius: 0 14px 0 50px; pointer-events: none; }
+.counselling-card-icon { width: 44px; height: 44px; border-radius: 12px; display: flex; align-items: center; justify-content: center; font-size: 1.2rem; margin-bottom: 0.85rem; }
+.counselling-card-title { font-size: 1rem; font-weight: 700; margin-bottom: 0.35rem; color: var(--text-primary); }
+.counselling-card-desc { font-size: 0.78rem; color: var(--text-secondary); line-height: 1.5; margin-bottom: 0.75rem; }
+.counselling-card-tags { display: flex; flex-wrap: wrap; gap: 0.35rem; }
+.counselling-tag { padding: 0.2rem 0.55rem; border-radius: 6px; font-size: 0.65rem; font-weight: 600; background: var(--bg-tertiary); color: var(--text-secondary); }
+.counselling-tag.green { background: color-mix(in srgb, var(--accent-green) 12%, transparent); color: var(--accent-green); }
+.counselling-tag.violet { background: color-mix(in srgb, var(--accent-violet) 12%, transparent); color: var(--accent-violet); }
+.counselling-tag.teal { background: color-mix(in srgb, var(--accent-primary) 12%, transparent); color: var(--accent-primary); }
+.counselling-tag.amber { background: color-mix(in srgb, #f59e0b 12%, transparent); color: #f59e0b; }
 
 /* === CHALLENGE CARDS === */
 .challenge-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(180px, 1fr)); gap: 1rem; margin-bottom: 2.5rem; }
@@ -161,7 +161,7 @@ $tipJson = json_encode($duplicatedTips);
 }
 @media (max-width: 600px) {
   .stats-bar { grid-template-columns: 1fr; }
-  .coaching-grid { grid-template-columns: 1fr; }
+  .counselling-grid { grid-template-columns: 1fr; }
   .how-grid { grid-template-columns: 1fr; }
   .hero-carousel { height: 260px; }
   .hero-slide-content h1 { font-size: 1.3rem; }
@@ -180,29 +180,11 @@ $tipJson = json_encode($duplicatedTips);
   <div class="dashboard-hero">
     <div class="hero-carousel" id="heroCarousel">
       <div class="hero-slide active">
-        <div class="hero-slide-bg" style="background-image:url('assets/images/life-coaching.jpg')"></div>
-        <div class="hero-slide-overlay"></div>
-        <div class="hero-slide-content">
-          <h1>Unlock Your Best Life with Coaching</h1>
-          <p>Transform your mindset, habits, and outcomes with personalized life coaching sessions — online or in-person across Nigeria.</p>
-          <a href="https://wa.me/2347010744142?text=Hi%20Coach%20Ibe!%20I%27d%20like%20to%20book%20a%20coaching%20session." class="hero-cta"><i class="lucide-message-circle"></i> Book a Free Session</a>
-        </div>
-      </div>
-      <div class="hero-slide">
-        <div class="hero-slide-bg" style="background-image:url('assets/images/health-coaching.jpg')"></div>
-        <div class="hero-slide-overlay"></div>
-        <div class="hero-slide-content">
-          <h1>Your Health Journey Starts Here</h1>
-          <p>From nutrition to regenerative therapies — we guide you through every step of healing and recovery.</p>
-          <a href="index.php?page=conditions" class="hero-cta"><i class="lucide-activity"></i> Explore Our Programs</a>
-        </div>
-      </div>
-      <div class="hero-slide">
         <div class="hero-slide-bg" style="background-image:url('assets/images/mri-brain.jpg')"></div>
         <div class="hero-slide-overlay"></div>
         <div class="hero-slide-content">
           <h1>Advanced Medical Imaging & Diagnostics</h1>
-          <p>Upload MRI, CT, X-ray, or retinal scans — get AI-assisted insights and specialist review within minutes.</p>
+          <p>Upload MRI, CT, X-ray, or retinal scans — get AI-assisted insights and specialist review within minutes. Early detection saves lives.</p>
           <a href="index.php?page=diagnostics" class="hero-cta"><i class="lucide-scan"></i> Run Diagnostics</a>
         </div>
       </div>
@@ -210,9 +192,27 @@ $tipJson = json_encode($duplicatedTips);
         <div class="hero-slide-bg" style="background-image:url('assets/images/wellness.jpg')"></div>
         <div class="hero-slide-overlay"></div>
         <div class="hero-slide-content">
-          <h1>Wellness Tech — Empower Growth</h1>
-          <p>PEMF therapy, stem cell protocols, and cutting-edge regenerative technologies for total body optimization.</p>
-          <a href="index.php?page=pemf" class="hero-cta"><i class="lucide-zap"></i> Discover PEMF</a>
+          <h1>Regenerative Medicine & Healing</h1>
+          <p>PEMF therapy, stem cell protocols, and cutting-edge regenerative technologies that accelerate recovery, reduce pain, and restore cellular health.</p>
+          <a href="index.php?page=pemf" class="hero-cta"><i class="lucide-zap"></i> Discover PEMF Therapy</a>
+        </div>
+      </div>
+      <div class="hero-slide">
+        <div class="hero-slide-bg" style="background-image:url('assets/images/health-counselling.jpg')"></div>
+        <div class="hero-slide-overlay"></div>
+        <div class="hero-slide-content">
+          <h1>Health Counselling & Wellness Guidance</h1>
+          <p>Personalized health counselling for nutrition, lifestyle optimization, chronic pain management, and holistic well-being — online or in-person across Nigeria.</p>
+          <a href="index.php?page=conditions" class="hero-cta"><i class="lucide-heart-pulse"></i> Explore Our Programs</a>
+        </div>
+      </div>
+      <div class="hero-slide">
+        <div class="hero-slide-bg" style="background-image:url('assets/images/life-counselling.jpg')"></div>
+        <div class="hero-slide-overlay"></div>
+        <div class="hero-slide-content">
+          <h1>Mental Health & Emotional Well-being</h1>
+          <p>Professional counselling for stress, anxiety, recovery mindset, and emotional resilience. Your mental health is as important as your physical health.</p>
+          <a href="https://wa.me/2347010744142?text=Hi%20Coach%20Ibe!%20I%27d%20like%20to%20book%20a%20counselling%20session." class="hero-cta"><i class="lucide-message-circle"></i> Book a Session</a>
         </div>
       </div>
     </div>
@@ -221,66 +221,66 @@ $tipJson = json_encode($duplicatedTips);
   <!-- STATS -->
   <div class="stats-bar">
     <div class="stat-item"><div class="stat-icon green"><i class="lucide-users"></i></div><div><div class="stat-value">500+</div><div class="stat-label">People Transformed</div></div></div>
-    <div class="stat-item"><div class="stat-icon violet"><i class="lucide-heart-pulse"></i></div><div><div class="stat-value">4</div><div class="stat-label">Coaching Programs</div></div></div>
+    <div class="stat-item"><div class="stat-icon violet"><i class="lucide-heart-pulse"></i></div><div><div class="stat-value">4</div><div class="stat-label">Counselling Programs</div></div></div>
     <div class="stat-item"><div class="stat-icon teal"><i class="lucide-scan"></i></div><div><div class="stat-value">5</div><div class="stat-label">Medical Challenges</div></div></div>
     <div class="stat-item"><div class="stat-icon amber"><i class="lucide-shield-check"></i></div><div><div class="stat-value">100%</div><div class="stat-label">Confidential</div></div></div>
   </div>
 
   <!-- COACHING SERVICES (4 cards) -->
   <div class="section-header">
-    <h2 class="section-title"><i class="lucide-heart-handshake"></i> Coaching & Wellness Programs</h2>
+    <h2 class="section-title"><i class="lucide-heart-handshake"></i> Counselling & Wellness Programs</h2>
   </div>
-  <div class="coaching-grid">
+  <div class="counselling-grid">
     <!-- LIFE COACHING -->
-    <div class="coaching-card" onclick="window.location='index.php?page=conditions'">
-      <img src="assets/images/life-coaching.jpg" alt="" class="coaching-card-image" loading="lazy">
-      <div class="coaching-card-icon" style="background:color-mix(in srgb, var(--accent-green) 12%, transparent);color:var(--accent-green)"><i class="lucide-sun"></i></div>
-      <div class="coaching-card-title">Life Coaching</div>
-      <div class="coaching-card-desc">Discover your purpose, overcome limiting beliefs, and build a life aligned with your deepest values. Sessions cover goal-setting, confidence, relationships, and personal growth.</div>
-      <div class="coaching-card-tags">
-        <span class="coaching-tag green">Goal Setting</span>
-        <span class="coaching-tag green">Mindset Shift</span>
-        <span class="coaching-tag green">Confidence</span>
-        <span class="coaching-tag green">Purpose</span>
+    <div class="counselling-card" onclick="window.location='index.php?page=conditions'">
+      <img src="assets/images/life-counselling.jpg" alt="" class="counselling-card-image" loading="lazy">
+      <div class="counselling-card-icon" style="background:color-mix(in srgb, var(--accent-green) 12%, transparent);color:var(--accent-green)"><i class="lucide-sun"></i></div>
+      <div class="counselling-card-title">Life Counselling</div>
+      <div class="counselling-card-desc">Discover your purpose, overcome limiting beliefs, and build a life aligned with your deepest values. Sessions cover goal-setting, confidence, relationships, and personal growth.</div>
+      <div class="counselling-card-tags">
+        <span class="counselling-tag green">Goal Setting</span>
+        <span class="counselling-tag green">Mindset Shift</span>
+        <span class="counselling-tag green">Confidence</span>
+        <span class="counselling-tag green">Purpose</span>
       </div>
     </div>
     <!-- HEALTH COACHING -->
-    <div class="coaching-card" onclick="window.location='index.php?page=conditions'">
-      <img src="assets/images/health-coaching.jpg" alt="" class="coaching-card-image" loading="lazy">
-      <div class="coaching-card-icon" style="background:color-mix(in srgb, var(--accent-primary) 12%, transparent);color:var(--accent-primary)"><i class="lucide-heart-pulse"></i></div>
-      <div class="coaching-card-title">Health Coaching</div>
-      <div class="coaching-card-desc">Regain control of your health with personalized nutrition plans, lifestyle optimization, and regenerative therapy guidance. We address root causes, not just symptoms.</div>
-      <div class="coaching-card-tags">
-        <span class="coaching-tag teal">Nutrition</span>
-        <span class="coaching-tag teal">Lifestyle</span>
-        <span class="coaching-tag teal">Recovery</span>
-        <span class="coaching-tag teal">Prevention</span>
+    <div class="counselling-card" onclick="window.location='index.php?page=conditions'">
+      <img src="assets/images/health-counselling.jpg" alt="" class="counselling-card-image" loading="lazy">
+      <div class="counselling-card-icon" style="background:color-mix(in srgb, var(--accent-primary) 12%, transparent);color:var(--accent-primary)"><i class="lucide-heart-pulse"></i></div>
+      <div class="counselling-card-title">Health Counselling</div>
+      <div class="counselling-card-desc">Regain control of your health with personalized nutrition plans, lifestyle optimization, and regenerative therapy guidance. We address root causes, not just symptoms.</div>
+      <div class="counselling-card-tags">
+        <span class="counselling-tag teal">Nutrition</span>
+        <span class="counselling-tag teal">Lifestyle</span>
+        <span class="counselling-tag teal">Recovery</span>
+        <span class="counselling-tag teal">Prevention</span>
       </div>
     </div>
     <!-- WELLNESS TECH -->
-    <div class="coaching-card" onclick="window.location='index.php?page=pemf'">
-      <img src="assets/images/wellness.jpg" alt="" class="coaching-card-image" loading="lazy">
-      <div class="coaching-card-icon" style="background:color-mix(in srgb, var(--accent-violet) 12%, transparent);color:var(--accent-violet)"><i class="lucide-zap"></i></div>
-      <div class="coaching-card-title">Wellness Tech</div>
-      <div class="coaching-card-desc">Experience PEMF therapy, red light therapy, and biofeedback devices — cutting-edge wellness technology that accelerates healing, reduces pain, and boosts cellular energy.</div>
-      <div class="coaching-card-tags">
-        <span class="coaching-tag violet">PEMF</span>
-        <span class="coaching-tag violet">Red Light</span>
-        <span class="coaching-tag violet">Biofeedback</span>
-        <span class="coaching-tag violet">Cellular</span>
+    <div class="counselling-card" onclick="window.location='index.php?page=pemf'">
+      <img src="assets/images/wellness.jpg" alt="" class="counselling-card-image" loading="lazy">
+      <div class="counselling-card-icon" style="background:color-mix(in srgb, var(--accent-violet) 12%, transparent);color:var(--accent-violet)"><i class="lucide-zap"></i></div>
+      <div class="counselling-card-title">Wellness Tech</div>
+      <div class="counselling-card-desc">Experience PEMF therapy, red light therapy, and biofeedback devices — cutting-edge wellness technology that accelerates healing, reduces pain, and boosts cellular energy.</div>
+      <div class="counselling-card-tags">
+        <span class="counselling-tag violet">PEMF</span>
+        <span class="counselling-tag violet">Red Light</span>
+        <span class="counselling-tag violet">Biofeedback</span>
+        <span class="counselling-tag violet">Cellular</span>
       </div>
     </div>
     <!-- MEDICAL DIAGNOSTICS -->
-    <div class="coaching-card" onclick="window.location='index.php?page=diagnostics'">
-      <img src="assets/images/mri-brain.jpg" alt="" class="coaching-card-image" loading="lazy">
-      <div class="coaching-card-icon" style="background:color-mix(in srgb, #f59e0b 12%, transparent);color:#f59e0b"><i class="lucide-scan"></i></div>
-      <div class="coaching-card-title">Medical Diagnostics</div>
-      <div class="coaching-card-desc">Upload MRI, CT, X-ray, retinal, prostate, or fertility scans for AI-assisted analysis and specialist review. Get actionable insights within minutes, not days.</div>
-      <div class="coaching-card-tags">
-        <span class="coaching-tag amber">MRI</span>
-        <span class="coaching-tag amber">CT Scan</span>
-        <span class="coaching-tag amber">X-Ray</span>
-        <span class="coaching-tag amber">Retinal</span>
+    <div class="counselling-card" onclick="window.location='index.php?page=diagnostics'">
+      <img src="assets/images/mri-brain.jpg" alt="" class="counselling-card-image" loading="lazy">
+      <div class="counselling-card-icon" style="background:color-mix(in srgb, #f59e0b 12%, transparent);color:#f59e0b"><i class="lucide-scan"></i></div>
+      <div class="counselling-card-title">Medical Diagnostics</div>
+      <div class="counselling-card-desc">Upload MRI, CT, X-ray, retinal, prostate, or fertility scans for AI-assisted analysis and specialist review. Get actionable insights within minutes, not days.</div>
+      <div class="counselling-card-tags">
+        <span class="counselling-tag amber">MRI</span>
+        <span class="counselling-tag amber">CT Scan</span>
+        <span class="counselling-tag amber">X-Ray</span>
+        <span class="counselling-tag amber">Retinal</span>
       </div>
     </div>
   </div>
@@ -354,7 +354,7 @@ $tipJson = json_encode($duplicatedTips);
     <div class="how-step">
       <div class="how-step-num">2</div>
       <div class="how-step-title">Find Your Direction</div>
-      <div class="how-step-desc">Whether it's coaching, diagnostics, or regenerative therapy — we design a personalized plan just for you.</div>
+      <div class="how-step-desc">Whether it's counselling, diagnostics, or regenerative therapy — we design a personalized plan just for you.</div>
     </div>
     <div class="how-step">
       <div class="how-step-num">3</div>
@@ -394,7 +394,7 @@ $tipJson = json_encode($duplicatedTips);
       </ul>
     </div>
     <div class="info-card">
-      <h4><i class="lucide-brain" style="color:var(--accent-primary)"></i> Cognitive Coaching</h4>
+      <h4><i class="lucide-brain" style="color:var(--accent-primary)"></i> Cognitive Counselling</h4>
       <p>Neuroscience-backed techniques to improve focus, memory, emotional regulation, and decision-making. Ideal for executives, students, and anyone seeking mental optimization.</p>
       <ul>
         <li>Improves working memory by 30%</li>
@@ -422,7 +422,7 @@ $tipJson = json_encode($duplicatedTips);
   <div class="testimonial-grid">
     <div class="testimonial-card">
       <div class="testimonial-stars">★★★★★</div>
-      <div class="testimonial-text">"Coach Ibe helped me rediscover my purpose after a devastating knee injury. The combination of life coaching and regenerative therapy got me back on my feet — literally and figuratively."</div>
+      <div class="testimonial-text">"Coach Ibe helped me rediscover my purpose after a devastating knee injury. The combination of life counselling and regenerative therapy got me back on my feet — literally and figuratively."</div>
       <div class="testimonial-author"><div class="testimonial-avatar">AO</div><div><div class="testimonial-name">Adaeze O.</div><div class="testimonial-role">Entrepreneur, Lagos</div></div></div>
     </div>
     <div class="testimonial-card">
@@ -432,7 +432,7 @@ $tipJson = json_encode($duplicatedTips);
     </div>
     <div class="testimonial-card">
       <div class="testimonial-stars">★★★★★</div>
-      <div class="testimonial-text">"The health coaching transformed my relationship with food. I lost 15kg in 4 months, my blood pressure normalized, and I have energy I haven't felt since my 20s."</div>
+      <div class="testimonial-text">"The health counselling transformed my relationship with food. I lost 15kg in 4 months, my blood pressure normalized, and I have energy I haven't felt since my 20s."</div>
       <div class="testimonial-author"><div class="testimonial-avatar">TM</div><div><div class="testimonial-name">Tunde M.</div><div class="testimonial-role">Engineer, Port Harcourt</div></div></div>
     </div>
     <div class="testimonial-card">
@@ -457,7 +457,7 @@ $tipJson = json_encode($duplicatedTips);
     <h2>Ready to Transform Your Health & Life?</h2>
     <p>Connect with Coach Ibe — available online worldwide and in-person across Nigeria. Your first discovery session is free.</p>
     <div class="cta-links">
-      <a href="https://wa.me/2347010744142?text=Hi%20Coach%20Ibe!%20I%27m%20interested%20in%20your%20coaching%20and%20regenerative%20health%20services." class="cta-link cta-whatsapp"><i class="lucide-message-circle"></i> WhatsApp (+234 701 074 4142)</a>
+      <a href="https://wa.me/2347010744142?text=Hi%20Coach%20Ibe!%20I%27m%20interested%20in%20your%20counselling%20and%20regenerative%20health%20services." class="cta-link cta-whatsapp"><i class="lucide-message-circle"></i> WhatsApp (+234 701 074 4142)</a>
       <a href="https://t.me/coachandheal" class="cta-link cta-telegram"><i class="lucide-send"></i> Telegram</a>
       <a href="mailto:Ibe@coachandheal.store" class="cta-link cta-email"><i class="lucide-mail"></i> Ibe@coachandheal.store</a>
     </div>
