@@ -83,13 +83,12 @@
             $isNigeria = strpos($p[1], 'Nigeria') === 0;
             $mapUrl = 'https://www.google.com/maps/search/?api=1&query=' . rawurlencode($p[6]);
         ?>
-        <a href="<?= SecurityManager::sanitizeOutput($p[3]) ?>" target="_blank" rel="noopener"
-           class="block bg-white dark:bg-slate-800 rounded-xl p-5 shadow-sm border border-slate-100 dark:border-slate-700/50 card-border transition-colors duration-200 hover:shadow-md mb-3">
+        <div class="bg-white dark:bg-slate-800 rounded-xl p-5 shadow-sm border border-slate-100 dark:border-slate-700/50 card-border transition-colors duration-200 hover:shadow-md mb-3">
             <div class="flex items-start justify-between gap-3">
-                <div>
+                <a href="<?= SecurityManager::sanitizeOutput($p[3]) ?>" target="_blank" rel="noopener" class="group">
                     <p class="font-semibold text-slate-900 dark:text-slate-100 text-sm flex items-center gap-2">
                         <?= $isNigeria ? '<span class="w-2 h-2 rounded-full bg-green-500 flex-shrink-0"></span>' : '<span class="w-2 h-2 rounded-full bg-teal-500 flex-shrink-0"></span>' ?>
-                        <?= SecurityManager::sanitizeOutput($p[0]) ?>
+                        <span class="group-hover:text-teal-600 transition-colors"><?= SecurityManager::sanitizeOutput($p[0]) ?></span>
                     </p>
                     <p class="text-xs text-slate-500 dark:text-slate-400 mt-1"><?= SecurityManager::sanitizeOutput($p[2]) ?></p>
                     <div class="mt-2 space-y-1">
@@ -103,16 +102,17 @@
                             <i class="lucide-map-pin w-3 h-3 text-teal-600"></i> <?= SecurityManager::sanitizeOutput($p[5]) ?>
                         </p>
                     </div>
-                </div>
+                </a>
                 <div class="flex flex-col items-end gap-2 flex-shrink-0">
                     <span class="text-[0.65rem] font-semibold px-2 py-1 rounded-md <?= $isNigeria ? 'bg-green-500/10 text-green-600 dark:text-green-400' : 'bg-medical-teal/10 text-medical-teal' ?>">
                         <?= SecurityManager::sanitizeOutput($p[1]) ?>
                     </span>
-                    <span class="inline-flex items-center gap-1 text-[0.65rem] font-semibold px-2 py-1 rounded-md bg-blue-500/10 text-blue-600 dark:text-blue-400 hover:bg-blue-500/20 transition-colors">
+                    <a href="<?= $mapUrl ?>" target="_blank" rel="noopener"
+                       class="inline-flex items-center gap-1 text-[0.65rem] font-semibold px-2 py-1 rounded-md bg-blue-500/10 text-blue-600 dark:text-blue-400 hover:bg-blue-500/20 transition-colors">
                         <i class="lucide-map w-3 h-3"></i> Map
-                    </span>
+                    </a>
                 </div>
             </div>
-        </a>
+        </div>
         <?php endforeach; ?>
     </main>
