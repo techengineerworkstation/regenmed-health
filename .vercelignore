@@ -1,0 +1,15 @@
+data/
+storage/
+uploads/
+logs/
+.ssl/
+setup/
+.git/
+*.md
+*.sh
+*.conf
+*.sqlite
+.server.pid
+.env.local
+.htaccess
+composer.lock
