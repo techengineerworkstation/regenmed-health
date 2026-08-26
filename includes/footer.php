@@ -123,9 +123,9 @@ $marqueeJson = json_encode($marqueeItems);
       <div>
         <div style="display:flex;align-items:center;gap:0.6rem;margin-bottom:0.75rem;">
           <img src="assets/svg/logo.svg" alt="Logo" style="height:28px;width:auto;">
-          <span style="font-weight:700;font-size:0.95rem;background:linear-gradient(135deg,var(--accent-green),var(--accent-violet));-webkit-background-clip:text;-webkit-text-fill-color:transparent;">Coach & Heal — Regen Med Health</span>
+          <span style="font-weight:800;font-size:1rem;background:linear-gradient(135deg,var(--accent-green),var(--accent-violet));-webkit-background-clip:text;-webkit-text-fill-color:transparent;letter-spacing:-0.02em;">Coach & Heal — Regen Med Health</span>
         </div>
-        <p style="font-size:0.75rem;color:var(--text-secondary);line-height:1.6;margin-bottom:0.75rem;">Empowering growth in life, health, and wellness. Personalized counselling, regenerative medicine, and medical diagnostics — available online worldwide and in-person across Nigeria.</p>
+        <p style="font-size:0.78rem;color:var(--text-secondary);line-height:1.65;margin-bottom:0.75rem;">Empowering growth in life, health, and wellness. Personalized counselling, regenerative medicine, and medical diagnostics — available online worldwide and in-person across Nigeria.</p>
         <div style="display:flex;gap:0.5rem;margin-bottom:0.75rem;flex-wrap:wrap;">
           <span style="padding:0.2rem 0.6rem;background:color-mix(in srgb,var(--accent-green) 10%,transparent);color:var(--accent-green);font-size:0.65rem;border-radius:6px;font-weight:600;">HIPAA Aware</span>
           <span style="padding:0.2rem 0.6rem;background:color-mix(in srgb,var(--accent-primary) 10%,transparent);color:var(--accent-primary);font-size:0.65rem;border-radius:6px;font-weight:600;">100% Confidential</span>
@@ -140,28 +140,28 @@ $marqueeJson = json_encode($marqueeItems);
 
       <!-- Challenges -->
       <div>
-        <h4 style="font-size:0.75rem;font-weight:700;text-transform:uppercase;letter-spacing:0.08em;color:var(--text-primary);margin-bottom:0.75rem;">Challenges</h4>
+        <h4 style="font-size:0.78rem;font-weight:700;text-transform:uppercase;letter-spacing:0.08em;color:var(--text-primary);margin-bottom:0.75rem;">Challenges</h4>
         <ul style="list-style:none;padding:0;margin:0;display:flex;flex-direction:column;gap:0.4rem;">
-          <li><a href="index.php?page=diagnostics&type=knee" style="font-size:0.73rem;color:var(--text-secondary);text-decoration:none;">Knee Joint MRI</a></li>
-          <li><a href="index.php?page=diagnostics&type=retina" style="font-size:0.73rem;color:var(--text-secondary);text-decoration:none;">Retinal Imaging</a></li>
-          <li><a href="index.php?page=diagnostics?type=male-fertility" style="font-size:0.73rem;color:var(--text-secondary);text-decoration:none;">Male Fertility</a></li>
-          <li><a href="index.php?page=diagnostics?type=female-fertility" style="font-size:0.73rem;color:var(--text-secondary);text-decoration:none;">Female Fertility</a></li>
-          <li><a href="index.php?page=diagnostics?type=prostate" style="font-size:0.73rem;color:var(--text-secondary);text-decoration:none;">Prostate Health</a></li>
+          <li><a href="index.php?page=diagnostics&type=knee" style="font-size:0.75rem;color:var(--text-secondary);text-decoration:none;transition:color 0.2s;">Knee Joint MRI</a></li>
+          <li><a href="index.php?page=diagnostics&type=retina" style="font-size:0.75rem;color:var(--text-secondary);text-decoration:none;transition:color 0.2s;">Retinal Imaging</a></li>
+          <li><a href="index.php?page=diagnostics?type=male-fertility" style="font-size:0.75rem;color:var(--text-secondary);text-decoration:none;transition:color 0.2s;">Male Fertility</a></li>
+          <li><a href="index.php?page=diagnostics?type=female-fertility" style="font-size:0.75rem;color:var(--text-secondary);text-decoration:none;transition:color 0.2s;">Female Fertility</a></li>
+          <li><a href="index.php?page=diagnostics?type=prostate" style="font-size:0.75rem;color:var(--text-secondary);text-decoration:none;transition:color 0.2s;">Prostate Health</a></li>
         </ul>
       </div>
 
       <!-- Resources -->
       <div>
-        <h4 style="font-size:0.75rem;font-weight:700;text-transform:uppercase;letter-spacing:0.08em;color:var(--text-primary);margin-bottom:0.75rem;">Resources</h4>
+        <h4 style="font-size:0.78rem;font-weight:700;text-transform:uppercase;letter-spacing:0.08em;color:var(--text-primary);margin-bottom:0.75rem;">Resources</h4>
         <ul style="list-style:none;padding:0;margin:0;display:flex;flex-direction:column;gap:0.4rem;">
-          <li><a href="index.php?page=diagnostics" style="font-size:0.73rem;color:var(--text-secondary);text-decoration:none;">Imaging Protocols</a></li>
-          <li><a href="index.php?page=protocols" style="font-size:0.73rem;color:var(--text-secondary);text-decoration:none;">Treatment Protocols</a></li>
-          <li><a href="index.php?page=supplements" style="font-size:0.73rem;color:var(--text-secondary);text-decoration:none;">Supplement Database</a></li>
-          <li><a href="index.php?page=pemf" style="font-size:0.73rem;color:var(--text-secondary);text-decoration:none;">PEMF Therapy</a></li>
-          <li><a href="index.php?page=stem-cells" style="font-size:0.73rem;color:var(--text-secondary);text-decoration:none;">Stem Cell Therapy</a></li>
-          <li><a href="index.php?page=references" style="font-size:0.73rem;color:var(--text-secondary);text-decoration:none;">Clinical References</a></li>
-          <li><a href="index.php?page=team" style="font-size:0.73rem;color:var(--text-secondary);text-decoration:none;">Team / About</a></li>
-          <li><a href="index.php?page=faq" style="font-size:0.73rem;color:var(--text-secondary);text-decoration:none;">FAQ</a></li>
+          <li><a href="index.php?page=diagnostics" style="font-size:0.75rem;color:var(--text-secondary);text-decoration:none;transition:color 0.2s;">Imaging Protocols</a></li>
+          <li><a href="index.php?page=protocols" style="font-size:0.75rem;color:var(--text-secondary);text-decoration:none;transition:color 0.2s;">Treatment Protocols</a></li>
+          <li><a href="index.php?page=supplements" style="font-size:0.75rem;color:var(--text-secondary);text-decoration:none;transition:color 0.2s;">Supplement Database</a></li>
+          <li><a href="index.php?page=pemf" style="font-size:0.75rem;color:var(--text-secondary);text-decoration:none;transition:color 0.2s;">PEMF Therapy</a></li>
+          <li><a href="index.php?page=stem-cells" style="font-size:0.75rem;color:var(--text-secondary);text-decoration:none;transition:color 0.2s;">Stem Cell Therapy</a></li>
+          <li><a href="index.php?page=references" style="font-size:0.75rem;color:var(--text-secondary);text-decoration:none;transition:color 0.2s;">Clinical References</a></li>
+          <li><a href="index.php?page=team" style="font-size:0.75rem;color:var(--text-secondary);text-decoration:none;transition:color 0.2s;">Team / About</a></li>
+          <li><a href="index.php?page=faq" style="font-size:0.75rem;color:var(--text-secondary);text-decoration:none;transition:color 0.2s;">FAQ</a></li>
         </ul>
       </div>
     </div>

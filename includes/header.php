@@ -24,8 +24,8 @@ $allThemes = ThemeManager::getThemeNames();
     <a href="index.php" style="display:flex;align-items:center;gap:0.75rem;text-decoration:none;color:var(--text-primary);">
       <img src="assets/svg/logo.svg" alt="Logo" style="height:36px;width:auto;">
       <div style="display:flex;flex-direction:column;line-height:1.2;">
-        <span style="font-weight:700;font-size:1rem;background:linear-gradient(135deg,var(--accent-green),var(--accent-violet));-webkit-background-clip:text;-webkit-text-fill-color:transparent;">Coach & Heal</span>
-        <span style="font-size:0.65rem;color:var(--text-secondary);letter-spacing:0.05em;">Regen Med Health</span>
+        <span style="font-weight:800;font-size:1.15rem;background:linear-gradient(135deg,var(--accent-green),var(--accent-violet));-webkit-background-clip:text;-webkit-text-fill-color:transparent;letter-spacing:-0.02em;">Coach & Heal</span>
+        <span style="font-size:0.68rem;color:var(--text-secondary);letter-spacing:0.06em;font-weight:500;">Regen Med Health</span>
       </div>
     </a>
   </div>
@@ -54,7 +54,7 @@ $allThemes = ThemeManager::getThemeNames();
         $bg = $isActive ? 'background:var(--accent-primary);color:#fff;' : 'background:transparent;color:var(--text-secondary);';
         $hover = $isActive ? '' : 'onmouseover="this.style.background=\'var(--bg-tertiary)\';this.style.color=\'var(--text-primary)\'" onmouseout="this.style.background=\'transparent\';this.style.color=\'var(--text-secondary)\'"';
       ?>
-        <li><a href="index.php?page=<?= $n['page'] ?>" style="display:flex;align-items:center;gap:0.35rem;padding:0.45rem 0.75rem;border-radius:8px;font-size:0.78rem;font-weight:500;white-space:nowrap;text-decoration:none;transition:all 0.2s ease;<?= $bg ?>" <?= $hover ?>><i class="<?= $n['icon'] ?>" style="font-size:1rem;"></i> <?= $n['label'] ?></a></li>
+        <li><a href="index.php?page=<?= $n['page'] ?>" style="display:flex;align-items:center;gap:0.35rem;padding:0.45rem 0.75rem;border-radius:8px;font-size:0.8rem;font-weight:600;white-space:nowrap;text-decoration:none;transition:all 0.2s ease;letter-spacing:0.005em;<?= $bg ?>" <?= $hover ?>><i class="<?= $n['icon'] ?>" style="font-size:1.05rem;"></i> <?= $n['label'] ?></a></li>
       <?php endforeach; ?>
     </ul>
   </nav>
@@ -73,7 +73,7 @@ $allThemes = ThemeManager::getThemeNames();
 <!-- THEME PICKER MODAL -->
 <div id="themeModal" style="position:fixed;inset:0;z-index:9999;display:none;align-items:center;justify-content:center;background:rgba(0,0,0,0.5);backdrop-filter:blur(4px);" onclick="if(event.target===this)this.style.display='none'">
   <div style="background:var(--bg-secondary);border:1px solid var(--border-color);border-radius:16px;padding:2rem;width:90%;max-width:480px;box-shadow:var(--shadow-lg);">
-    <h3 style="margin-bottom:1.25rem;font-size:1.1rem;color:var(--text-primary);">Choose Your Wave</h3>
+    <h3 style="margin-bottom:1.25rem;font-size:1.2rem;font-weight:700;color:var(--text-primary);letter-spacing:-0.02em;">Choose Your Wave</h3>
     <div style="display:grid;grid-template-columns:repeat(2,1fr);gap:0.75rem;">
       <?php
       foreach ($allThemes as $key => $info):
@@ -87,8 +87,8 @@ $allThemes = ThemeManager::getThemeNames();
         $border = $sel ? 'border-color:var(--accent-primary);' : '';
       ?>
         <div onclick="selectTheme('<?= $key ?>')" style="padding:1rem;border-radius:12px;border:2px solid var(--border-color);<?= $border ?>cursor:pointer;background:var(--bg-tertiary);transition:all 0.2s ease;">
-          <div style="font-weight:600;font-size:0.9rem;margin-bottom:0.2rem;color:var(--text-primary);"><?= $info['name'] ?></div>
-          <div style="font-size:0.72rem;color:var(--text-secondary);margin-bottom:0.4rem;"><?= $info['description'] ?? '' ?></div>
+          <div style="font-weight:700;font-size:0.92rem;margin-bottom:0.2rem;color:var(--text-primary);letter-spacing:-0.01em;"><?= $info['name'] ?></div>
+          <div style="font-size:0.73rem;color:var(--text-secondary);margin-bottom:0.4rem;line-height:1.5;"><?= $info['description'] ?? '' ?></div>
           <div style="display:flex;gap:5px;">
             <?php foreach ([$c1,$c2,$c3,$c4] as $c): ?>
               <span style="width:16px;height:16px;border-radius:50%;background:<?= $c ?>;display:inline-block;border:1px solid rgba(0,0,0,0.1);"></span>
