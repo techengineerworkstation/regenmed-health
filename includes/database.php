@@ -675,6 +675,9 @@ class RegenMedDatabase {
 
 class SessionManager {
     public static function start(): void {
+        if (VERCEL_MODE) {
+            return;
+        }
         if (session_status() === PHP_SESSION_NONE) {
             ini_set('session.cookie_httponly', '1');
             ini_set('session.use_strict_mode', '1');

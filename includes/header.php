@@ -1,5 +1,5 @@
 <?php
-if (session_status() === PHP_SESSION_NONE) { session_start(); }
+if (!VERCEL_MODE && session_status() === PHP_SESSION_NONE) { session_start(); }
 ThemeManager::init();
 $currentTheme = ThemeManager::getCurrentTheme();
 $themeData = ThemeManager::getTheme($currentTheme);

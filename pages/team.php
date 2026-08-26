@@ -1,4 +1,4 @@
-<?php if (session_status() === PHP_SESSION_NONE) { session_start(); } ?>
+<?php if (!VERCEL_MODE && session_status() === PHP_SESSION_NONE) { session_start(); } ?>
 <style>
 .about-section { max-width: 900px; margin: 0 auto; padding: 2rem 1.5rem; position: relative; z-index: 1; }
 .about-hero { text-align: center; margin-bottom: 2.5rem; }

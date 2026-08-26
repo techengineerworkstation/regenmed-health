@@ -1,5 +1,5 @@
 <?php
-if (session_status() === PHP_SESSION_NONE) { session_start(); }
+if (!VERCEL_MODE && session_status() === PHP_SESSION_NONE) { session_start(); }
 if (!isset($newsFeed)) $newsFeed = [];
 if (!isset($app_version)) $app_version = '3.0';
 

@@ -1,5 +1,10 @@
 <?php
 declare(strict_types=1);
+
+if (!defined('VERCEL_MODE')) {
+    define('VERCEL_MODE', isset($_SERVER['VERCEL']) || getenv('VERCEL') !== false);
+}
+
 require_once __DIR__ . '/security.php';
 require_once __DIR__ . '/themes.php';
 require_once __DIR__ . '/theme-manager.php';

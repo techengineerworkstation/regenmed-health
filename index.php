@@ -1,6 +1,10 @@
 <?php
 declare(strict_types=1);
 
+if (!defined('VERCEL_MODE')) {
+    define('VERCEL_MODE', isset($_SERVER['VERCEL']) || getenv('VERCEL') !== false);
+}
+
 define('APP_NAME', 'Coach & Heal — Regen Med Health');
 define('APP_VERSION', '2.0');
 define('APP_DESCRIPTION', 'Empowering Growth in Life, Health & World Business — Medical Scans, Tests, and Recommendations');

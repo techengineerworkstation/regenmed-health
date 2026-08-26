@@ -1,5 +1,5 @@
 <?php
-if (session_status() === PHP_SESSION_NONE) { session_start(); }
+if (!VERCEL_MODE && session_status() === PHP_SESSION_NONE) { session_start(); }
 
 // Fetch tips for ticker
 $rss = new RssFeedManager();
@@ -114,7 +114,9 @@ $tipJson = json_encode($duplicatedTips);
 .how-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 1rem; margin-bottom: 3rem; }
 .how-step { text-align: center; padding: 1.5rem 1.25rem; border-radius: 16px; background: var(--bg-secondary); border: 1.5px solid var(--border-color); transition: all 0.3s ease; }
 .how-step:hover { border-color: var(--accent-primary); box-shadow: var(--shadow-md); transform: translateY(-2px); }
-.how-step-num { width: 40px; height: 40px; border-radius: 50%; background: linear-gradient(135deg, var(--accent-green), var(--accent-primary)); color: #fff; display: flex; align-items: center; justify-content: center; font-family: var(--font-heading), 'DM Sans', sans-serif; font-weight: 800; font-size: 0.95rem; margin: 0 auto 1rem; box-shadow: 0 4px 12px rgba(22,163,74,0.3); }
+.how-step-icon { width: 56px; height: 56px; border-radius: 50%; background: linear-gradient(135deg, #16a34a, #7c3aed); display: flex; align-items: center; justify-content: center; margin: 0 auto 0.6rem; box-shadow: 0 4px 14px rgba(22,163,74,0.3); }
+.how-step-icon svg { width: 26px; height: 26px; }
+.how-step-num { font-family: var(--font-heading), 'DM Sans', sans-serif; font-size: 0.68rem; font-weight: 800; text-transform: uppercase; letter-spacing: 0.1em; color: #16a34a; margin-bottom: 0.35rem; }
 .how-step-title { font-family: var(--font-heading), 'DM Sans', sans-serif; font-size: 0.92rem; font-weight: 700; margin-bottom: 0.4rem; color: var(--text-primary); letter-spacing: -0.01em; }
 .how-step-desc { font-size: 0.76rem; color: var(--text-secondary); line-height: 1.6; }
 
@@ -147,7 +149,8 @@ $tipJson = json_encode($duplicatedTips);
 
 /* === INFO CARDS === */
 .info-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: 1rem; margin-bottom: 3rem; }
-.info-card { padding: 1.4rem; border-radius: 14px; background: var(--bg-secondary); border: 1.5px solid var(--border-color); transition: all 0.3s ease; }
+.info-card { padding: 1.4rem; border-radius: 14px; background: var(--bg-secondary); border: 1.5px solid var(--border-color); transition: all 0.3s ease; overflow: hidden; }
+.info-card-image { width: 100%; height: 120px; object-fit: cover; border-radius: 10px; margin-bottom: 0.9rem; display: block; }
 .info-card:hover { border-color: var(--accent-primary); box-shadow: var(--shadow-md); }
 .info-card h4 { font-family: var(--font-heading), 'DM Sans', sans-serif; font-size: 0.9rem; font-weight: 700; margin-bottom: 0.55rem; color: var(--text-primary); display: flex; align-items: center; gap: 0.45rem; letter-spacing: -0.01em; }
 .info-card p { font-size: 0.77rem; color: var(--text-secondary); line-height: 1.65; }
@@ -378,22 +381,26 @@ $tipJson = json_encode($duplicatedTips);
   </div>
   <div class="how-grid">
     <div class="how-step">
-      <div class="how-step-num">1</div>
+      <div class="how-step-icon"><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7.9 20A9 9 0 1 0 4 16.1L2 22Z"/></svg></div>
+      <div class="how-step-num">Step 1</div>
       <div class="how-step-title">Let's Talk</div>
       <div class="how-step-desc">Book a free discovery call via WhatsApp or Telegram. We listen to your goals, challenges, and health history.</div>
     </div>
     <div class="how-step">
-      <div class="how-step-num">2</div>
+      <div class="how-step-icon"><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polygon points="16.24 7.76 14.12 14.12 7.76 16.24 9.88 9.88 16.24 7.76"/></svg></div>
+      <div class="how-step-num">Step 2</div>
       <div class="how-step-title">Find Your Direction</div>
       <div class="how-step-desc">Whether it's counselling, diagnostics, or regenerative therapy — we design a personalized plan just for you.</div>
     </div>
     <div class="how-step">
-      <div class="how-step-num">3</div>
+      <div class="how-step-icon"><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="22 7 13.5 15.5 8.5 10.5 2 17"/><polyline points="16 7 22 7 22 13"/></svg></div>
+      <div class="how-step-num">Step 3</div>
       <div class="how-step-title">Grow at Your Pace</div>
       <div class="how-step-desc">Weekly sessions, progress tracking, and continuous support. We move with you, not against you.</div>
     </div>
     <div class="how-step">
-      <div class="how-step-num">4</div>
+      <div class="how-step-icon"><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"/><path d="M3.22 12H9.5l.5-1 2 4.5 2-7 1.5 3.5h5.27"/></svg></div>
+      <div class="how-step-num">Step 4</div>
       <div class="how-step-title">Thrive in Every Area</div>
       <div class="how-step-desc">From mindset to physical health — experience lasting transformation that touches every part of your life.</div>
     </div>
@@ -405,6 +412,7 @@ $tipJson = json_encode($duplicatedTips);
   </div>
   <div class="info-grid">
     <div class="info-card">
+      <img class="info-card-image" src="assets/svg/pemf-waves.svg" alt="PEMF wave illustration">
       <h4><i class="lucide-zap" style="color:var(--accent-violet)"></i> PEMF Therapy</h4>
       <p>Pulsed Electromagnetic Field therapy stimulates cellular repair by delivering low-frequency electromagnetic pulses. Used for chronic pain, bone healing, inflammation, and post-surgical recovery.</p>
       <ul>
@@ -415,6 +423,7 @@ $tipJson = json_encode($duplicatedTips);
       </ul>
     </div>
     <div class="info-card">
+      <img class="info-card-image" src="assets/svg/stem-cell.svg" alt="Stem cell illustration">
       <h4><i class="lucide-dna" style="color:var(--accent-green)"></i> Stem Cell Therapy</h4>
       <p>Regenerative medicine uses your body's own stem cells to repair damaged tissue. Effective for joint injuries, degenerative conditions, and autoimmune disorders.</p>
       <ul>
@@ -425,6 +434,7 @@ $tipJson = json_encode($duplicatedTips);
       </ul>
     </div>
     <div class="info-card">
+      <img class="info-card-image" src="assets/images/meditation.jpg" alt="Cognitive wellness">
       <h4><i class="lucide-brain" style="color:var(--accent-primary)"></i> Cognitive Counselling</h4>
       <p>Neuroscience-backed techniques to improve focus, memory, emotional regulation, and decision-making. Ideal for executives, students, and anyone seeking mental optimization.</p>
       <ul>
@@ -435,6 +445,7 @@ $tipJson = json_encode($duplicatedTips);
       </ul>
     </div>
     <div class="info-card">
+      <img class="info-card-image" src="assets/images/healthy-food.jpg" alt="Nutritional medicine">
       <h4><i class="lucide-apple" style="color:#f59e0b"></i> Nutritional Medicine</h4>
       <p>Food is medicine. We create personalized nutrition plans based on your lab results, genetics, and health goals — addressing deficiencies at the cellular level.</p>
       <ul>
@@ -442,6 +453,17 @@ $tipJson = json_encode($duplicatedTips);
         <li>Gut health optimization</li>
         <li>Anti-inflammatory diet protocols</li>
         <li>Supplement stacking guidance</li>
+      </ul>
+    </div>
+    <div class="info-card">
+      <img class="info-card-image" src="assets/images/detox-water.jpg" alt="Detoxification therapy">
+      <h4><i class="lucide-leaf" style="color:#16a34a"></i> Detoxification Sessions</h4>
+      <p>Guided detox programs that cleanse the body at the cellular level — flushing accumulated toxins, resetting the gut, and restoring natural energy flow for full-body renewal.</p>
+      <ul>
+        <li>IV vitamin &amp; mineral therapy</li>
+        <li>Gut microbiome reset protocols</li>
+        <li>Herbal liver &amp; kidney cleanse</li>
+        <li>Heavy-metal chelation support</li>
       </ul>
     </div>
   </div>
