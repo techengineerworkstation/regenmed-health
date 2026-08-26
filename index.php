@@ -5,7 +5,7 @@ if (!defined('VERCEL_MODE')) {
     define('VERCEL_MODE', isset($_SERVER['VERCEL']) || getenv('VERCEL') !== false);
 }
 
-define('APP_NAME', 'Coach & Heal — Regen Med Health');
+define('APP_NAME', 'Regen Med Health');
 define('APP_VERSION', '2.0');
 define('APP_DESCRIPTION', 'Empowering Growth in Life, Health & World Business — Medical Scans, Tests, and Recommendations');
 
@@ -153,7 +153,7 @@ if (!VERCEL_MODE && $page === 'magic-login' && isset($_GET['token'])) {
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Coach & Heal — Regen Med Health</title>
+    <title>Regen Med Health — A Coach & Heal App</title>
     <meta name="description" content="Empowering Growth in Life, Health & World Business — Medical Scans, Tests, and Recommendations">
     <meta name="theme-color" content="#0d9488">
     <link rel="preconnect" href="https://fonts.googleapis.com">

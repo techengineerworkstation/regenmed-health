@@ -123,8 +123,9 @@ $marqueeJson = json_encode($marqueeItems);
       <div>
         <div style="display:flex;align-items:center;gap:0.6rem;margin-bottom:0.75rem;">
           <img src="assets/svg/logo.svg" alt="Logo" style="height:28px;width:auto;">
-          <span style="font-weight:800;font-size:1rem;background:linear-gradient(135deg,var(--accent-green),var(--accent-violet));-webkit-background-clip:text;-webkit-text-fill-color:transparent;letter-spacing:-0.02em;">Coach & Heal — Regen Med Health</span>
+          <span style="font-weight:800;font-size:1rem;background:linear-gradient(135deg,var(--accent-green),var(--accent-violet));-webkit-background-clip:text;-webkit-text-fill-color:transparent;letter-spacing:-0.02em;">Regen Med Health</span>
         </div>
+        <div style="font-size:0.7rem;color:var(--text-secondary);margin-bottom:0.6rem;letter-spacing:0.04em;font-weight:500;">A Coach &amp; Heal App — Ibereal Enterprise</div>
         <p style="font-size:0.78rem;color:var(--text-secondary);line-height:1.65;margin-bottom:0.75rem;">Empowering growth in life, health, and wellness. Personalized counselling, regenerative medicine, and medical diagnostics — available online worldwide and in-person across Nigeria.</p>
         <div style="display:flex;gap:0.5rem;margin-bottom:0.75rem;flex-wrap:wrap;">
           <span style="padding:0.2rem 0.6rem;background:color-mix(in srgb,var(--accent-green) 10%,transparent);color:var(--accent-green);font-size:0.65rem;border-radius:6px;font-weight:600;">HIPAA Aware</span>
@@ -168,7 +169,7 @@ $marqueeJson = json_encode($marqueeItems);
 
     <!-- Bottom bar -->
     <div style="border-top:1px solid var(--border-color);padding-top:1rem;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:0.5rem;">
-      <p style="font-size:0.65rem;color:var(--text-secondary);">© <?= date('Y') ?> Coach & Heal — Regen Med Health by Coach Ibe / Ibereal Enterprise. For research and educational purposes only. Not a substitute for professional medical advice.</p>
+      <p style="font-size:0.65rem;color:var(--text-secondary);">© <?= date('Y') ?> Regen Med Health — A Coach & Heal App by Coach Ibe / Ibereal Enterprise. For research and educational purposes only. Not a substitute for professional medical advice.</p>
       <p style="font-size:0.65rem;color:var(--text-secondary);">Version <?= $app_version ?> | Powered by Ibereal Enterprise</p>
     </div>
   </div>

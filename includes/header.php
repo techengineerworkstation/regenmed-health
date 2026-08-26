@@ -24,8 +24,8 @@ $allThemes = ThemeManager::getThemeNames();
     <a href="index.php" style="display:flex;align-items:center;gap:0.75rem;text-decoration:none;color:var(--text-primary);">
       <img src="assets/svg/logo.svg" alt="Logo" style="height:36px;width:auto;">
       <div style="display:flex;flex-direction:column;line-height:1.2;">
-        <span style="font-weight:800;font-size:1.15rem;background:linear-gradient(135deg,var(--accent-green),var(--accent-violet));-webkit-background-clip:text;-webkit-text-fill-color:transparent;letter-spacing:-0.02em;">Coach & Heal</span>
-        <span style="font-size:0.68rem;color:var(--text-secondary);letter-spacing:0.06em;font-weight:500;">Regen Med Health</span>
+        <span style="font-weight:800;font-size:1.15rem;background:linear-gradient(135deg,var(--accent-green),var(--accent-violet));-webkit-background-clip:text;-webkit-text-fill-color:transparent;letter-spacing:-0.02em;">Regen Med Health</span>
+        <span style="font-size:0.68rem;color:var(--text-secondary);letter-spacing:0.06em;font-weight:500;">A Coach & Heal App</span>
       </div>
     </a>
   </div>
@@ -132,9 +132,9 @@ document.getElementById('menuToggle')?.addEventListener('click', () => {
     sidebar.id = 'mobileSidebar';
     sidebar.style.cssText = 'position:fixed;inset:0;z-index:9998;background:var(--bg-secondary);padding:2rem;overflow-y:auto;display:flex;flex-direction:column;gap:0.5rem;';
     const links = <?= json_encode($navItems) ?>;
-    let html = '<div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:1rem"><strong style="font-size:1rem;background:linear-gradient(135deg,var(--accent-green),var(--accent-violet));-webkit-background-clip:text;-webkit-text-fill-color:transparent">Coach & Heal</strong><button onclick="document.getElementById(\'mobileSidebar\').remove()" style="background:none;border:none;color:var(--text-primary);font-size:1.5rem;cursor:pointer">&times;</button></div>';
+    let html = '<div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:1rem"><strong style="font-size:1rem;background:linear-gradient(135deg,var(--accent-green),var(--accent-violet));-webkit-background-clip:text;-webkit-text-fill-color:transparent">Regen Med Health</strong><button onclick="document.getElementById(\'mobileSidebar\').remove()" style="background:none;border:none;color:var(--text-primary);font-size:1.5rem;cursor:pointer">&times;</button></div>';
     links.forEach(l => { html += '<a href="index.php?page=' + l.page + '" style="display:flex;align-items:center;gap:0.75rem;padding:0.85rem 1rem;border-radius:10px;color:var(--text-primary);text-decoration:none;font-size:0.9rem;background:var(--bg-tertiary)"><i class="lucide-' + l.icon + '"></i>' + l.label + '</a>'; });
-    html += '<div style="margin-top:1.5rem;padding-top:1rem;border-top:1px solid var(--border-color);font-size:0.7rem;color:var(--text-secondary);text-align:center">Powered by Ibereal Enterprise<br>© <?= date('Y') ?> Coach & Heal</div>';
+    html += '<div style="margin-top:1.5rem;padding-top:1rem;border-top:1px solid var(--border-color);font-size:0.7rem;color:var(--text-secondary);text-align:center">Powered by Ibereal Enterprise<br>© <?= date('Y') ?> Regen Med Health — A Coach & Heal App</div>';
     sidebar.innerHTML = html;
     document.body.appendChild(sidebar);
   }

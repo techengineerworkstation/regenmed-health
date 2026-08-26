@@ -239,7 +239,7 @@
         <p>Getting started is simple:</p>
         <ul>
           <li><strong>Step 1:</strong> Send a message via WhatsApp (+234 701 074 4142), Telegram, or email (Ibe@coachandheal.store)</li>
-          <li><strong>Step 2:</strong> Book your free discovery session</li>
+          <li><strong>Step 2:</strong> Arrange your free discovery session</li>
           <li><strong>Step 3:</strong> Discuss your goals, challenges, and health history with Coach Ibe</li>
           <li><strong>Step 4:</strong> Receive a personalized plan — counselling, diagnostics, or therapy</li>
           <li><strong>Step 5:</strong> Begin your transformation journey</li>

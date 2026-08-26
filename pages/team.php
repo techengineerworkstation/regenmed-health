@@ -177,7 +177,7 @@
   <!-- CTA -->
   <div class="cta-section">
     <h2>Start Your Transformation Today</h2>
-    <p>Book a free discovery session with Coach Ibe. No obligation, no pressure — just a genuine conversation about your goals.</p>
+    <p>Arrange a free discovery session with Coach Ibe. No obligation, no pressure — just a genuine conversation about your goals.</p>
     <div class="cta-links">
       <a href="https://wa.me/2347010744142?text=Hi%20Coach%20Ibe!%20I%27d%20like%20to%20learn%20more%20about%20your%20counselling." class="cta-link cta-whatsapp"><i class="lucide-message-circle"></i> WhatsApp</a>
       <a href="https://t.me/coachandheal" class="cta-link cta-telegram"><i class="lucide-send"></i> Telegram</a>

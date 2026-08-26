@@ -16,7 +16,7 @@ return [
         'charset'  => 'utf8mb4',
     ],
     'app' => [
-        'name'  => 'Coach & Heal — Regen Med Health',
+        'name'  => 'Regen Med Health',
         'url'   => VERCEL_MODE ? 'https://' . ($_SERVER['HTTP_HOST'] ?? 'regenmed.vercel.app') : 'http://localhost:8081',
         'debug' => false,
     ],

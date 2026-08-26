@@ -206,7 +206,7 @@ $tipJson = json_encode($duplicatedTips);
         <div class="hero-slide-content">
           <h1>Personalized Health Consultation</h1>
           <p>One-on-one sessions with health professionals who understand your unique needs. From diagnosis to recovery, we guide you every step.</p>
-          <a href="https://wa.me/2347010744142?text=Hi%20Coach%20Ibe!%20I%27d%20like%20to%20book%20a%20health%20consultation." class="hero-cta"><i class="lucide-message-circle"></i> Book a Consultation</a>
+          <a href="https://wa.me/2347010744142?text=Hi%20Coach%20Ibe!%20I%27d%20like%20to%20arrange%20a%20health%20consultation." class="hero-cta"><i class="lucide-message-circle"></i> Arrange a Consultation</a>
         </div>
       </div>
       <div class="hero-slide">
@@ -222,9 +222,9 @@ $tipJson = json_encode($duplicatedTips);
         <div class="hero-slide-bg" style="background-image:url('assets/images/detox-water.jpg')"></div>
         <div class="hero-slide-overlay"></div>
         <div class="hero-slide-content">
-          <h1>Detoxification & Cellular Cleansing</h1>
-          <p>Medical-grade detox programs that flush toxins, restore gut health, and rejuvenate your body from the inside out. Feel lighter, think clearer.</p>
-          <a href="index.php?page=conditions" class="hero-cta"><i class="lucide-droplets"></i> Explore Detox Programs</a>
+          <h1>Cleanse & Cellular Renewal</h1>
+          <p>Medical-grade cleanse programs that flush toxins, restore gut health, and rejuvenate your body from the inside out. Feel lighter, think clearer.</p>
+          <a href="index.php?page=conditions" class="hero-cta"><i class="lucide-droplets"></i> Explore Cleanse Programs</a>
         </div>
       </div>
       <div class="hero-slide">
@@ -233,7 +233,7 @@ $tipJson = json_encode($duplicatedTips);
         <div class="hero-slide-content">
           <h1>Mental Health & Emotional Well-being</h1>
           <p>Professional counselling for stress, anxiety, recovery mindset, and emotional resilience. Your mental health is as important as your physical health.</p>
-          <a href="https://wa.me/2347010744142?text=Hi%20Coach%20Ibe!%20I%27d%20like%20to%20book%20a%20counselling%20session." class="hero-cta"><i class="lucide-brain"></i> Book a Session</a>
+          <a href="https://wa.me/2347010744142?text=Hi%20Coach%20Ibe!%20I%27d%20like%20to%20arrange%20a%20counselling%20session." class="hero-cta"><i class="lucide-brain"></i> Arrange a Session</a>
         </div>
       </div>
     </div>
@@ -308,8 +308,8 @@ $tipJson = json_encode($duplicatedTips);
     <div class="counselling-card" onclick="window.location='index.php?page=conditions'">
       <img src="assets/images/detox-water.jpg" alt="" class="counselling-card-image" loading="lazy">
       <div class="counselling-card-icon" style="background:color-mix(in srgb, #10b981 12%, transparent);color:#10b981"><i class="lucide-droplets"></i></div>
-      <div class="counselling-card-title">Detoxification</div>
-      <div class="counselling-card-desc">Medical-grade detox programs that flush toxins, restore gut health, and rejuvenate your body. Includes IV therapy, herbal cleanses, and nutritional support for cellular renewal.</div>
+      <div class="counselling-card-title">Cleanse</div>
+      <div class="counselling-card-desc">Medical-grade cleanse programs that flush toxins, restore gut health, and rejuvenate your body. Includes IV therapy, herbal cleanses, and nutritional support for cellular renewal.</div>
       <div class="counselling-card-tags">
         <span class="counselling-tag green">IV Therapy</span>
         <span class="counselling-tag green">Gut Reset</span>
@@ -384,7 +384,7 @@ $tipJson = json_encode($duplicatedTips);
       <div class="how-step-icon"><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7.9 20A9 9 0 1 0 4 16.1L2 22Z"/></svg></div>
       <div class="how-step-num">Step 1</div>
       <div class="how-step-title">Let's Talk</div>
-      <div class="how-step-desc">Book a free discovery call via WhatsApp or Telegram. We listen to your goals, challenges, and health history.</div>
+      <div class="how-step-desc">Arrange a free discovery call via WhatsApp or Telegram. We listen to your goals, challenges, and health history.</div>
     </div>
     <div class="how-step">
       <div class="how-step-icon"><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polygon points="16.24 7.76 14.12 14.12 7.76 16.24 9.88 9.88 16.24 7.76"/></svg></div>
@@ -456,8 +456,8 @@ $tipJson = json_encode($duplicatedTips);
       </ul>
     </div>
     <div class="info-card">
-      <img class="info-card-image" src="assets/images/detox-water.jpg" alt="Detoxification therapy">
-      <h4><i class="lucide-leaf" style="color:#16a34a"></i> Detoxification Sessions</h4>
+      <img class="info-card-image" src="assets/images/detox-water.jpg" alt="Cleanse therapy">
+      <h4><i class="lucide-leaf" style="color:#16a34a"></i> Cleanse Sessions</h4>
       <p>Guided detox programs that cleanse the body at the cellular level — flushing accumulated toxins, resetting the gut, and restoring natural energy flow for full-body renewal.</p>
       <ul>
         <li>IV vitamin &amp; mineral therapy</li>
