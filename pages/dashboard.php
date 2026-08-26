@@ -1,11 +1,5 @@
 <?php
 if (session_status() === PHP_SESSION_NONE) { session_start(); }
-require_once __DIR__ . '/../includes/database.php';
-require_once __DIR__ . '/../includes/security.php';
-require_once __DIR__ . '/../includes/rss-feeds.php';
-$db = Database::getInstance();
-$security = new Security($db);
-$security->rateLimit('page_load', 60, 20);
 
 // Fetch tips for ticker
 $rss = new RssFeedManager();
