@@ -11,7 +11,7 @@
                 ['condition' => 'Macular Degeneration', 'sources' => ['iPSC-derived RPE cells', 'UC-MSC', 'Retinal progenitor cells'], 'delivery' => 'Subretinal injection by vitreoretinal surgeon', 'cells' => '1x10^5 to 5x10^5 RPE cells', 'sessions' => 'Single procedure, long-term monitoring'],
                 ['condition' => 'Male Enhancing Fertility', 'sources' => ['MSC (autologous)', 'UC-MSC', 'Testicular stem cells'], 'delivery' => 'Intratesticular injection or IV infusion', 'cells' => '1x10^6 to 1x10^7', 'sessions' => '1-3 treatments over 3 months'],
                 ['condition' => 'Female Enhancing Fertility', 'sources' => ['UC-MSC', 'BMC', 'Ovarian stem cells'], 'delivery' => 'Intrauterine, intraovarian, or IV', 'cells' => '1x10^7 to 5x10^7', 'sessions' => '1-2 treatments per cycle'],
-                ['condition' => 'Prostate Disease', 'sources' => ['MSC (autologous)', 'UC-MSC', 'Adipose SVF'], 'delivery' => 'Transperineal injection or IV infusion', 'cells' => '1x10^7', 'sessions' => '1-2 treatments over 3 months'],
+                ['condition' => 'Prostate Challenge', 'sources' => ['MSC (autologous)', 'UC-MSC', 'Adipose SVF'], 'delivery' => 'Transperineal injection or IV infusion', 'cells' => '1x10^7', 'sessions' => '1-2 treatments over 3 months'],
             ];
             foreach ($stemCellProtocols as $protocol):
             ?>
@@ -82,7 +82,7 @@
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                                   d="M11.25 11.25l.041-.020a.75.75 0 00-.982-.982L11.25 10.25h.001zm0 0a2.25 2.25 0 01-2.25 2.25h-1.5a.75.75 0 01-.75-.75V10a.75.75 0 01.75-.75h.041a2.25 2.25 0 01.982.982z"/>
                         </svg>
-                        Serial Imaging Protocol
+                        Serial Lab Scan Protocol
                     </h4>
                     <p class="text-sm text-slate-600 dark:text-slate-300">Baseline MRI → Post-injection → 3/6/12 month follow-up. AI quantifies cell migration and tissue regeneration.</p>
                 </div>

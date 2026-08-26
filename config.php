@@ -21,4 +21,9 @@ return [
         'debug' => false,
     ],
     'vercel' => VERCEL_MODE,
+    'ai' => [
+        'local_endpoint' => getenv('SCAN_LOCAL_ENDPOINT') ?: 'http://127.0.0.1:8080',
+        'cloud_endpoint' => getenv('SCAN_CLOUD_ENDPOINT') ?: '',
+        'model' => 'llava-v1.6',
+    ],
 ];

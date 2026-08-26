@@ -20,7 +20,7 @@ if (empty($tipItems)) {
     'Nutritional optimization is the foundation of wellness',
     'Chronic stress accelerates aging — mindfulness reverses it',
     'Growth mindset counselling increases resilience by 40%',
-    'Medical imaging detects issues before symptoms appear',
+    'Lab scans detect issues before symptoms appear',
     'Sleep quality is the #1 predictor of recovery speed',
     'Holistic wellness combines mind, body, and spirit healing',
   ];
@@ -195,9 +195,9 @@ $tipJson = json_encode($duplicatedTips);
         <div class="hero-slide-bg" style="background-image:url('assets/images/mri-brain.jpg')"></div>
         <div class="hero-slide-overlay"></div>
         <div class="hero-slide-content">
-          <h1>Advanced Medical Imaging & Diagnostics</h1>
+          <h1>Advanced Lab Scans & Diagnostics</h1>
           <p>Upload MRI, CT, X-ray, or retinal scans — get AI-assisted insights and specialist review within minutes. Early detection saves lives.</p>
-          <a href="index.php?page=diagnostics" class="hero-cta"><i class="lucide-scan"></i> Run Diagnostics</a>
+          <a href="index.php?page=lab-scans" class="hero-cta"><i class="lucide-scan"></i> Run Diagnostics</a>
         </div>
       </div>
       <div class="hero-slide">
@@ -292,7 +292,7 @@ $tipJson = json_encode($duplicatedTips);
       </div>
     </div>
     <!-- MEDICAL DIAGNOSTICS -->
-    <div class="counselling-card" onclick="window.location='index.php?page=diagnostics'">
+    <div class="counselling-card" onclick="window.location='index.php?page=lab-scans'">
       <img src="assets/images/mri-brain.jpg" alt="" class="counselling-card-image" loading="lazy">
       <div class="counselling-card-icon" style="background:color-mix(in srgb, #f59e0b 12%, transparent);color:#f59e0b"><i class="lucide-scan"></i></div>
       <div class="counselling-card-title">Medical Diagnostics</div>
@@ -325,7 +325,7 @@ $tipJson = json_encode($duplicatedTips);
     <a href="index.php?page=conditions" style="font-size:0.78rem;color:var(--accent-primary);text-decoration:none;font-weight:600">View All →</a>
   </div>
   <div class="challenge-grid">
-    <div class="challenge-card" onclick="window.location='index.php?page=diagnostics&type=knee'">
+    <div class="challenge-card" onclick="window.location='index.php?page=lab-scans&type=knee'">
       <img src="assets/images/mri-knee.jpg" alt="Knee MRI Analysis" class="challenge-card-image" loading="lazy">
       <div class="challenge-card-body">
         <div class="challenge-card-title">Knee Joint MRI</div>
@@ -333,15 +333,15 @@ $tipJson = json_encode($duplicatedTips);
         <span class="challenge-card-cta">Run Analysis →</span>
       </div>
     </div>
-    <div class="challenge-card" onclick="window.location='index.php?page=diagnostics&type=retina'">
-      <img src="assets/images/retina-scan.jpg" alt="Retinal Imaging" class="challenge-card-image" loading="lazy">
+    <div class="challenge-card" onclick="window.location='index.php?page=lab-scans&type=retina'">
+      <img src="assets/images/retina-scan.jpg" alt="Retinal Lab Scans" class="challenge-card-image" loading="lazy">
       <div class="challenge-card-body">
-        <div class="challenge-card-title">Retinal Imaging</div>
+        <div class="challenge-card-title">Retinal Lab Scans</div>
         <div class="challenge-card-sub">Optical coherence & diabetic retinopathy screening</div>
         <span class="challenge-card-cta">Run Analysis →</span>
       </div>
     </div>
-    <div class="challenge-card" onclick="window.location='index.php?page=diagnostics?type=male-fertility'">
+    <div class="challenge-card" onclick="window.location='index.php?page=lab-scans?type=male-fertility'">
       <img src="assets/images/fertility-male.jpg" alt="Male Fertility Assessment" class="challenge-card-image" loading="lazy">
       <div class="challenge-card-body">
         <div class="challenge-card-title">Male Fertility</div>
@@ -349,7 +349,7 @@ $tipJson = json_encode($duplicatedTips);
         <span class="challenge-card-cta">Run Analysis →</span>
       </div>
     </div>
-    <div class="challenge-card" onclick="window.location='index.php?page=diagnostics?type=female-fertility'">
+    <div class="challenge-card" onclick="window.location='index.php?page=lab-scans?type=female-fertility'">
       <img src="assets/images/fertility-female.jpg" alt="Female Fertility Assessment" class="challenge-card-image" loading="lazy">
       <div class="challenge-card-body">
         <div class="challenge-card-title">Female Fertility</div>
@@ -357,7 +357,7 @@ $tipJson = json_encode($duplicatedTips);
         <span class="challenge-card-cta">Run Analysis →</span>
       </div>
     </div>
-    <div class="challenge-card" onclick="window.location='index.php?page=diagnostics?type=prostate'">
+    <div class="challenge-card" onclick="window.location='index.php?page=lab-scans?type=prostate'">
       <img src="assets/images/prostate-scan.jpg" alt="Prostate Health Assessment" class="challenge-card-image" loading="lazy">
       <div class="challenge-card-body">
         <div class="challenge-card-title">Prostate Health</div>

@@ -1,7 +1,7 @@
     <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
         <div class="mb-8 animate-fade-in">
             <h1 class="text-3xl font-bold text-slate-900 dark:text-slate-100">Condition Profiles</h1>
-            <p class="text-slate-500 dark:text-slate-400 mt-2">Complete diagnostic protocols including imaging findings, severity grading, and integrated treatment planning.</p>
+            <p class="text-slate-500 dark:text-slate-400 mt-2">Complete diagnostic protocols including lab scan findings, severity grading, and integrated treatment planning.</p>
         </div>
 
         <!-- Condition Selector -->
@@ -61,7 +61,7 @@
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                                   d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
                         </svg>
-                        Key Imaging Findings
+                        Key Lab Scan Findings
                     </h3>
                     <ul class="findings-list grid grid-cols-1 md:grid-cols-2 gap-2 text-sm text-slate-700 dark:text-slate-300">
                         <?php foreach ($cond['key_findings'] as $finding): ?>

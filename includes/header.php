@@ -36,7 +36,8 @@ $allThemes = ThemeManager::getThemeNames();
       $navItems = [
         ['page'=>'dashboard','label'=>'Main Screen','icon'=>'lucide-home'],
         ['page'=>'conditions','label'=>'Challenges','icon'=>'lucide-activity'],
-        ['page'=>'diagnostics','label'=>'Imaging','icon'=>'lucide-scan'],
+        ['page'=>'lab-scans','label'=>'Lab Scans','icon'=>'lucide-scan'],
+        ['page'=>'scan-analysis','label'=>'AI Scans','icon'=>'lucide-upload-cloud'],
         ['page'=>'protocols','label'=>'Protocols','icon'=>'lucide-file-text'],
         ['page'=>'supplements','label'=>'Supplements','icon'=>'lucide-capsule'],
         ['page'=>'pemf','label'=>'PEMF','icon'=>'lucide-zap'],

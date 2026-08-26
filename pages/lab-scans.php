@@ -1,12 +1,12 @@
     <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
         <div class="mb-8 animate-fade-in">
-            <h1 class="text-3xl font-bold text-slate-900 dark:text-slate-100">Imaging Protocols</h1>
-            <p class="text-slate-500 dark:text-slate-400 mt-2">Standardized imaging acquisition and analysis protocols for each diagnostic module.</p>
+            <h1 class="text-3xl font-bold text-slate-900 dark:text-slate-100">Lab Scan Protocols</h1>
+            <p class="text-slate-500 dark:text-slate-400 mt-2">Standardized lab scan acquisition and analysis protocols for each diagnostic module.</p>
         </div>
 
         <div class="grid grid-cols-1 lg:grid-cols-2 gap-6">
             <?php
-            $imagingProtocols = [
+            $labScanProtocols = [
                 ['condition' => 'Knee Osteoarthritis', 'modality' => 'MRI', 'planes' => 'Sagittal PD/T2, Coronal T1, Axial FS', 'sequences' => '3D SPGR for cartilage mapping', 'protocol' => '3T preferred, 1.5T acceptable', 'duration' => '25-30 min'],
                 ['condition' => 'Knee Osteoarthritis', 'modality' => 'X-ray', 'planes' => 'AP standing, Lateral, Sunrise', 'sequences' => 'Weight-bearing essential', 'protocol' => 'Kellgren-Lawrence grading', 'duration' => '5 min'],
                 ['condition' => 'Macular Degeneration', 'modality' => 'OCT', 'planes' => 'Macular cube 512x128', 'sequences' => 'B-scan, En face, OCTA', 'protocol' => 'Heidelberg Spectralis/Carl Zeiss', 'duration' => '10 min'],
@@ -14,9 +14,9 @@
                 ['condition' => 'Male Enhancing Fertility', 'modality' => 'Scrotal US', 'planes' => 'Transverse + Longitudinal', 'sequences' => 'Color Doppler, spectral analysis', 'protocol' => '7-15 MHz linear transducer', 'duration' => '15 min'],
                 ['condition' => 'Female Enhancing Fertility', 'modality' => 'TV US', 'planes' => 'Sagittal uterus, transverse ovaries', 'sequences' => '3D ultrasound, power Doppler', 'protocol' => '5-9 MHz transvaginal probe', 'duration' => '20 min'],
                 ['condition' => 'Female Enhancing Fertility', 'modality' => 'HSG', 'planes' => 'AP fluoroscopy', 'sequences' => 'Contrast flow, spillage', 'protocol' => 'Water-soluble contrast', 'duration' => '10 min'],
-                ['condition' => 'Prostate Disease', 'modality' => 'mpMRI', 'planes' => 'T2 axial, DWI, DCE', 'sequences' => 'PI-RADS v2.1 scoring', 'protocol' => '3T with surface coil', 'duration' => '35-40 min'],
+                ['condition' => 'Prostate Challenge', 'modality' => 'mpMRI', 'planes' => 'T2 axial, DWI, DCE', 'sequences' => 'PI-RADS v2.1 scoring', 'protocol' => '3T with surface coil', 'duration' => '35-40 min'],
             ];
-            foreach ($imagingProtocols as $protocol):
+            foreach ($labScanProtocols as $protocol):
             ?>
             <div class="bg-white dark:bg-slate-800 dark:border-slate-700/50 rounded-2xl p-6 shadow-sm border border-slate-100 dark:border-slate-700 card-border card-hover">
                 <div class="flex items-center justify-between mb-4">

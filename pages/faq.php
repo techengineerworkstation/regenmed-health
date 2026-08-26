@@ -115,7 +115,7 @@
         <ul>
           <li><strong>Harvest</strong> — cells collected from bone marrow or adipose tissue (your own body)</li>
           <li><strong>Process</strong> — concentrated and prepared in a clinical setting</li>
-          <li><strong>Inject</strong> — delivered precisely to the damaged area using imaging guidance</li>
+          <li><strong>Inject</strong> — delivered precisely to the damaged area using lab scan guidance</li>
           <li><strong>Heal</strong> — stem cells differentiate into healthy tissue, reducing inflammation and promoting repair</li>
         </ul>
       </div>
@@ -127,7 +127,7 @@
         <p>Regenerative therapies are effective for:</p>
         <ul>
           <li><strong>Joint problems</strong> — osteoarthritis, meniscus tears, ligament injuries</li>
-          <li><strong>Spine conditions</strong> — herniated discs, degenerative disc disease</li>
+          <li><strong>Spine conditions</strong> — herniated discs, degenerative disc challenge</li>
           <li><strong>Chronic pain</strong> — back pain, neck pain, neuropathy</li>
           <li><strong>Sports injuries</strong> — tendonitis, rotator cuff, Achilles</li>
           <li><strong>Fertility</strong> — male and female factor infertility</li>
@@ -160,7 +160,7 @@
       <div class="faq-answer">
         <p>Upload your MRI, CT, X-ray, or retinal scan through our secure portal. Our AI system:</p>
         <ul>
-          <li>Analyzes the image using trained medical imaging models</li>
+          <li>Analyzes the image using trained medical lab scan models</li>
           <li>Identifies key findings and potential abnormalities</li>
           <li>Generates a detailed report with severity scoring</li>
           <li>Provides recommendations and next steps</li>
@@ -173,12 +173,12 @@
     <div class="faq-item">
       <button class="faq-question" onclick="this.parentElement.classList.toggle('open')">What scan types do you support?<i class="lucide-chevron-down"></i></button>
       <div class="faq-answer">
-        <p>We support multiple imaging modalities:</p>
+        <p>We support multiple lab scan modalities:</p>
         <ul>
           <li><strong>MRI</strong> — brain, spine, knee, shoulder, hip, ankle</li>
           <li><strong>CT Scan</strong> — chest, abdomen, pelvis, head</li>
           <li><strong>X-Ray</strong> — skeletal, chest, dental</li>
-          <li><strong>Retinal Imaging</strong> — OCT, fundus photos</li>
+          <li><strong>Retinal Lab Scans</strong> — OCT, fundus photos</li>
           <li><strong>Ultrasound</strong> — abdominal, pelvic, scrotal</li>
           <li><strong>Fertility Assessments</strong> — semen analysis, hormonal panels</li>
           <li><strong>Prostate Assessment</strong> — mpMRI, PSA correlation</li>

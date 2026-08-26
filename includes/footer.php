@@ -22,7 +22,7 @@ if (empty($marqueeItems)) {
     ['title' => 'Stem cell therapy shows promise for knee osteoarthritis recovery', 'source' => 'ScienceDaily', 'link' => '#'],
     ['title' => 'AI-assisted retinal screening detects diabetic retinopathy early', 'source' => 'WHO', 'link' => '#'],
     ['title' => 'Regenerative medicine advances in fertility treatment', 'source' => 'Mayo Clinic', 'link' => '#'],
-    ['title' => 'Nutritional medicine: How diet impacts chronic disease recovery', 'source' => 'Healthline', 'link' => '#'],
+    ['title' => 'Nutritional medicine: How diet impacts chronic challenge recovery', 'source' => 'Healthline', 'link' => '#'],
     ['title' => 'Mental health counselling improves post-surgical recovery outcomes', 'source' => 'NIH', 'link' => '#'],
     ['title' => 'New MRI techniques enhance prostate cancer detection accuracy', 'source' => 'The Lancet', 'link' => '#'],
     ['title' => 'Biofeedback devices show effectiveness in stress reduction', 'source' => 'WebMD', 'link' => '#'],
@@ -143,11 +143,11 @@ $marqueeJson = json_encode($marqueeItems);
       <div>
         <h4 style="font-size:0.78rem;font-weight:700;text-transform:uppercase;letter-spacing:0.08em;color:var(--text-primary);margin-bottom:0.75rem;">Challenges</h4>
         <ul style="list-style:none;padding:0;margin:0;display:flex;flex-direction:column;gap:0.4rem;">
-          <li><a href="index.php?page=diagnostics&type=knee" style="font-size:0.75rem;color:var(--text-secondary);text-decoration:none;transition:color 0.2s;">Knee Joint MRI</a></li>
-          <li><a href="index.php?page=diagnostics&type=retina" style="font-size:0.75rem;color:var(--text-secondary);text-decoration:none;transition:color 0.2s;">Retinal Imaging</a></li>
-          <li><a href="index.php?page=diagnostics?type=male-fertility" style="font-size:0.75rem;color:var(--text-secondary);text-decoration:none;transition:color 0.2s;">Male Fertility</a></li>
-          <li><a href="index.php?page=diagnostics?type=female-fertility" style="font-size:0.75rem;color:var(--text-secondary);text-decoration:none;transition:color 0.2s;">Female Fertility</a></li>
-          <li><a href="index.php?page=diagnostics?type=prostate" style="font-size:0.75rem;color:var(--text-secondary);text-decoration:none;transition:color 0.2s;">Prostate Health</a></li>
+          <li><a href="index.php?page=lab-scans&type=knee" style="font-size:0.75rem;color:var(--text-secondary);text-decoration:none;transition:color 0.2s;">Knee Joint MRI</a></li>
+          <li><a href="index.php?page=lab-scans&type=retina" style="font-size:0.75rem;color:var(--text-secondary);text-decoration:none;transition:color 0.2s;">Retinal Lab Scans</a></li>
+          <li><a href="index.php?page=lab-scans?type=male-fertility" style="font-size:0.75rem;color:var(--text-secondary);text-decoration:none;transition:color 0.2s;">Male Fertility</a></li>
+          <li><a href="index.php?page=lab-scans?type=female-fertility" style="font-size:0.75rem;color:var(--text-secondary);text-decoration:none;transition:color 0.2s;">Female Fertility</a></li>
+          <li><a href="index.php?page=lab-scans?type=prostate" style="font-size:0.75rem;color:var(--text-secondary);text-decoration:none;transition:color 0.2s;">Prostate Health</a></li>
         </ul>
       </div>
 
@@ -155,7 +155,7 @@ $marqueeJson = json_encode($marqueeItems);
       <div>
         <h4 style="font-size:0.78rem;font-weight:700;text-transform:uppercase;letter-spacing:0.08em;color:var(--text-primary);margin-bottom:0.75rem;">Resources</h4>
         <ul style="list-style:none;padding:0;margin:0;display:flex;flex-direction:column;gap:0.4rem;">
-          <li><a href="index.php?page=diagnostics" style="font-size:0.75rem;color:var(--text-secondary);text-decoration:none;transition:color 0.2s;">Imaging Protocols</a></li>
+          <li><a href="index.php?page=lab-scans" style="font-size:0.75rem;color:var(--text-secondary);text-decoration:none;transition:color 0.2s;">Lab Scan Protocols</a></li>
           <li><a href="index.php?page=protocols" style="font-size:0.75rem;color:var(--text-secondary);text-decoration:none;transition:color 0.2s;">Treatment Protocols</a></li>
           <li><a href="index.php?page=supplements" style="font-size:0.75rem;color:var(--text-secondary);text-decoration:none;transition:color 0.2s;">Supplement Database</a></li>
           <li><a href="index.php?page=pemf" style="font-size:0.75rem;color:var(--text-secondary);text-decoration:none;transition:color 0.2s;">PEMF Therapy</a></li>

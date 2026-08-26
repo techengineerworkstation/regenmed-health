@@ -165,7 +165,7 @@
     <div class="timeline-item">
       <div class="timeline-year">2024</div>
       <div class="timeline-title">AI-Powered Diagnostics</div>
-      <div class="timeline-desc">Launch of AI-assisted medical imaging analysis — MRI, CT, X-ray, retinal, prostate, and fertility scans reviewed with cutting-edge machine learning.</div>
+      <div class="timeline-desc">Launch of AI-assisted medical lab scan analysis — MRI, CT, X-ray, retinal, prostate, and fertility scans reviewed with cutting-edge machine learning.</div>
     </div>
     <div class="timeline-item">
       <div class="timeline-year">2025</div>

@@ -26,11 +26,11 @@
                             <option value="retinal_degeneration">Macular Degeneration</option>
                             <option value="male_factor_enhancing_fertility">Male Enhancing Fertility</option>
                             <option value="female_factor_enhancing_fertility">Female Enhancing Fertility</option>
-                            <option value="prostate_disease">Prostate Disease</option>
+                            <option value="prostate_disease">Prostate Challenge</option>
                         </select>
                     </div>
                     <div>
-                        <label class="block text-xs font-medium text-slate-600 dark:text-slate-300 mb-1.5">Imaging Modality</label>
+                        <label class="block text-xs font-medium text-slate-600 dark:text-slate-300 mb-1.5">Lab Scan Modality</label>
                         <select x-model="scanForm.modality"
                                 class="w-full px-3.5 py-2.5 border border-slate-200 dark:border-slate-600 dark:bg-slate-700/50 dark:text-slate-200 rounded-lg text-sm focus:ring-2 focus:ring-medical-teal/20 focus:border-medical-teal outline-none transition">
                             <option value="MRI">MRI</option>
@@ -348,7 +348,7 @@
                             <option value="stem_cell" class="text-slate-900">Stem Cell Therapy</option>
                             <option value="pemf" class="text-slate-900">PEMF Protocol</option>
                             <option value="supplements" class="text-slate-900">Supplements & Herbs</option>
-                            <option value="imaging" class="text-slate-900">Imaging Follow-up</option>
+                            <option value="imaging" class="text-slate-900">Lab Scan Follow-up</option>
                         </select>
                     </div>
                 </div>
@@ -457,7 +457,7 @@
                             <li><strong>Source:</strong> ${this.getStemCellSource(condName)}</li>
                             <li><strong>Delivery:</strong> ${this.getDeliveryMethod(condName)}</li>
                             <li><strong>Cell Count:</strong> ${this.getCellCount(condName)}</li>
-                            <li><strong>Schedule:</strong> Single injection with 3-month follow-up imaging</li>
+                            <li><strong>Schedule:</strong> Single injection with 3-month follow-up lab scans</li>
                         </ul>
                     </div>`;
                 }
@@ -492,11 +492,11 @@
 
                 if (this.recommendation.focus === 'comprehensive' || this.recommendation.focus === 'imaging') {
                     rec += `<div class="p-4 bg-medical-cyan/5 dark:bg-medical-cyan/10 rounded-xl border border-medical-cyan/10 dark:border-medical-cyan/20">
-                        <h4 class="font-semibold text-medical-cyan mb-2">Imaging Follow-up Schedule</h4>
+                        <h4 class="font-semibold text-medical-cyan mb-2">Lab Scan Follow-up Schedule</h4>
                         <ul class="text-sm space-y-1 list-disc pl-4">
-                            <li><strong>Baseline:</strong> Complete imaging workup (current)</li>
-                            <li><strong>3 months:</strong> Follow-up imaging to assess treatment response</li>
-                            <li><strong>6 months:</strong> Serial imaging for regeneration monitoring</li>
+                            <li><strong>Baseline:</strong> Complete lab scan workup (current)</li>
+                            <li><strong>3 months:</strong> Follow-up lab scans to assess treatment response</li>
+                            <li><strong>6 months:</strong> Serial lab scans for regeneration monitoring</li>
                             <li><strong>12 months:</strong> Comprehensive reassessment with AI comparison</li>
                         </ul>
                     </div>`;
@@ -521,7 +521,7 @@
                     'Macular Degeneration': 'iPSC-derived RPE cells or UC-MSC',
                     'Male Enhancing Fertility': 'Mesenchymal Stem Cells (MSC)',
                     'Female Enhancing Fertility': 'UC-MSC or BMC for ovarian rejuvenation',
-                    'Prostate Disease': 'MSC (autologous or allogeneic)'
+                    'Prostate Challenge': 'MSC (autologous or allogeneic)'
                 };
                 return sources[cond] || 'MSC (condition-specific)';
             },
@@ -531,7 +531,7 @@
                     'Macular Degeneration': 'Subretinal injection by vitreoretinal surgeon',
                     'Male Enhancing Fertility': 'Intratesticular injection or IV infusion',
                     'Female Enhancing Fertility': 'Intrauterine or intraovarian injection',
-                    'Prostate Disease': 'Transperineal injection or IV infusion'
+                    'Prostate Challenge': 'Transperineal injection or IV infusion'
                 };
                 return methods[cond] || 'Targeted injection';
             },
@@ -541,7 +541,7 @@
                     'Macular Degeneration': '1x10^5 to 5x10^5 RPE cells',
                     'Male Enhancing Fertility': '1x10^6 to 1x10^7 MSC',
                     'Female Enhancing Fertility': '1x10^7 to 5x10^7 cells',
-                    'Prostate Disease': '1x10^7 MSC'
+                    'Prostate Challenge': '1x10^7 MSC'
                 };
                 return counts[cond] || '1x10^6 to 1x10^7 cells';
             },
@@ -551,7 +551,7 @@
                     'Macular Degeneration': 'N/A (use PBMT: Red/NIR light)',
                     'Male Enhancing Fertility': '1-10 Hz',
                     'Female Enhancing Fertility': '5-25 Hz',
-                    'Prostate Disease': '10-50 Hz'
+                    'Prostate Challenge': '10-50 Hz'
                 };
                 return freqs[cond] || '1-50 Hz';
             },
@@ -561,7 +561,7 @@
                     'Macular Degeneration': 'N/A (use PBMT)',
                     'Male Enhancing Fertility': '1-5 mT',
                     'Female Enhancing Fertility': '1-3 mT',
-                    'Prostate Disease': '1-3 mT'
+                    'Prostate Challenge': '1-3 mT'
                 };
                 return ints[cond] || '1-5 mT';
             },
@@ -571,7 +571,7 @@
                     'Macular Degeneration': 'Daily PBMT sessions',
                     'Male Enhancing Fertility': '30 min/day for 12 weeks',
                     'Female Enhancing Fertility': '30 min/day for 8-12 weeks',
-                    'Prostate Disease': '30 min/day for 4-8 weeks'
+                    'Prostate Challenge': '30 min/day for 4-8 weeks'
                 };
                 return durs[cond] || '30 min/day';
             },
@@ -581,7 +581,7 @@
                     'Macular Degeneration': '<li>AREDS2 formula daily</li><li>Lutein 10mg/day</li><li>Zeaxanthin 2mg/day</li><li>Omega-3 1000mg/day</li>',
                     'Male Enhancing Fertility': '<li>CoQ10 200mg/day</li><li>L-Carnitine 2000mg/day</li><li>Zinc 30mg/day</li><li>Vitamin D3 4000IU/day</li>',
                     'Female Enhancing Fertility': '<li>Myo-Inositol 4g/day</li><li>CoQ10 200mg/day</li><li>Folate 800mcg/day</li><li>Vitamin D3 4000IU/day</li>',
-                    'Prostate Disease': '<li>Saw Palmetto 320mg/day</li><li>Beta-sitosterol 60mg/day</li><li>Zinc 30mg/day</li><li>Lycopene 15mg/day</li>'
+                    'Prostate Challenge': '<li>Saw Palmetto 320mg/day</li><li>Beta-sitosterol 60mg/day</li><li>Zinc 30mg/day</li><li>Lycopene 15mg/day</li>'
                 };
                 return tabs[cond] || '<li>Multivitamin daily</li>';
             },
@@ -591,7 +591,7 @@
                     'Macular Degeneration': '<li>Saffron 20mg/day</li><li>Bilberry extract</li><li>Ginkgo biloba</li><li>Goji berry</li>',
                     'Male Enhancing Fertility': '<li>Tongkat Ali</li><li>Ashwagandha</li><li>Maca root</li><li>Fenugreek</li>',
                     'Female Enhancing Fertility': '<li>Vitex (Chasteberry)</li><li>Maca root</li><li>Ashwagandha</li><li>Shatavari</li>',
-                    'Prostate Disease': '<li>Saw Palmetto</li><li>Stinging Nettle root</li><li>Pygeum</li><li>Pumpkin seed oil</li>'
+                    'Prostate Challenge': '<li>Saw Palmetto</li><li>Stinging Nettle root</li><li>Pygeum</li><li>Pumpkin seed oil</li>'
                 };
                 return herbs[cond] || '<li>Consult herbalist</li>';
             }
