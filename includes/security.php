@@ -246,6 +246,7 @@ class SecurityManager
     }
     
     public static function logSecurityEvent(string $event, array $context = []): void {
+        if (VERCEL_MODE) return;
         $logEntry = [
             'timestamp' => date('Y-m-d H:i:s'),
             'event' => $event,

@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 260" fill="none">
+  <defs>
+    <linearGradient id="boneGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#f5f5f4"/>
+      <stop offset="100%" style="stop-color:#d6d3d1"/>
+    </linearGradient>
+    <linearGradient id="cartGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#0d9488"/>
+      <stop offset="100%" style="stop-color:#06b6d4"/>
+    </linearGradient>
+    <linearGradient id="defectGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#fbbf24"/>
+      <stop offset="100%" style="stop-color:#f59e0b"/>
+    </linearGradient>
+  </defs>
+  <!-- Femur -->
+  <ellipse cx="70" cy="50" rx="28" ry="20" fill="url(#boneGrad)" stroke="#a8a29e" stroke-width="1"/>
+  <rect x="55" y="55" width="30" height="90" rx="10" fill="url(#boneGrad)" stroke="#a8a29e" stroke-width="1"/>
+  <!-- Femur condyles -->
+  <ellipse cx="70" cy="148" rx="26" ry="14" fill="#e7e5e4" stroke="#a8a29e" stroke-width="1"/>
+  <!-- Cartilage (healthy) -->
+  <path d="M52 152 Q70 160 88 152" stroke="url(#cartGrad)" stroke-width="3" fill="none" opacity="0.8"/>
+  <!-- Cartilage defect -->
+  <path d="M58 154 Q65 162 72 156" stroke="url(#defectGrad)" stroke-width="4" fill="none" opacity="0.9">
+    <animate attributeName="opacity" values="0.6;1;0.6" dur="2s" repeatCount="indefinite"/>
+  </path>
+  <!-- Tibia -->
+  <ellipse cx="80" cy="170" rx="35" ry="12" fill="#e7e5e4" stroke="#a8a29e" stroke-width="1"/>
+  <rect x="62" y="175" width="36" height="60" rx="8" fill="url(#boneGrad)" stroke="#a8a29e" stroke-width="1"/>
+  <!-- Tibia shaft -->
+  <rect x="68" y="235" width="24" height="20" rx="5" fill="url(#boneGrad)" stroke="#a8a29e" stroke-width="1"/>
+  <!-- Joint space -->
+  <path d="M45 165 Q80 155 115 165" stroke="#1e293b" stroke-width="0.5" fill="none" stroke-dasharray="3 3" opacity="0.5"/>
+  <!-- Osteophyte -->
+  <path d="M48 162 Q44 158 46 154" stroke="#f59e0b" stroke-width="2" fill="none" opacity="0.7"/>
+  <!-- Labels -->
+  <text x="15" y="40" font-size="8" fill="#64748b" font-family="sans-serif">Femur</text>
+  <text x="115" y="150" font-size="8" fill="#0d9488" font-family="sans-serif">Cartilage</text>
+  <text x="115" y="168" font-size="8" fill="#f59e0b" font-family="sans-serif">Defect</text>
+  <text x="115" y="185" font-size="8" fill="#64748b" font-family="sans-serif">Tibia</text>
+</svg>

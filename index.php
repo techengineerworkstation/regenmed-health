@@ -11,7 +11,13 @@ require_once __DIR__ . '/includes/themes.php';
 require_once __DIR__ . '/includes/theme-manager.php';
 require_once __DIR__ . '/includes/rss-feeds.php';
 
-SessionManager::start();
+// Skip session and DB-dependent features on Vercel
+if (!VERCEL_MODE) {
+    SessionManager::start();
+} else {
+    // Ensure $_SESSION exists as empty array for Vercel (no session support)
+    if (!isset($_SESSION)) $_SESSION = [];
+}
 ThemeManager::init();
 RssFeedManager::init();
 
@@ -27,13 +33,15 @@ if (!in_array($page, $allowedPages, true)) {
     $page = 'dashboard';
 }
 
-RegenMedDatabase::logPageView(
-    $userId,
-    null,
-    $page,
-    $_SERVER['QUERY_STRING'] ?? null,
-    $_SERVER['HTTP_REFERER'] ?? null
-);
+if (!VERCEL_MODE) {
+    RegenMedDatabase::logPageView(
+        $userId,
+        null,
+        $page,
+        $_SERVER['QUERY_STRING'] ?? null,
+        $_SERVER['HTTP_REFERER'] ?? null
+    );
+}
 
 $conditions = [
     'knee_arthritis' => ['name' => 'Knee Osteoarthritis', 'icd10' => 'M17', 'imaging' => ['MRI', 'X-ray', 'Ultrasound'], 'severity_grades' => ['Grade 1: Minimal', 'Grade 2: Mild', 'Grade 3: Moderate', 'Grade 4: Severe'], 'key_findings' => ['Cartilage loss', 'Osteophytes', 'Subchondral sclerosis', 'Joint space narrowing', 'Bone marrow lesions'], 'window' => ['image' => 'knee-mri.svg', 'view' => 'Sagittal PD/T2', 'highlight' => 'Cartilage defect medial compartment']],
@@ -75,12 +83,14 @@ $pemfParams = [
 ];
 
 if ($page === 'logout') {
-    SessionManager::logout();
+    if (!VERCEL_MODE) {
+        SessionManager::logout();
+    }
     header('Location: ?page=dashboard');
     exit;
 }
 
-$csrfToken = SessionManager::generateCSRFToken();
+$csrfToken = VERCEL_MODE ? bin2hex(random_bytes(16)) : SessionManager::generateCSRFToken();
 $nonce = SecurityManager::getNonce();
 
 $tipsFeed = [];
@@ -93,7 +103,7 @@ if ($page === 'dashboard') {
 $errors = [];
 $lockoutRemaining = 0;
 
-if ($page === 'login' && $_SERVER['REQUEST_METHOD'] === 'POST') {
+if (!VERCEL_MODE && $page === 'login' && $_SERVER['REQUEST_METHOD'] === 'POST') {
     if (!SecurityManager::validateCSRF($_POST['csrf_token'] ?? '')) {
         $errors[] = 'Invalid CSRF token';
     } elseif (!SecurityManager::checkHoneypot()) {
@@ -116,7 +126,7 @@ if ($page === 'login' && $_SERVER['REQUEST_METHOD'] === 'POST') {
     }
 }
 
-if ($page === 'magic-login' && isset($_GET['token'])) {
+if (!VERCEL_MODE && $page === 'magic-login' && isset($_GET['token'])) {
     $token = $_GET['token'];
     $linkData = RegenMedDatabase::verifyMagicLink($token);
     if ($linkData) {

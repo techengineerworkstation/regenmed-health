@@ -27,6 +27,7 @@ class RssFeedManager
 
     public static function init(): void
     {
+        if (VERCEL_MODE) return;
         if (!is_dir(self::CACHE_DIR)) {
             mkdir(self::CACHE_DIR, 0755, true);
         }
@@ -34,6 +35,7 @@ class RssFeedManager
 
     public static function getTips(int $limit = 8): array
     {
+        if (VERCEL_MODE) return [];
         $cacheFile = self::CACHE_DIR . '/tips.json';
         $cached = self::readCache($cacheFile);
         if ($cached !== null) {
@@ -55,6 +57,7 @@ class RssFeedManager
 
     public static function getNews(int $limit = 8): array
     {
+        if (VERCEL_MODE) return [];
         $cacheFile = self::CACHE_DIR . '/news.json';
         $cached = self::readCache($cacheFile);
         if ($cached !== null) {

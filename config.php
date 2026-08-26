@@ -1,6 +1,11 @@
 <?php
 declare(strict_types=1);
 
+// Detect Vercel environment
+if (!defined('VERCEL_MODE')) {
+    define('VERCEL_MODE', isset($_SERVER['VERCEL']) || getenv('VERCEL') !== false);
+}
+
 return [
     'database' => [
         'host'     => '127.0.0.1',
@@ -12,7 +17,8 @@ return [
     ],
     'app' => [
         'name'  => 'Coach & Heal — Regen Med Health',
-        'url'   => 'http://localhost:8081',
+        'url'   => VERCEL_MODE ? 'https://' . ($_SERVER['HTTP_HOST'] ?? 'regenmed.vercel.app') : 'http://localhost:8081',
         'debug' => false,
     ],
+    'vercel' => VERCEL_MODE,
 ];

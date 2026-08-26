@@ -13,6 +13,10 @@ class RegenMedDatabase {
     private static ?PDO $instance = null;
     private static ?string $driver = null;
 
+    public static function isAvailable(): bool {
+        return !VERCEL_MODE;
+    }
+
     private static function getConfig(): array {
         static $config = null;
         if ($config === null) {
@@ -62,7 +66,10 @@ class RegenMedDatabase {
         return $pdo;
     }
 
-    public static function getInstance(): PDO {
+    public static function getInstance(): ?PDO {
+        if (VERCEL_MODE) {
+            return null;
+        }
         if (self::$instance === null) {
             $cfg = self::getConfig();
 
@@ -501,6 +508,7 @@ class RegenMedDatabase {
     }
 
     public static function logPageView(?int $userId, ?int $sessionId, string $page, ?string $queryString = null, ?string $referer = null, ?int $responseTime = null): void {
+        if (!self::isAvailable()) return;
         $db = self::getInstance();
         $stmt = $db->prepare("INSERT INTO browsing_history (user_id, session_id, page, query_string, referer, ip_address, user_agent, response_time_ms) VALUES (?, ?, ?, ?, ?, ?, ?, ?)");
         $stmt->execute([
