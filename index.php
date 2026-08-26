@@ -144,10 +144,10 @@ if ($page === 'magic-login' && isset($_GET['token'])) {
     <meta name="theme-color" content="#0d9488">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=DM+Sans:wght@400;500;600;700;800&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
     <link rel="preload" href="assets/svg/logo.svg" as="image">
     <link rel="preload" href="assets/css/animations.css" as="style">
-    <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"></noscript>
+    <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=DM+Sans:wght@400;500;600;700;800&display=swap"></noscript>
     <script src="/assets/js/tailwind-browser.js"></script>
     <?php echo ThemeManager::injectThemeScript($nonce); ?>
     <script nonce="<?= $nonce ?>">
@@ -155,7 +155,7 @@ if ($page === 'magic-login' && isset($_GET['token'])) {
             darkMode: 'class',
             theme: {
                 extend: {
-                    fontFamily: { sans: ['Inter', 'system-ui', 'sans-serif'] },
+                    fontFamily: { sans: ['Inter', 'system-ui', 'sans-serif'], heading: ['DM Sans', 'Inter', 'system-ui', 'sans-serif'] },
                     colors: {
                         medical: {
                             50: '#f0fdfa', 100: '#ccfbf1', 200: '#99f6e4',

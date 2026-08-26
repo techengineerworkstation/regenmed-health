@@ -37,9 +37,9 @@ $tipJson = json_encode($duplicatedTips);
 .hero-slide-bg { position: absolute; inset: 0; background-size: cover; background-position: center; }
 .hero-slide-overlay { position: absolute; inset: 0; background: linear-gradient(to top, rgba(0,0,0,0.75) 0%, rgba(0,0,0,0.2) 100%); }
 .hero-slide-content { position: relative; z-index: 1; color: #fff; max-width: 600px; }
-.hero-slide-content h1 { font-size: 1.75rem; font-weight: 800; margin-bottom: 0.5rem; line-height: 1.2; }
+.hero-slide-content h1 { font-family: var(--font-heading), 'DM Sans', sans-serif; font-size: 1.75rem; font-weight: 800; margin-bottom: 0.5rem; line-height: 1.2; letter-spacing: -0.02em; }
 .hero-slide-content p { font-size: 0.9rem; opacity: 0.9; margin-bottom: 1rem; }
-.hero-cta { display: inline-flex; align-items: center; gap: 0.5rem; padding: 0.7rem 1.5rem; background: var(--accent-green); color: #fff; border: none; border-radius: 8px; font-weight: 600; font-size: 0.85rem; cursor: pointer; text-decoration: none; transition: all 0.2s ease; }
+.hero-cta { display: inline-flex; align-items: center; gap: 0.5rem; padding: 0.7rem 1.5rem; background: var(--accent-green); color: #fff; border: none; border-radius: 8px; font-family: var(--font-heading), 'DM Sans', sans-serif; font-weight: 600; font-size: 0.85rem; cursor: pointer; text-decoration: none; transition: all 0.2s ease; letter-spacing: 0.01em; }
 .hero-cta:hover { background: var(--accent-violet); transform: translateY(-1px); }
 
 /* === STATS BAR === */
@@ -51,16 +51,16 @@ $tipJson = json_encode($duplicatedTips);
 .stat-icon.violet { background: color-mix(in srgb, var(--accent-violet) 12%, transparent); color: var(--accent-violet); }
 .stat-icon.teal { background: color-mix(in srgb, var(--accent-primary) 12%, transparent); color: var(--accent-primary); }
 .stat-icon.amber { background: color-mix(in srgb, #f59e0b 12%, transparent); color: #f59e0b; }
-.stat-value { font-size: 1.5rem; font-weight: 800; color: var(--text-primary); line-height: 1; }
-.stat-label { font-size: 0.7rem; color: var(--text-secondary); margin-top: 0.15rem; }
+.stat-value { font-family: var(--font-heading), 'DM Sans', sans-serif; font-size: 1.5rem; font-weight: 800; color: var(--text-primary); line-height: 1; letter-spacing: -0.02em; }
+.stat-label { font-size: 0.7rem; color: var(--text-secondary); margin-top: 0.15rem; font-weight: 500; }
 
 /* === SECTIONS === */
 .section-header { display: flex; align-items: center; justify-content: space-between; margin-bottom: 1.25rem; }
-.section-title { font-size: 1.1rem; font-weight: 700; color: var(--text-primary); display: flex; align-items: center; gap: 0.5rem; }
+.section-title { font-family: var(--font-heading), 'DM Sans', sans-serif; font-size: 1.15rem; font-weight: 800; color: var(--text-primary); display: flex; align-items: center; gap: 0.5rem; letter-spacing: -0.01em; }
 .section-title i { color: var(--accent-green); font-size: 1.15rem; }
 
-/* === COACHING CARDS (4 cards, 2x2 grid) === */
-.counselling-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 1rem; margin-bottom: 2.5rem; }
+/* === COUNSELLING CARDS (5 cards) === */
+.counselling-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1rem; margin-bottom: 2.5rem; }
 .counselling-card {
   position: relative; overflow: hidden;
   padding: 1.5rem; border-radius: 14px;
@@ -72,7 +72,7 @@ $tipJson = json_encode($duplicatedTips);
 .counselling-card:hover { transform: translateY(-3px); box-shadow: var(--shadow-lg); border-color: var(--accent-primary); }
 .counselling-card-image { position: absolute; top: 0; right: 0; width: 100px; height: 100px; object-fit: cover; opacity: 0.15; border-radius: 0 14px 0 50px; pointer-events: none; }
 .counselling-card-icon { width: 44px; height: 44px; border-radius: 12px; display: flex; align-items: center; justify-content: center; font-size: 1.2rem; margin-bottom: 0.85rem; }
-.counselling-card-title { font-size: 1rem; font-weight: 700; margin-bottom: 0.35rem; color: var(--text-primary); }
+.counselling-card-title { font-family: var(--font-heading), 'DM Sans', sans-serif; font-size: 1rem; font-weight: 700; margin-bottom: 0.35rem; color: var(--text-primary); letter-spacing: -0.01em; }
 .counselling-card-desc { font-size: 0.78rem; color: var(--text-secondary); line-height: 1.5; margin-bottom: 0.75rem; }
 .counselling-card-tags { display: flex; flex-wrap: wrap; gap: 0.35rem; }
 .counselling-tag { padding: 0.2rem 0.55rem; border-radius: 6px; font-size: 0.65rem; font-weight: 600; background: var(--bg-tertiary); color: var(--text-secondary); }
@@ -92,7 +92,7 @@ $tipJson = json_encode($duplicatedTips);
 .challenge-card:hover { transform: translateY(-3px); box-shadow: var(--shadow-lg); border-color: var(--accent-primary); }
 .challenge-card-image { width: 100%; height: 110px; object-fit: cover; display: block; }
 .challenge-card-body { padding: 1rem; }
-.challenge-card-title { font-size: 0.85rem; font-weight: 700; margin-bottom: 0.25rem; color: var(--text-primary); }
+.challenge-card-title { font-family: var(--font-heading), 'DM Sans', sans-serif; font-size: 0.85rem; font-weight: 700; margin-bottom: 0.25rem; color: var(--text-primary); letter-spacing: -0.01em; }
 .challenge-card-sub { font-size: 0.7rem; color: var(--text-secondary); margin-bottom: 0.5rem; }
 .challenge-card-cta { display: inline-flex; align-items: center; gap: 0.35rem; font-size: 0.7rem; font-weight: 600; color: var(--accent-primary); text-decoration: none; }
 .challenge-card-cta:hover { color: var(--accent-green); }
@@ -115,7 +115,7 @@ $tipJson = json_encode($duplicatedTips);
 .how-step { text-align: center; padding: 1.25rem; border-radius: 14px; background: var(--bg-secondary); border: 1px solid var(--border-color); transition: all 0.2s ease; }
 .how-step:hover { border-color: var(--accent-primary); box-shadow: var(--shadow-md); }
 .how-step-num { width: 36px; height: 36px; border-radius: 50%; background: var(--accent-primary); color: #fff; display: flex; align-items: center; justify-content: center; font-weight: 800; font-size: 0.85rem; margin: 0 auto 0.75rem; }
-.how-step-title { font-size: 0.85rem; font-weight: 700; margin-bottom: 0.35rem; color: var(--text-primary); }
+.how-step-title { font-family: var(--font-heading), 'DM Sans', sans-serif; font-size: 0.85rem; font-weight: 700; margin-bottom: 0.35rem; color: var(--text-primary); }
 .how-step-desc { font-size: 0.75rem; color: var(--text-secondary); line-height: 1.5; }
 
 /* === TESTIMONIALS === */
@@ -126,15 +126,15 @@ $tipJson = json_encode($duplicatedTips);
 .testimonial-text { font-size: 0.8rem; color: var(--text-secondary); line-height: 1.6; margin-bottom: 0.75rem; font-style: italic; }
 .testimonial-author { display: flex; align-items: center; gap: 0.6rem; }
 .testimonial-avatar { width: 32px; height: 32px; border-radius: 50%; background: var(--accent-primary); color: #fff; display: flex; align-items: center; justify-content: center; font-weight: 700; font-size: 0.75rem; flex-shrink: 0; }
-.testimonial-name { font-size: 0.78rem; font-weight: 600; color: var(--text-primary); }
+.testimonial-name { font-family: var(--font-heading), 'DM Sans', sans-serif; font-size: 0.78rem; font-weight: 600; color: var(--text-primary); }
 .testimonial-role { font-size: 0.68rem; color: var(--text-secondary); }
 
 /* === CTA SECTION === */
 .cta-section { padding: 2rem; border-radius: 16px; background: linear-gradient(135deg, var(--accent-green), var(--accent-violet)); color: #fff; text-align: center; margin-bottom: 2.5rem; }
-.cta-section h2 { font-size: 1.35rem; font-weight: 800; margin-bottom: 0.5rem; }
+.cta-section h2 { font-family: var(--font-heading), 'DM Sans', sans-serif; font-size: 1.35rem; font-weight: 800; margin-bottom: 0.5rem; letter-spacing: -0.02em; }
 .cta-section p { font-size: 0.85rem; opacity: 0.9; margin-bottom: 1.25rem; max-width: 550px; margin-left: auto; margin-right: auto; }
 .cta-links { display: flex; justify-content: center; gap: 0.75rem; flex-wrap: wrap; }
-.cta-link { display: inline-flex; align-items: center; gap: 0.4rem; padding: 0.6rem 1.25rem; border-radius: 10px; font-size: 0.8rem; font-weight: 600; text-decoration: none; transition: all 0.2s ease; }
+.cta-link { display: inline-flex; align-items: center; gap: 0.4rem; padding: 0.6rem 1.25rem; border-radius: 10px; font-family: var(--font-heading), 'DM Sans', sans-serif; font-size: 0.8rem; font-weight: 600; text-decoration: none; transition: all 0.2s ease; letter-spacing: 0.01em; }
 .cta-whatsapp { background: #25d366; color: #fff; }
 .cta-whatsapp:hover { background: #1da851; }
 .cta-telegram { background: #0088cc; color: #fff; }
@@ -143,12 +143,12 @@ $tipJson = json_encode($duplicatedTips);
 .cta-email:hover { background: rgba(255,255,255,0.3); }
 
 /* === PRIVACY BAR === */
-.privacy-bar { display: flex; align-items: center; justify-content: center; gap: 0.5rem; padding: 0.75rem; margin-bottom: 2.5rem; border-radius: 12px; background: color-mix(in srgb, var(--accent-green) 6%, var(--bg-secondary)); border: 1px solid color-mix(in srgb, var(--accent-green) 20%, var(--border-color)); font-size: 0.78rem; color: var(--accent-green); font-weight: 600; }
+.privacy-bar { display: flex; align-items: center; justify-content: center; gap: 0.5rem; padding: 0.75rem; margin-bottom: 2.5rem; border-radius: 12px; background: color-mix(in srgb, var(--accent-green) 6%, var(--bg-secondary)); border: 1px solid color-mix(in srgb, var(--accent-green) 20%, var(--border-color)); font-size: 0.78rem; color: var(--accent-green); font-weight: 600; letter-spacing: 0.01em; }
 
 /* === INFO CARDS === */
 .info-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(240px, 1fr)); gap: 1rem; margin-bottom: 2.5rem; }
 .info-card { padding: 1.25rem; border-radius: 14px; background: var(--bg-secondary); border: 1px solid var(--border-color); }
-.info-card h4 { font-size: 0.85rem; font-weight: 700; margin-bottom: 0.5rem; color: var(--text-primary); display: flex; align-items: center; gap: 0.4rem; }
+.info-card h4 { font-family: var(--font-heading), 'DM Sans', sans-serif; font-size: 0.85rem; font-weight: 700; margin-bottom: 0.5rem; color: var(--text-primary); display: flex; align-items: center; gap: 0.4rem; }
 .info-card p { font-size: 0.75rem; color: var(--text-secondary); line-height: 1.6; }
 .info-card ul { list-style: none; padding: 0; margin: 0.5rem 0 0; }
 .info-card ul li { font-size: 0.73rem; color: var(--text-secondary); padding: 0.25rem 0; display: flex; align-items: center; gap: 0.4rem; }
@@ -161,7 +161,7 @@ $tipJson = json_encode($duplicatedTips);
 }
 @media (max-width: 600px) {
   .stats-bar { grid-template-columns: 1fr; }
-  .counselling-grid { grid-template-columns: 1fr; }
+  .counselling-grid { grid-template-columns: repeat(2, 1fr); }
   .how-grid { grid-template-columns: 1fr; }
   .hero-carousel { height: 260px; }
   .hero-slide-content h1 { font-size: 1.3rem; }
@@ -189,6 +189,15 @@ $tipJson = json_encode($duplicatedTips);
         </div>
       </div>
       <div class="hero-slide">
+        <div class="hero-slide-bg" style="background-image:url('assets/images/doctor-consult.jpg')"></div>
+        <div class="hero-slide-overlay"></div>
+        <div class="hero-slide-content">
+          <h1>Personalized Health Consultation</h1>
+          <p>One-on-one sessions with health professionals who understand your unique needs. From diagnosis to recovery, we guide you every step.</p>
+          <a href="https://wa.me/2347010744142?text=Hi%20Coach%20Ibe!%20I%27d%20like%20to%20book%20a%20health%20consultation." class="hero-cta"><i class="lucide-message-circle"></i> Book a Consultation</a>
+        </div>
+      </div>
+      <div class="hero-slide">
         <div class="hero-slide-bg" style="background-image:url('assets/images/wellness.jpg')"></div>
         <div class="hero-slide-overlay"></div>
         <div class="hero-slide-content">
@@ -198,21 +207,21 @@ $tipJson = json_encode($duplicatedTips);
         </div>
       </div>
       <div class="hero-slide">
-        <div class="hero-slide-bg" style="background-image:url('assets/images/health-counselling.jpg')"></div>
+        <div class="hero-slide-bg" style="background-image:url('assets/images/detox-water.jpg')"></div>
         <div class="hero-slide-overlay"></div>
         <div class="hero-slide-content">
-          <h1>Health Counselling & Wellness Guidance</h1>
-          <p>Personalized health counselling for nutrition, lifestyle optimization, chronic pain management, and holistic well-being — online or in-person across Nigeria.</p>
-          <a href="index.php?page=conditions" class="hero-cta"><i class="lucide-heart-pulse"></i> Explore Our Programs</a>
+          <h1>Detoxification & Cellular Cleansing</h1>
+          <p>Medical-grade detox programs that flush toxins, restore gut health, and rejuvenate your body from the inside out. Feel lighter, think clearer.</p>
+          <a href="index.php?page=conditions" class="hero-cta"><i class="lucide-droplets"></i> Explore Detox Programs</a>
         </div>
       </div>
       <div class="hero-slide">
-        <div class="hero-slide-bg" style="background-image:url('assets/images/life-counselling.jpg')"></div>
+        <div class="hero-slide-bg" style="background-image:url('assets/images/meditation.jpg')"></div>
         <div class="hero-slide-overlay"></div>
         <div class="hero-slide-content">
           <h1>Mental Health & Emotional Well-being</h1>
           <p>Professional counselling for stress, anxiety, recovery mindset, and emotional resilience. Your mental health is as important as your physical health.</p>
-          <a href="https://wa.me/2347010744142?text=Hi%20Coach%20Ibe!%20I%27d%20like%20to%20book%20a%20counselling%20session." class="hero-cta"><i class="lucide-message-circle"></i> Book a Session</a>
+          <a href="https://wa.me/2347010744142?text=Hi%20Coach%20Ibe!%20I%27d%20like%20to%20book%20a%20counselling%20session." class="hero-cta"><i class="lucide-brain"></i> Book a Session</a>
         </div>
       </div>
     </div>
@@ -221,7 +230,7 @@ $tipJson = json_encode($duplicatedTips);
   <!-- STATS -->
   <div class="stats-bar">
     <div class="stat-item"><div class="stat-icon green"><i class="lucide-users"></i></div><div><div class="stat-value">500+</div><div class="stat-label">People Transformed</div></div></div>
-    <div class="stat-item"><div class="stat-icon violet"><i class="lucide-heart-pulse"></i></div><div><div class="stat-value">4</div><div class="stat-label">Counselling Programs</div></div></div>
+    <div class="stat-item"><div class="stat-icon violet"><i class="lucide-heart-pulse"></i></div><div><div class="stat-value">5</div><div class="stat-label">Counselling Programs</div></div></div>
     <div class="stat-item"><div class="stat-icon teal"><i class="lucide-scan"></i></div><div><div class="stat-value">5</div><div class="stat-label">Medical Challenges</div></div></div>
     <div class="stat-item"><div class="stat-icon amber"><i class="lucide-shield-check"></i></div><div><div class="stat-value">100%</div><div class="stat-label">Confidential</div></div></div>
   </div>
@@ -281,6 +290,19 @@ $tipJson = json_encode($duplicatedTips);
         <span class="counselling-tag amber">CT Scan</span>
         <span class="counselling-tag amber">X-Ray</span>
         <span class="counselling-tag amber">Retinal</span>
+      </div>
+    </div>
+    <!-- DETOXIFICATION -->
+    <div class="counselling-card" onclick="window.location='index.php?page=conditions'">
+      <img src="assets/images/detox-water.jpg" alt="" class="counselling-card-image" loading="lazy">
+      <div class="counselling-card-icon" style="background:color-mix(in srgb, #10b981 12%, transparent);color:#10b981"><i class="lucide-droplets"></i></div>
+      <div class="counselling-card-title">Detoxification</div>
+      <div class="counselling-card-desc">Medical-grade detox programs that flush toxins, restore gut health, and rejuvenate your body. Includes IV therapy, herbal cleanses, and nutritional support for cellular renewal.</div>
+      <div class="counselling-card-tags">
+        <span class="counselling-tag green">IV Therapy</span>
+        <span class="counselling-tag green">Gut Reset</span>
+        <span class="counselling-tag green">Herbal Cleanse</span>
+        <span class="counselling-tag green">Cellular</span>
       </div>
     </div>
   </div>
