@@ -317,6 +317,33 @@ $tipJson = json_encode($duplicatedTips);
         <span class="counselling-tag green">Cellular</span>
       </div>
     </div>
+    <!-- MUSCULOSKELETAL REJUVENATION -->
+    <div class="counselling-card" onclick="window.location='index.php?page=conditions'">
+      <img src="assets/images/mri-knee.jpg" alt="" class="counselling-card-image" loading="lazy">
+      <div class="counselling-card-icon" style="background:color-mix(in srgb, var(--accent-primary) 12%, transparent);color:var(--accent-primary)"><i class="lucide-bone"></i></div>
+      <div class="counselling-card-title">Musculoskeletal Rejuvenation</div>
+      <div class="counselling-card-desc">Regenerative orthopedics for joint, tendon, and ligament restoration. PRP, stem cell therapy, and PEMF protocols restore mobility, reduce pain, and regenerate cartilage, tendons, and ligaments without surgery.</div>
+      <div class="counselling-card-tags">
+        <span class="counselling-tag teal">PRP Therapy</span>
+        <span class="counselling-tag teal">Stem Cell</span>
+        <span class="counselling-tag teal">PEMF</span>
+        <span class="counselling-tag teal">Cartilage Repair</span>
+      </div>
+    </div>
+    <!-- SKIN ENHANCEMENT & AESTHETIC REGENERATION -->
+    <div class="counselling-card" onclick="window.location='index.php?page=conditions'">
+      <img src="assets/images/healthy-food.jpg" alt="" class="counselling-card-image" loading="lazy">
+      <div class="counselling-card-icon" style="background:color-mix(in srgb, #ec4899 12%, transparent);color:#ec4899"><i class="lucide-sparkles"></i></div>
+      <div class="counselling-card-title">Skin Enhancement & Aesthetic Regeneration</div>
+      <div class="counselling-card-desc">Regenerative aesthetics combining PRP, exosomes, microneedling, and bio-stimulators. Collagen induction, scar revision, hair restoration, and skin quality improvement through cellular-level regeneration.</div>
+      <div class="counselling-card-tags">
+        <span class="counselling-tag violet">PRP Facial</span>
+        <span class="counselling-tag violet">Exosomes</span>
+        <span class="counselling-tag violet">Microneedling</span>
+        <span class="counselling-tag violet">Hair Restoration</span>
+        <span class="counselling-tag violet">Hair Growth</span>
+      </div>
+    </div>
   </div>
 
   <!-- TESTS & THERAPIES -->
@@ -455,17 +482,42 @@ $tipJson = json_encode($duplicatedTips);
         <li>Supplement stacking guidance</li>
       </ul>
     </div>
-    <div class="info-card">
+<div class="info-card">
       <img class="info-card-image" src="assets/images/detox-water.jpg" alt="Cleanse therapy">
       <h4><i class="lucide-leaf" style="color:#16a34a"></i> Cleanse Sessions</h4>
       <p>Guided detox programs that cleanse the body at the cellular level — flushing accumulated toxins, resetting the gut, and restoring natural energy flow for full-body renewal.</p>
       <ul>
-        <li>IV vitamin &amp; mineral therapy</li>
+        <li>IV vitamin & mineral therapy</li>
         <li>Gut microbiome reset protocols</li>
-        <li>Herbal liver &amp; kidney cleanse</li>
+        <li>Herbal liver & kidney cleanse</li>
         <li>Heavy-metal chelation support</li>
       </ul>
     </div>
+    <!-- IMMUNE SYSTEM STRENGTHENING -->
+    <div class="info-card">
+      <img class="info-card-image" src="assets/images/meditation.jpg" alt="Immune system optimization">
+      <h4><i class="lucide-shield" style="color:var(--accent-primary)"></i> Immune System Strengthening</h4>
+      <p>Comprehensive immune optimization through IV immunoglobulin, thymosin alpha-1, peptide therapy, and personalized nutraceutical protocols. Enhances natural defense mechanisms against infections, autoimmune conditions, and age-related immune decline.</p>
+      <ul>
+        <li>IV immunoglobulin therapy</li>
+        <li>Thymosin alpha-1 peptide therapy</li>
+        <li>Personalized nutraceutical protocols</li>
+        <li>Immune senescence reversal</li>
+      </ul>
+    </div>
+    <!-- ANTI-RETROVIRAL THERAPY -->
+    <div class="info-card">
+      <img class="info-card-image" src="assets/images/lab-research.jpg" alt="Anti-retroviral therapy">
+      <h4><i class="lucide-virus" style="color:#ec4899"></i> Anti-Retroviral Therapy</h4>
+      <p>Advanced HIV management with integrative antiretroviral therapy, immune reconstitution monitoring, and regenerative adjuncts. Personalized ART regimens with resistance testing, mitochondrial support, and immune reconstitution strategies for optimal viral suppression and quality of life.</p>
+      <ul>
+        <li>Personalized ART regimens with resistance testing</li>
+        <li>Mitochondrial toxicity prevention</li>
+        <li>Immune reconstitution monitoring</li>
+        <li>Regenerative adjuncts for immune recovery</li>
+      </ul>
+    </div>
+  </div>
   </div>
 
   <!-- TESTIMONIALS -->
