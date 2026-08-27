@@ -1,4 +1,4 @@
-<?php if (!VERCEL_MODE && session_status() === PHP_SESSION_NONE) { session_start(); } ?>
+<?php if (!VERCEL_MODE && session_status() === PHP_SESSION_NONE) { session_start(); } ?><?php $scanEndpoint = VERCEL_MODE ? 'api/scan-analyze.php' : 'includes/scan-analyze.php'; ?>
 <main class="max-w-7xl mx-auto px-4 py-12">
     <div class="text-center mb-10">
         <h1 class="text-3xl font-bold text-slate-900 dark:text-slate-100 flex items-center justify-center gap-3">
@@ -120,7 +120,7 @@
         }
     }
 
-    fetch('includes/scan-analyze.php?action=status').then(r => r.json()).then(d => {
+    fetch('<?= $scanEndpoint ?>?action=status').then(r => r.json()).then(d => {
         setStatus('localDot', 'localLabel', d.local);
         setStatus('cloudDot', 'cloudLabel', d.cloud);
         if (!d.local.online && !d.cloud.online) {
@@ -159,7 +159,7 @@
         document.getElementById('resultError').classList.add('hidden');
         document.getElementById('resultLoading').classList.remove('hidden');
 
-        fetch('includes/scan-analyze.php', { method: 'POST', body: fd })
+        fetch('<?= $scanEndpoint ?>', { method: 'POST', body: fd })
             .then(r => r.json())
             .then(d => {
                 document.getElementById('resultLoading').classList.add('hidden');
