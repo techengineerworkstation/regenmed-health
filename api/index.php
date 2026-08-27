@@ -11,5 +11,10 @@ define('VERCEL_MODE', true);
 // We need to set the root path for includes
 $_SERVER['DOCUMENT_ROOT'] = dirname(__DIR__);
 
+if (str_contains($_SERVER['REQUEST_URI'] ?? '', 'scan-analyze.php')) {
+    require_once dirname(__DIR__) . '/includes/scan-analyze.php';
+    exit;
+}
+
 // Include the main application
 require_once dirname(__DIR__) . '/index.php';
