@@ -21,6 +21,11 @@ return [
         'debug' => false,
     ],
     'vercel' => VERCEL_MODE,
+    'supabase' => [
+        'url' => getenv('SUPABASE_URL') ?: '',
+        'anon_key' => getenv('SUPABASE_ANON_KEY') ?: '',
+        'service_key' => getenv('SUPABASE_SERVICE_ROLE_KEY') ?: '',
+    ],
     'ai' => [
         'local_endpoint' => getenv('SCAN_LOCAL_ENDPOINT') ?: 'http://127.0.0.1:8080',
         'cloud_endpoint' => getenv('SCAN_CLOUD_ENDPOINT') ?: '',
