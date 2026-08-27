@@ -98,8 +98,6 @@ function heuristicAnalysis(string $imagePath, string $modality): array {
             $prev = $lum;
         }
     }
-    imagedestroy($small);
-    imagedestroy($img);
     $mean = $sum / 4096;
     $std = sqrt(max(0.0, $sqSum / 4096 - $mean * $mean));
     $edgeDensity = $edge / 4096 * 100;
